@@ -4,15 +4,13 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
+export const metadata:Metadata = {
   title: 'Price-Pulse App',
   description: 'Information about the lowest prices available in retail chains of Ukraine.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
+export default function RootLayout({children}: {
+  children:React.ReactNode
 }) {
   return (
     <html lang="en">

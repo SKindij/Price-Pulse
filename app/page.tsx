@@ -5,8 +5,8 @@ import Typography from '@mui/material/Typography';
 export default function Home() {
   return (
     <main className={styles.main}>  
-      <p>
-        Get started by editing&nbsp;
+      <h1>Main Screen</h1>
+      <p>Get started by editing&nbsp;
         <code className={styles.code}>app/page.tsx</code>
       </p>
        
