@@ -1,4 +1,8 @@
 {
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   // розширення правил
   "extends": [
     "next/core-web-vitals", // розширення для проектів Next
@@ -38,7 +42,10 @@
     // вимагає завжди ставити крапку з комою
     "@typescript-eslint/semi": ["error", "always"],
     // встановлює стиль розставлення пропусків в анотаціях типів
-    "@typescript-eslint/type-annotation-spacing": ["error", { "before": "never", "after": "never" }],
+    "@typescript-eslint/type-annotation-spacing": [
+      "error",
+      { "before": false, "after": false }
+    ],
     // стиль фігурних дужок для блоків коду
       // тут "One True Brace Style" - { в наступному рядку
       "brace-style": ["error", "1tbs"],
