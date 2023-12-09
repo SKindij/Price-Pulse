@@ -6,7 +6,7 @@ export default function CreateBeveragesPage() {
       <section>
         <h1>Створюємо напій.</h1>
 
-        <p>Оберіть параметринапою.</p>
+        <p>Оберіть параметри напою.</p>
       </section>
     </>
   );

@@ -1,4 +1,5 @@
 // @path: @/app/categories/beverages/create/page.tsx
+import Link from 'next/link';
 
 export default function BeveragesPage() {
   return (
@@ -7,7 +8,9 @@ export default function BeveragesPage() {
         <h1>Напої</h1>
 
         <p>Порівнюємо ціни різних напоїв</p>
-
+        <nav>
+          <Link href="/categories/beverages/create">Додати напій</Link>
+        </nav>
       </section>
 
     </>

@@ -1,5 +1,6 @@
 // @path: @/app/categories/layout.tsx
 
+
 export default function CategoriesLayout({
   children,
 }:{ children:React.ReactNode;
