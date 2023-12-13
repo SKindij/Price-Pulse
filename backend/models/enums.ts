@@ -31,4 +31,5 @@ export enum DrinkCategory {
   Tequila = 'tequila',
   Tincture = 'tincture',
   Whiskey = 'whiskey',
+  Wine = 'wine'
 }

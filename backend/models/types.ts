@@ -2,8 +2,6 @@
 
 import { RetailChain } from '@/backend/models/enums';
 
-
-
 // use enum as keys for this object
 export type RetailPrices = {
   [K in RetailChain]:{
