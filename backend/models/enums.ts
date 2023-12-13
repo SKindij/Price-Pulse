@@ -8,15 +8,26 @@ export enum RetailChain {
 }
 
 export enum Country {
+  Argentina = 'Argentina',
+  Australia = 'Australia',
+  Barbados = 'Barbados',
   Bulgaria = 'Bulgaria',
   Cuba = 'Cuba',
+  CzechRepublic = 'Czech Republic',
+  Finland = 'Finland',
   France = 'France',
   Germany = 'Germany',
+  Greece = 'Greece',
   Ireland = 'Ireland',
   Italy = 'Italy',
+  Jamaica = 'Jamaica',
+  Mexico = 'Mexico',
   Poland = 'Poland',
-  Spain = 'Spain',
   Scotland = 'Scotland',
+  Slovakia = 'Slovakia',
+  SouthAfrica = 'South Africa',
+  Spain = 'Spain',
+  Sweden = 'Sweden',
   Ukraine = 'Ukraine',
   USA = 'USA',
 }
