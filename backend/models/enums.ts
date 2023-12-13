@@ -22,7 +22,7 @@ export enum Country {
 }
 
 export enum DrinkCategory {
-Bourbon = 'bourbon',
+  Bourbon = 'bourbon',
   Champagne = 'champagne',
   Gin = 'gin',
   Horilka = 'horilka',
@@ -32,17 +32,3 @@ Bourbon = 'bourbon',
   Tincture = 'tincture',
   Whiskey = 'whiskey',
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
