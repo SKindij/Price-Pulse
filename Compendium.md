@@ -13,6 +13,26 @@ It can transform into a contextual action bar or be used as a navbar.
 
 
 
+
+### Default installation
+
+* npm-site: https://www.npmjs.com/package/@mui/material
+  - version: 5.15.0
+  - install: `npm install @mui/material`
+  - weekly downloads: 3 318 610
+* home-page: https://mui.com/material-ui/
+
+### @emotion/react & @emotion/styled
+Allows developers to skip the styled API abstraction and style components and elements directly.
+
+* npm-site: https://www.npmjs.com/package/@emotion/react
+  - version: 11.11.1
+  - install: `npm i @emotion/styled @emotion/react`
+  - weekly downloads: 7 311 000
+* home-page: https://emotion.sh/docs/introduction
+
+- - -
+
 ## npm packages
 
 ### @emailjs/browser
@@ -24,14 +44,7 @@ EmailJS helps to send emails using client-side technologies only. No server is r
   - weekly downloads: 27 150
 * home-page: https://www.emailjs.com/
 
-### @emotion/react & @emotion/styled
-Allows developers to skip the styled API abstraction and style components and elements directly.
 
-* npm-site: https://www.npmjs.com/package/@emotion/react
-  - version: 11.11.1
-  - install: `npm i @emotion/styled @emotion/react`
-  - weekly downloads: 7 311 000
-* home-page: https://emotion.sh/docs/introduction
 
 ### @fancyapps/ui
 The ultimate JavaScript lightbox alternative, that sets the standard for premium user experience in multimedia display. Supports images, videos, maps, inline content, iframes and any other HTML content.
@@ -60,11 +73,32 @@ Performant, flexible and extensible forms with easy-to-use validation.
 * npm-site: https://www.npmjs.com/package/@hookform/resolvers
   - version: 3.3.2
   - install: `npm i @hookform/resolvers`
-  - weekly downloads: 1 9994 900
+  - weekly downloads: 1 994 900
 * home-page: https://react-hook-form.com/
 
 List of exported Typescript Types.
 
+### @mui/icons-material
+This package provides the Google Material Icons converted to SvgIcon components.
+
+* npm-site: https://www.npmjs.com/package/@mui/icons-material
+  - version: 5.15.0
+  - install: `npm install @mui/icons-material`
+  - weekly downloads: 2 552 785
+* home-page:
+
+
+
+###
+
+* npm-site:
+  - version:
+  - install: ``
+  - weekly downloads:
+* home-page:
+
+
+
 ###
 
 * npm-site:
@@ -82,12 +116,6 @@ List of exported Typescript Types.
   - install: ``
   - weekly downloads:
 * home-page:
-
-
-
-
-
-
 
 
 
