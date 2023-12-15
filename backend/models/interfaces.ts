@@ -5,6 +5,7 @@ import { Country, DrinkCategory } from '@/backend/models/enums';
 
 
 export interface IDrink {
+  id:number;
   title:string;
   category:DrinkCategory;
   volume:DrinkVolume;
@@ -12,7 +13,7 @@ export interface IDrink {
   inWish:boolean;
   ratings:number;
   country:Country;
-  id:number;
+  description:string;
 }
 
 
