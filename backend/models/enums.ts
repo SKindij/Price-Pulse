@@ -12,6 +12,7 @@ export enum Country {
   Australia = 'Australia',
   Barbados = 'Barbados',
   Belgium = 'Belgium',
+  Britain = 'Britain',
   Bulgaria = 'Bulgaria',
   Cuba = 'Cuba',
   CzechRepublic = 'Czech Republic',

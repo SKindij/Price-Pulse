@@ -451,30 +451,47 @@ const beveragesData:IDrink[] = [
   },
   /* --- GIN --- */
   {
-    title: 'Gordon\'s',
+    id: 114,
+    title: 'Malfy Pink Grapefruit 0.7L',
     category: DrinkCategory.Gin,
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 4,
-    country: Country,
-    id: 114,
+    country: Country.Britain,
+    description: ''
   },
-  /* --- PORTWEIN --- */
   {
-    id: 115,
-    title: 'Colonist',
-    category: DrinkCategory.Portwein,
+    id: 114,
+    title: 'Gordon\'s Pink 0.7L',
+    category: DrinkCategory.Gin,
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 3,
+    country: Country.Britain,
+    description: ''
+  },
+  /* --- PORTWEIN --- */
+  {
+    id: 115,
+    title: 'Colonist 0.7L',
+    category: DrinkCategory.Portwein,
+    volume: 0.7,
+    prices: {
+      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -483,20 +500,36 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    title: 'Osborn',
+    id: 116,
+    title: 'Osborn Premium Rojo 0.7L',
     category: DrinkCategory.Portwein,
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 374, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
-    country: Country,
+    country: Country.Spain,
+    description: 'Смак з тонами полину, гіркої апельсинової шкірки та відтінками кориці.'
+  },
+  {
     id: 116,
-    description: ''
+    title: 'Osborn Porto Tawny 0.7L',
+    category: DrinkCategory.Portwein,
+    volume: 0.7,
+    prices: {
+      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 290, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 5,
+    country: Country.Spain,
+    description: 'Туріга Насьональ. Тони пряні, кондитерські.'
   },
   /* --- CHAMPAGNE --- */
   {
@@ -506,8 +539,8 @@ const beveragesData:IDrink[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -522,7 +555,7 @@ const beveragesData:IDrink[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 539, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 389, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
@@ -533,35 +566,19 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 118,
-    title: ' 0.7L',
+    title: 'Martini Rose 0.7L',
     category: DrinkCategory.Champagne,
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 535, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
-    ratings: 3,
-    country: Country,
-    description: ''
-  },
-  {
-    id: 118,
-    title: ' 0.7L',
-    category: DrinkCategory.Champagne,
-    volume: 0.7,
-    prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-    },
-    inWish: false,
-    ratings: 3,
-    country: Country,
-    description: ''
+    ratings: 5,
+    country: Country.Italy,
+    description: 'Купаж. Тони букета фруктові, квіткові.'
   },
   /* --- TEQUILA --- */
   {
