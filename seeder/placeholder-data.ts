@@ -12,8 +12,8 @@ const beveragesData:IDrink[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 1669, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 2199, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -28,8 +28,8 @@ const beveragesData:IDrink[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 1637, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 1779, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 1699, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -44,8 +44,8 @@ const beveragesData:IDrink[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 1049, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 729, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 749, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -61,7 +61,7 @@ const beveragesData:IDrink[] = [
     prices: {
       [RetailChain.Auchan]: { price: 849, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 589, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 599, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -71,13 +71,13 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1005,
-	title: 'Wild Turkey Rye 0.7L',
+    title: 'Wild Turkey Rye 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 849, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 969, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -87,13 +87,13 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1006,
-	title: 'Jim Beam Double Oak 0.7L',
+    title: 'Jim Beam Double Oak 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 1089, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 1199, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 1149, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -103,13 +103,13 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1007,
-	title: 'Jim Beam Double Rye 0.7L',
+    title: 'Jim Beam Double Rye 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 1179, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 1099, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -119,13 +119,13 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1008,
-	title: 'Jim Beam White 4Y 0.7L',
+    title: 'Jim Beam White 4Y 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 559, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 549, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 699, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -134,30 +134,46 @@ const beveragesData:IDrink[] = [
     description: '51% сусла із кукурудзи.'
   },
   {
-    id: 1011,
-	title: 'Wild Turkey 1.0L',
+    id: 1003,
+	  title: 'Wild Turkey 101 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,
     prices: {
-      [RetailChain.Auchan]: { price: 1045, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 939, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.USA,
-	description: 'Аромат ірису, меду, карамелі і обпаленого дуба. Делікатний, солодкуватий, трохи маслянистий смак.'
+    description: 'Смак ванілі, меду, карамелі, тютюну і тростинного цукру. Аромат ванілі, дуба, апельсина.'
+  },
+  {
+    id: 1011,
+	  title: 'Wild Turkey 1.0L',
+    category: DrinkCategory.Bourbon,
+    volume: 1.0,
+    prices: {
+      [RetailChain.Auchan]: { price: 1045, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 749, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 1099, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 5,
+    country: Country.USA,
+	  description: 'Аромат ірису, меду, карамелі і обпаленого дуба. Делікатний, солодкуватий, трохи маслянистий смак.'
   },
   {
     id: 1012,
-	title: 'Jim Beam Red Stag Cherry 1.0L',
+	  title: 'Jim Beam Red Stag Cherry 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,
     prices: {
       [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 1159, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -167,13 +183,13 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1013,
-	title: 'Jim Beam White 4Y 1.0L',
+	  title: 'Jim Beam White 4Y 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,
     prices: {
       [RetailChain.Auchan]: { price: 729, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 1159, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 699, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -183,99 +199,169 @@ const beveragesData:IDrink[] = [
   },
   /* --- WHISKEY --- */
   {
-    title: 'Ballantines',
+    title: 'Jameson Stout 0.7L',
     category: DrinkCategory.Whiskey,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-    },
-    inWish: false,
-    ratings: 3,
-    country: Country,
-    id: 108,
-  },
-  {
-    title: 'Jameson',
-    category: DrinkCategory.Whiskey,
-    volume: 0.7,
-    prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 795, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 699, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 709, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
-    country: Country,
+    country: Country.Ireland,
     id: 109,
+    description: ''
   },
   {
-    title: 'Jameson',
+    title: 'Jameson 0.7L',
     category: DrinkCategory.Whiskey,
-    volume: 0.5,
+    volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 599, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 579, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 599, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
-    country: Country,
-    id: 110,
+    country: Country.Ireland,
+    id: 109,
+    description: 'Blended.'
   },
   {
-    title: 'Ballantines',
+    id: 111,
+    title: 'Ballantines Finest 0.7L',
     category: DrinkCategory.Whiskey,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 4,
+    country: Country.Britain,
+    description: 'Blended.'
+  },
+  {
+    id: 112,
+    title: 'Johnnie Walker Blonde 0.7L',
+    category: DrinkCategory.Whiskey,
+    volume: 0.7,
+    prices: {
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 674, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 4,
+    country: Country.Britain,
+    description: ''
+  },
+  {
+    id: 113,
+    title: 'Johnnie Walker Red Label 0.7L',
+    category: DrinkCategory.Whiskey,
+    volume: 0.7,
+    prices: {
+      [RetailChain.Auchan]: { price: 649, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 519, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 4,
+    country: Country.Britain,
+    description: 'Blended.'
+  },
+  {
+    id: 113,
+    title: 'Hankey Bannister 0.7L',
+    category: DrinkCategory.Whiskey,
+    volume: 0.7,
+    prices: {
+      [RetailChain.Auchan]: { price: 369, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 369, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 369, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 362, lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 3,
+    country: Country.Scotland,
+    description: 'Blended.'
+  },
+  {
+    title: 'Jameson  1.0L',
+    category: DrinkCategory.Whiskey,
+    volume: 1.0,
+    prices: {
+      [RetailChain.Auchan]: { price: 799, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 799, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 799, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 5,
+    country: Country.Ireland,
+    id: 110,
+    description: 'Blended.'
+  },
+  {
+    id: 111,
+    title: 'Ballantines Finest 1.0L',
+    category: DrinkCategory.Whiskey,
+    volume: 1.0,
+    prices: {
+      [RetailChain.Auchan]: { price: 639, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 629, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 689, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 4,
+    country: Country.Britain,
+    description: 'Blended.'
+  },
+  {
+    id: 113,
+    title: 'Johnnie Walker Red Label 1.0L',
+    category: DrinkCategory.Whiskey,
+    volume: 1.0,
+    prices: {
+      [RetailChain.Auchan]: { price: 779, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 699, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 959, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 4,
+    country: Country.Britain,
+    description: 'Blended.'
+  },
+  {
+    id: 113,
+    title: 'Hankey Bannister 1.0L',
+    category: DrinkCategory.Whiskey,
+    volume: 0.7,
+    prices: {
+      [RetailChain.Auchan]: { price: 599, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 569, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
-    country: Country,
-    id: 111,
-  },
-  {
-    title: 'John Walker',
-    category: DrinkCategory.Whiskey,
-    volume: 0.7,
-    prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-    },
-    inWish: false,
-    ratings: 4,
-    country: Country,
-    id: 112,
-  },
-  {
-    title: 'John Walker',
-    category: DrinkCategory.Whiskey,
-    volume: 0.5,
-    prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-    },
-    inWish: false,
-    ratings: 4,
-    country: Country,
-    id: 113,
+    country: Country.Scotland,
+    description: 'Blended.'
   },
   /* --- RUM --- */
   {
-    id: 1010
-	title: 'Doorly\'s Gold 5Y 0.7L',
+    id: 1010,
+	  title: 'Doorly\'s Gold 5Y 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
@@ -291,7 +377,7 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 104,
-	title: 'Doorly\'s White 3Y 0.7L',
+	  title: 'Doorly\'s White 3Y 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
@@ -307,7 +393,7 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1005,
-	title: 'Botafogo Spiced 0.7L',
+    title: 'Botafogo Spiced 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
@@ -323,7 +409,7 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1007,
-	title: 'Appleton Reserve 0.7L',
+    title: 'Appleton Reserve 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
@@ -339,7 +425,7 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1008,
-	title: 'Appleton 12Y 0.7L',
+    title: 'Appleton 12Y 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
@@ -350,12 +436,12 @@ const beveragesData:IDrink[] = [
     },
     inWish: false,
     ratings: 0,
-    country: Country.Jamaica,   
-	description: 'Вершковий смак із відтінками апельсинової цедри і ванілі. Аромат волоського і мускатного горіхів.'
+    country: Country.Jamaica,
+    description: 'Вершковий смак із відтінками апельсинової цедри і ванілі. Аромат волоського і мускатного горіхів.'
   },
   {
     id: 1003,
-	title: 'Santiago de Cuba Anejo 0.7L',
+    title: 'Santiago de Cuba Anejo 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
@@ -371,7 +457,7 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1009,
-	title: 'Bacardi Spiced 0.7L',
+    title: 'Bacardi Spiced 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
@@ -385,9 +471,9 @@ const beveragesData:IDrink[] = [
     country: Country.Italy,
     description: 'Ваніль, кориця, мускатний горіх і мед. Аромат з нотками дубової бочки і сухофруктів.'
   },
-    {
+  {
     id: 1003,
-	title: 'Santiago de Cuba Carta Blanca 0.7L',
+    title: 'Santiago de Cuba Carta Blanca 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
@@ -403,7 +489,7 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1006,
-	title: 'Botafogo Black 0.7L',
+    title: 'Botafogo Black 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
@@ -435,7 +521,7 @@ const beveragesData:IDrink[] = [
   },
   {
     id: 1019,
-	title: 'Bacardi Spiced 1.0L',
+    title: 'Bacardi Spiced 1.0L',
     category: DrinkCategory.Rum,
     volume: 1.0,
     prices: {
@@ -457,14 +543,30 @@ const beveragesData:IDrink[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 919, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 699, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
-    ratings: 4,
-    country: Country.Britain,
-    description: ''
+    ratings: 5,
+    country: Country.Italy,
+    description: 'Тони сицілійського рожевого грейпфрута, коріандра та ревеня.'
+  },
+  {
+    id: 114,
+    title: 'Malfy Con Limone 0.7L',
+    category: DrinkCategory.Gin,
+    volume: 0.7,
+    prices: {
+      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 919, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 699, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 5,
+    country: Country.Italy,
+    description: 'Аромат з тонами лимона, ялівцю, дягелю і кориці.'
   },
   {
     id: 114,
@@ -473,7 +575,23 @@ const beveragesData:IDrink[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 659, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 3,
+    country: Country.Britain,
+    description: ''
+  },
+  {
+    id: 114,
+    title: 'Gordon\'s Sicilian Lemon 0.7L',
+    category: DrinkCategory.Gin,
+    volume: 0.7,
+    prices: {
+      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 689, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
@@ -654,7 +772,7 @@ const beveragesData:IDrink[] = [
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 399, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 476, lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 4,
