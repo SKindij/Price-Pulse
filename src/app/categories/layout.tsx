@@ -8,6 +8,7 @@ export default function CategoriesLayout({
   return (
     <div>
       <div>
+        {/*  */}
         <h1>Категорії товарів.</h1>
       </div>
       <div>
