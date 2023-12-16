@@ -1,6 +1,6 @@
-// @file: @/seeder/placeholder-data.ts
-import { IDrink } from '@/backend/models/interfaces';
-import { DrinkCategory, RetailChain, Country } from '@/backend/models/enums';
+// @/seeder/placeholder-data.ts
+import { IDrink } from '@/src/models/interfaces';
+import { DrinkCategory, RetailChain, Country } from '@/src/models/enums';
 // import { RetailPrices, DrinkVolume } from '@/backend/models/types';
 
 const beveragesData:IDrink[] = [
@@ -134,7 +134,7 @@ const beveragesData:IDrink[] = [
     description: '51% сусла із кукурудзи.'
   },
   {
-    id: 1003,
+    id: 1009,
 	  title: 'Wild Turkey 101 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,
@@ -150,7 +150,7 @@ const beveragesData:IDrink[] = [
     description: 'Смак ванілі, меду, карамелі, тютюну і тростинного цукру. Аромат ванілі, дуба, апельсина.'
   },
   {
-    id: 1011,
+    id: 1010,
 	  title: 'Wild Turkey 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,
@@ -166,7 +166,7 @@ const beveragesData:IDrink[] = [
 	  description: 'Аромат ірису, меду, карамелі і обпаленого дуба. Делікатний, солодкуватий, трохи маслянистий смак.'
   },
   {
-    id: 1012,
+    id: 1011,
 	  title: 'Jim Beam Red Stag Cherry 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,
@@ -182,7 +182,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    id: 1013,
+    id: 1012,
 	  title: 'Jim Beam White 4Y 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,

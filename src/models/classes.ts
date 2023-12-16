@@ -1,4 +1,4 @@
-// @path: @/backend/models/classes.ts
+// @/src/models/classes.ts
 
 
 

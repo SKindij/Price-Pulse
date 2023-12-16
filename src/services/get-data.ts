@@ -1,4 +1,4 @@
-// @path: @/backend/services/get-data.ts
+// @/src/services/get-data.ts
 
 
 

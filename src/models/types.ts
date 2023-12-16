@@ -1,6 +1,6 @@
-// @path: @/backend/models/types.ts
+// @/src/models/types.ts
 
-import { RetailChain } from '@/backend/models/enums';
+import { RetailChain } from '@/src/models/enums';
 
 // use enum as keys for this object
 export type RetailPrices = {

@@ -1,7 +1,7 @@
-// @path: @/backend/models/interfaces.ts
+// @//models/interfaces.ts
 
-import { RetailPrices, DrinkVolume } from '@/backend/models/types';
-import { Country, DrinkCategory } from '@/backend/models/enums';
+import { RetailPrices, DrinkVolume } from '@/src/models/types';
+import { Country, DrinkCategory } from '@/src/models/enums';
 
 
 export interface IDrink {
