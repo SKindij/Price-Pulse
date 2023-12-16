@@ -1,0 +1,43 @@
+/* Заголовок */
+.header {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.list {
+  margin-top: 8px;
+  padding-left: 0;
+}
+
+/* Картка товару */
+.productCard {
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.productTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.productDescription {
+  color: #666;
+}
+
+/* Список цін */
+.priceList {
+  list-style-type: none;
+  padding: 0;
+}
+.priceItem {
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-weight: bold;
+}
+.lastUpdated {
+  color: #888;
+  font-size: 0.9rem;
+}

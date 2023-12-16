@@ -3,7 +3,8 @@ import { Metadata } from 'next';
 
 import { fetchBeverageById } from '@/src/services/get-data';
 
-import { Box, Typography } from '@mui/material';
+import { Typography, Box, List, ListItem, ListItemText } from '@mui/material';
+import styles from './page.module.css';
 
 type Props = {
   params:{ // only property that is an object
@@ -29,8 +30,6 @@ export async function generateMetadata(
   };
 };
 
-
-
 export default async function BeveragePage({params: {beverageId}}:Props) {
   // to get the data of a specific drink
   const beverage = await fetchBeverageById(Number(beverageId));
@@ -41,19 +40,31 @@ export default async function BeveragePage({params: {beverageId}}:Props) {
 
   return (
     <section>
-      <Typography variant="h1">Обраний напій:</Typography>
-      <Box>
-        <Typography variant="h2">{beverage.title}</Typography>
-        <Typography variant="body1">{beverage.description}</Typography>
-
-        <Typography variant="h3">Ціни:</Typography>
-        <ul>
+      <Typography variant="h1" className={styles.header}>
+        Обраний напій:
+      </Typography>
+      {/* Інформація про напій */}
+      <Box sx={{ mt: 2 }}>
+        <Typography variant="body1">{beverage.category}</Typography>
+        <Typography variant="h2" className={styles.productTitle}>
+          {beverage.title}
+        </Typography>
+        <Typography variant="body1">{beverage.country}</Typography>
+        <Typography variant="body1" className={styles.productDescription}>
+          {beverage.description}
+        </Typography>
+        {/* Ціни */}
+        <Typography variant="h3" sx={{ mt: 2 }}>Ціни:</Typography>
+        <List className={styles.list}>
           {Object.entries(beverage.prices).map(([chain, info]) => (
-            <li key={chain}>
-              {chain}: {info.price} ({info.lastUpdated.toLocaleDateString()})
-            </li>
+            <ListItem key={chain} disablePadding>
+              <ListItemText
+                primary={`${chain}: ${info.price} грн`}
+                secondary={`Останнє оновлення: ${info.lastUpdated.toLocaleDateString()}`}
+              />
+            </ListItem>
           ))}
-        </ul>
+        </List>
 
         {/* Додайте інші дані про напій для відображення */}
       </Box>
