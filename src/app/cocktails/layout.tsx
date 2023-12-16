@@ -1,1 +1,1 @@
-// @path: @/app/cocktails/layout.tsx
+// @/src/app/cocktails/layout.tsx

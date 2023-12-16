@@ -1,4 +1,4 @@
-// @path: @/app/api/beverages/route.ts
+// @/app/api/beverages/route.ts
 import { NextResponse } from 'next/server';
 
 

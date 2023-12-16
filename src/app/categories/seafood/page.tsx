@@ -1,4 +1,4 @@
-// @/app/categories/seafood/page.tsx
+// @/src/app/categories/seafood/page.tsx
 
 
 

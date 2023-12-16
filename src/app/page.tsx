@@ -1,3 +1,4 @@
+// @/src/app/page.tsc
 import styles from './page.module.css';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -8,17 +9,14 @@ export default function Home() {
     <main className={styles.main}>
       <h1>Main Screen</h1>
       {/*  */}
-      <p>Get started by editing&nbsp;
-        <code className={styles.code}>app/page.tsx</code>
-      </p>
 
       <Container>
-        <Typography variant="h2">Hello NEXT World</Typography>
+        <Typography variant="h4">Hello NEXT World</Typography>
         {/*  */}
         <nav>
           <Link href="/categories/beverages">Напої</Link>
-          <Link href="/categories/beverages">Напої</Link>
-          <Link href="/categories/beverages">Напої</Link>
+          <Link href="/categories/seafood">Морепродукти</Link>
+          <Link href="/categories/household">Побутові речі</Link>
         </nav>
       </Container>
 

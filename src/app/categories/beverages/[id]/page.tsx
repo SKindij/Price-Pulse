@@ -1,4 +1,4 @@
-// @/app/categories/beverages/[id]/page.tsx
+// @/src/app/categories/beverages/[id]/page.tsx
 
 export default async function BeveragePage() {
 

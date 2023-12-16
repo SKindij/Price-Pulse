@@ -1,4 +1,4 @@
-// @/app/recipes/page.tsx
+// @/src/app/recipes/page.tsx
 
 
 

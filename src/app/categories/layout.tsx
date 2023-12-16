@@ -1,4 +1,4 @@
-// @path: @/app/categories/layout.tsx
+// @/src/app/categories/layout.tsx
 
 
 export default function CategoriesLayout({

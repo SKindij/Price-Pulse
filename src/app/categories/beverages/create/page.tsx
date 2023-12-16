@@ -1,4 +1,4 @@
-// @/app/categories/beverages/create/page.tsx
+// @/src/app/categories/beverages/create/page.tsx
 
 export default function CreateBeveragePage() {
   return (
