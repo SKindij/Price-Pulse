@@ -1,12 +1,12 @@
 // @/seeder/placeholder-data.ts
-import { IDrink } from '@/src/models/interfaces';
+import { IBeverage } from '@/src/models/interfaces';
 import { DrinkCategory, RetailChain, Country } from '@/src/models/enums';
 // import { RetailPrices, DrinkVolume } from '@/backend/models/types';
 
-const beveragesData:IDrink[] = [
+const beveragesData:IBeverage[] = [
   /* --- BOURBON --- */
   {
-    id: 1001,
+    beverageId: 1001,
 	  title: 'Wild Turkey Rare Breed 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
@@ -22,7 +22,7 @@ const beveragesData:IDrink[] = [
     description: 'Тони паленого коричневого цукру і ванілі, трохи цитрусових, сосни і дуба.'
   },
   {
-    id: 1002,
+    beverageId: 1002,
 	  title: 'Wild Turkey Longbranch 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
@@ -38,7 +38,7 @@ const beveragesData:IDrink[] = [
     description: 'Смак з відтінками димних солодощів, червоних яблук і карамелі. '
   },
   {
-    id: 1003,
+    beverageId: 1003,
 	  title: 'Wild Turkey 101 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
@@ -54,7 +54,7 @@ const beveragesData:IDrink[] = [
     description: 'Смак ванілі, меду, карамелі, тютюну і тростинного цукру. Аромат ванілі, дуба, апельсина.'
   },
   {
-    id: 1004,
+    beverageId: 1004,
 	  title: 'Wild Turkey 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
@@ -70,7 +70,7 @@ const beveragesData:IDrink[] = [
     description: 'Аромат ірису, меду, карамелі і обпаленого дуба. Делікатний, солодкуватий, трохи маслянистий смак.'
   },
   {
-    id: 1005,
+    beverageId: 1005,
     title: 'Wild Turkey Rye 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
@@ -86,7 +86,7 @@ const beveragesData:IDrink[] = [
     description: 'Аромат має ванільно-пряні, дубові, цитрусові акценти. У смаку грушеві тони в компанії карамелі.'
   },
   {
-    id: 1006,
+    beverageId: 1006,
     title: 'Jim Beam Double Oak 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
@@ -102,7 +102,7 @@ const beveragesData:IDrink[] = [
     description: 'Баланс насиченого смаку і неповторного аромату.'
   },
   {
-    id: 1007,
+    beverageId: 1007,
     title: 'Jim Beam Double Rye 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
@@ -118,7 +118,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    id: 1008,
+    beverageId: 1008,
     title: 'Jim Beam White 4Y 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
@@ -134,7 +134,7 @@ const beveragesData:IDrink[] = [
     description: '51% сусла із кукурудзи.'
   },
   {
-    id: 1009,
+    beverageId: 1009,
 	  title: 'Wild Turkey 101 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,
@@ -150,7 +150,7 @@ const beveragesData:IDrink[] = [
     description: 'Смак ванілі, меду, карамелі, тютюну і тростинного цукру. Аромат ванілі, дуба, апельсина.'
   },
   {
-    id: 1010,
+    beverageId: 1010,
 	  title: 'Wild Turkey 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,
@@ -166,7 +166,7 @@ const beveragesData:IDrink[] = [
 	  description: 'Аромат ірису, меду, карамелі і обпаленого дуба. Делікатний, солодкуватий, трохи маслянистий смак.'
   },
   {
-    id: 1011,
+    beverageId: 1011,
 	  title: 'Jim Beam Red Stag Cherry 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,
@@ -182,7 +182,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    id: 1012,
+    beverageId: 1012,
 	  title: 'Jim Beam White 4Y 1.0L',
     category: DrinkCategory.Bourbon,
     volume: 1.0,
@@ -199,6 +199,7 @@ const beveragesData:IDrink[] = [
   },
   /* --- WHISKEY --- */
   {
+    beverageId: 1013,
     title: 'Jameson Stout 0.7L',
     category: DrinkCategory.Whiskey,
     volume: 0.7,
@@ -211,10 +212,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ireland,
-    id: 109,
     description: ''
   },
   {
+    beverageId: 1014,
     title: 'Jameson 0.7L',
     category: DrinkCategory.Whiskey,
     volume: 0.7,
@@ -227,11 +228,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ireland,
-    id: 109,
     description: 'Blended.'
   },
   {
-    id: 111,
+    beverageId: 1015,
     title: 'Ballantines Finest 0.7L',
     category: DrinkCategory.Whiskey,
     volume: 0.7,
@@ -247,7 +247,7 @@ const beveragesData:IDrink[] = [
     description: 'Blended.'
   },
   {
-    id: 112,
+    beverageId: 1016,
     title: 'Johnnie Walker Blonde 0.7L',
     category: DrinkCategory.Whiskey,
     volume: 0.7,
@@ -263,7 +263,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    id: 113,
+    beverageId: 1017,
     title: 'Johnnie Walker Red Label 0.7L',
     category: DrinkCategory.Whiskey,
     volume: 0.7,
@@ -279,7 +279,7 @@ const beveragesData:IDrink[] = [
     description: 'Blended.'
   },
   {
-    id: 113,
+    beverageId: 1018,
     title: 'Hankey Bannister 0.7L',
     category: DrinkCategory.Whiskey,
     volume: 0.7,
@@ -295,6 +295,7 @@ const beveragesData:IDrink[] = [
     description: 'Blended.'
   },
   {
+    beverageId: 1019,
     title: 'Jameson  1.0L',
     category: DrinkCategory.Whiskey,
     volume: 1.0,
@@ -307,11 +308,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ireland,
-    id: 110,
     description: 'Blended.'
   },
   {
-    id: 111,
+    beverageId: 1020,
     title: 'Ballantines Finest 1.0L',
     category: DrinkCategory.Whiskey,
     volume: 1.0,
@@ -327,7 +327,7 @@ const beveragesData:IDrink[] = [
     description: 'Blended.'
   },
   {
-    id: 113,
+    beverageId: 1021,
     title: 'Johnnie Walker Red Label 1.0L',
     category: DrinkCategory.Whiskey,
     volume: 1.0,
@@ -343,7 +343,7 @@ const beveragesData:IDrink[] = [
     description: 'Blended.'
   },
   {
-    id: 113,
+    beverageId: 1022,
     title: 'Hankey Bannister 1.0L',
     category: DrinkCategory.Whiskey,
     volume: 0.7,
@@ -360,7 +360,7 @@ const beveragesData:IDrink[] = [
   },
   /* --- RUM --- */
   {
-    id: 1010,
+    beverageId: 1023,
 	  title: 'Doorly\'s Gold 5Y 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
@@ -376,7 +376,7 @@ const beveragesData:IDrink[] = [
     description: 'Ноти тропічних і сушених фруктів, підсмажених кокосів і дуба. Післясмак фруктовий ванільний.'
   },
   {
-    id: 104,
+    beverageId: 1024,
 	  title: 'Doorly\'s White 3Y 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
@@ -392,7 +392,7 @@ const beveragesData:IDrink[] = [
     description: 'Ванільний аромат із вершковими та медовими нотками. Смак з відтінками екзотичних фруктів.'
   },
   {
-    id: 1005,
+    beverageId: 1025,
     title: 'Botafogo Spiced 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
@@ -408,7 +408,7 @@ const beveragesData:IDrink[] = [
     description: 'У смаку - спеції, ваніль, карамель і лакриця. Аромат солодкий цитрусовий.'
   },
   {
-    id: 1007,
+    beverageId: 1026,
     title: 'Appleton Reserve 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
@@ -424,7 +424,7 @@ const beveragesData:IDrink[] = [
     description: 'Cмак пряних і горіхових нот із відтінком меду, ванілі і лісового горіха.'
   },
   {
-    id: 1008,
+    beverageId: 1027,
     title: 'Appleton 12Y 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
@@ -440,7 +440,7 @@ const beveragesData:IDrink[] = [
     description: 'Вершковий смак із відтінками апельсинової цедри і ванілі. Аромат волоського і мускатного горіхів.'
   },
   {
-    id: 1003,
+    beverageId: 1028,
     title: 'Santiago de Cuba Anejo 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
@@ -456,7 +456,7 @@ const beveragesData:IDrink[] = [
     description: 'Гладкий смак із фруктовими відтінками, нюансами вишні, ванілі, какао.'
   },
   {
-    id: 1009,
+    beverageId: 1029,
     title: 'Bacardi Spiced 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
@@ -472,7 +472,7 @@ const beveragesData:IDrink[] = [
     description: 'Ваніль, кориця, мускатний горіх і мед. Аромат з нотками дубової бочки і сухофруктів.'
   },
   {
-    id: 1003,
+    beverageId: 1030,
     title: 'Santiago de Cuba Carta Blanca 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
@@ -488,7 +488,7 @@ const beveragesData:IDrink[] = [
     description: 'Квітковий аромат із відтінками меду і карамелі. Свіжий цитрусовий смак.'
   },
   {
-    id: 1006,
+    beverageId: 1031,
     title: 'Botafogo Black 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
@@ -504,7 +504,7 @@ const beveragesData:IDrink[] = [
     description: 'Темний ром, ваніль, апельсин, чилі. Аромат висушеного винограду.'
   },
   {
-    id: 122,
+    beverageId: 1032,
     title: 'Santiago Cuba',
     category: DrinkCategory.Rum,
     volume: 0.7,
@@ -520,7 +520,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    id: 1019,
+    beverageId: 1033,
     title: 'Bacardi Spiced 1.0L',
     category: DrinkCategory.Rum,
     volume: 1.0,
@@ -537,7 +537,7 @@ const beveragesData:IDrink[] = [
   },
   /* --- GIN --- */
   {
-    id: 114,
+    beverageId: 1034,
     title: 'Malfy Pink Grapefruit 0.7L',
     category: DrinkCategory.Gin,
     volume: 0.7,
@@ -553,7 +553,7 @@ const beveragesData:IDrink[] = [
     description: 'Тони сицілійського рожевого грейпфрута, коріандра та ревеня.'
   },
   {
-    id: 114,
+    beverageId: 1035,
     title: 'Malfy Con Limone 0.7L',
     category: DrinkCategory.Gin,
     volume: 0.7,
@@ -569,7 +569,7 @@ const beveragesData:IDrink[] = [
     description: 'Аромат з тонами лимона, ялівцю, дягелю і кориці.'
   },
   {
-    id: 114,
+    beverageId: 1036,
     title: 'Gordon\'s Pink 0.7L',
     category: DrinkCategory.Gin,
     volume: 0.7,
@@ -585,7 +585,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    id: 114,
+    beverageId: 1037,
     title: 'Gordon\'s Sicilian Lemon 0.7L',
     category: DrinkCategory.Gin,
     volume: 0.7,
@@ -602,7 +602,7 @@ const beveragesData:IDrink[] = [
   },
   /* --- PORTWEIN --- */
   {
-    id: 115,
+    beverageId: 1038,
     title: 'Colonist 0.7L',
     category: DrinkCategory.Portwein,
     volume: 0.7,
@@ -618,7 +618,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    id: 116,
+    beverageId: 1039,
     title: 'Osborn Premium Rojo 0.7L',
     category: DrinkCategory.Portwein,
     volume: 0.7,
@@ -634,7 +634,7 @@ const beveragesData:IDrink[] = [
     description: 'Смак з тонами полину, гіркої апельсинової шкірки та відтінками кориці.'
   },
   {
-    id: 116,
+    beverageId: 1040,
     title: 'Osborn Porto Tawny 0.7L',
     category: DrinkCategory.Portwein,
     volume: 0.7,
@@ -651,7 +651,7 @@ const beveragesData:IDrink[] = [
   },
   /* --- CHAMPAGNE --- */
   {
-    id: 117,
+    beverageId: 1041,
     title: 'Colonist 0.7L',
     category: DrinkCategory.Champagne,
     volume: 0.7,
@@ -667,7 +667,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    id: 118,
+    beverageId: 1042,
     title: 'Martini Prosecco 0.7L',
     category: DrinkCategory.Champagne,
     volume: 0.7,
@@ -683,7 +683,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    id: 118,
+    beverageId: 1043,
     title: 'Martini Rose 0.7L',
     category: DrinkCategory.Champagne,
     volume: 0.7,
@@ -700,6 +700,7 @@ const beveragesData:IDrink[] = [
   },
   /* --- TEQUILA --- */
   {
+    beverageId: 1044,
     title: 'Espolon Blanco 0.7L',
     category: DrinkCategory.Tequila,
     volume: 0.7,
@@ -712,10 +713,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 5,
     country: Country.Mexico,
-    id: 119,
     description: ''
   },
   {
+    beverageId: 1045,
     title: 'Espolon Reposado 0.7L',
     category: DrinkCategory.Tequila,
     volume: 0.7,
@@ -728,10 +729,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 5,
     country: Country.Mexico,
-    id: 120,
     description: ''
   },
   {
+    beverageId: 1046,
     title: 'Jose Cuervo Silver 0.7L',
     category: DrinkCategory.Tequila,
     volume: 0.7,
@@ -744,10 +745,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 3,
     country: Country.Mexico,
-    id: 120,
     description: ''
   },
   {
+    beverageId: 1047,
     title: 'Jose Cuervo Especial 0.7L',
     category: DrinkCategory.Tequila,
     volume: 0.7,
@@ -760,11 +761,11 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 3,
     country: Country.Mexico,
-    id: 120,
     description: ''
   },
   /* --- TINCTURE --- */
   {
+    beverageId: 1048,
     title: 'Jagermeister 0.7L',
     category: DrinkCategory.Tincture,
     volume: 0.7,
@@ -777,10 +778,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 4,
     country: Country.Germany,
-    id: 123,
     description: ''
   },
   {
+    beverageId: 1049,
     title: 'Becherovka 0.7L',
     category: DrinkCategory.Tincture,
     volume: 0.7,
@@ -793,10 +794,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 3,
     country: Country.CzechRepublic,
-    id: 125,
     description: ''
   },
   {
+    beverageId: 1050,
     title: 'Jagermeister 1.0L',
     category: DrinkCategory.Tincture,
     volume: 1.0,
@@ -809,10 +810,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 4,
     country: Country.Germany,
-    id: 124,
     description: ''
   },
   {
+    beverageId: 1051,
     title: 'Becherovka 1.0L',
     category: DrinkCategory.Tincture,
     volume: 1.0,
@@ -825,11 +826,11 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 3,
     country: Country.CzechRepublic,
-    id: 126,
     description: ''
   },
   /* --- HORILKA --- */
   {
+    beverageId: 1052,
     title: 'Koskenkorva 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -842,10 +843,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 5,
     country: Country.Finland,
-    id: 130,
     description: ''
   },
   {
+    beverageId: 1053,
     title: 'Koskenkorva Lemon Lime 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -858,10 +859,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 5,
     country: Country.Finland,
-    id: 130,
     description: ''
   },
   {
+    beverageId: 1054,
     title: 'Koskenkorva Sauna Barrel 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -874,11 +875,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 5,
     country: Country.Finland,
-    id: 130,
     description: ''
   },
   {
-    id: 128,
+    beverageId: 1055,
     title: 'Absolut Mandrin 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -894,7 +894,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
-    id: 128,
+    beverageId: 1056,
     title: 'Absolut Pears 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -910,6 +910,7 @@ const beveragesData:IDrink[] = [
     description: ''
   },
   {
+    beverageId: 1057,
     title: 'Finlandia 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -922,10 +923,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 2,
     country: Country.Finland,
-    id: 129,
     description: ''
   },
   {
+    beverageId: 1058,
     title: 'Staritsky Levitsky Reserve 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -938,10 +939,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ukraine,
-    id: 129,
     description: ''
   },
   {
+    beverageId: 1059,
     title: 'Staritsky Levitsky 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -954,10 +955,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 4,
     country: Country.Ukraine,
-    id: 129,
     description: ''
   },
   {
+    beverageId: 1060,
     title: 'Staritsky Levitsky Distil №9 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -970,10 +971,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 4,
     country: Country.Ukraine,
-    id: 129,
     description: ''
   },
   {
+    beverageId: 1061,
     title: 'R.Jelinek hruska 0.5L',
     category: DrinkCategory.Horilka,
     volume: 0.5,
@@ -986,10 +987,10 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 2,
     country: Country.CzechRepublic,
-    id: 127,
     description: ''
   },
   {
+    beverageId: 1062,
     title: 'Koskenkorva 1.0L',
     category: DrinkCategory.Horilka,
     volume: 1.0,
@@ -1002,7 +1003,8 @@ const beveragesData:IDrink[] = [
     inWish: false,
     ratings: 5,
     country: Country.Finland,
-    id: 130,
     description: ''
   },
 ];
+
+export { beveragesData };

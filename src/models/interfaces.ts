@@ -4,8 +4,8 @@ import { RetailPrices, DrinkVolume } from '@/src/models/types';
 import { Country, DrinkCategory } from '@/src/models/enums';
 
 
-export interface IDrink {
-  id:number;
+export interface IBeverage {
+  beverageId:number;
   title:string;
   category:DrinkCategory;
   volume:DrinkVolume;
