@@ -1,20 +1,8 @@
 # Compendium.md
 
-
 ## MUI core
 
-### App Bar
-
-It displays information and actions relating to the current screen.\
-It's used for branding, screen titles, navigation, and actions.\
-It can transform into a contextual action bar or be used as a navbar.
-
-
-
-
-
-
-### Default installation
+### @mui/material
 
 * npm-site: https://www.npmjs.com/package/@mui/material
   - version: 5.15.0
@@ -30,6 +18,17 @@ Allows developers to skip the styled API abstraction and style components and el
   - install: `npm i @emotion/styled @emotion/react`
   - weekly downloads: 7 311 000
 * home-page: https://emotion.sh/docs/introduction
+
+### @mui/system
+MUI System is a collection of CSS utilities for rapidly laying out custom designs with MUI component libraries.
+
+* npm-site: https://www.npmjs.com/package/@mui/system
+  - version: 5.15.0
+  - install: `npm i @mui/system`
+  - weekly downloads: 3 468 900
+* home-page: https://mui.com/system/getting-started/
+
+MUI System's core utility is the `sx` prop, which gives you a quick and efficient way to apply the correct design tokens directly to a React element.
 
 ### @mui/icons-material
 This package provides the Google Material Icons converted to SvgIcon components.
