@@ -30,6 +30,16 @@ MUI System is a collection of CSS utilities for rapidly laying out custom design
 
 MUI System's core utility is the `sx` prop, which gives you a quick and efficient way to apply the correct design tokens directly to a React element.
 
+### @emotion/cache
+**createCache** allows for low level customization of how styles get inserted by emotion. It's intended to be used with the `<CacheProvider/>` component to override the default cache, which is created with sensible defaults for most applications.
+
+* npm-site: https://www.npmjs.com/package/@emotion/cache
+  - version: 11.11.0
+  - install: `npm i @emotion/cache`
+  - weekly downloads: 11 412 600
+* home-page: https://github.com/emotion-js/emotion/tree/main#readme
+
+
 ### @mui/icons-material
 This package provides the Google Material Icons converted to SvgIcon components.
 
