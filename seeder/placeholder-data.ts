@@ -1,6 +1,6 @@
 // @/seeder/placeholder-data.ts
-import { IBeverage } from '@/src/models/interfaces';
-import { DrinkCategory, RetailChain, Country } from '@/src/models/enums';
+import { IBeverage } from '@/models/interfaces';
+import { DrinkCategory, RetailChain, Country } from '@/models/enums';
 // import { RetailPrices, DrinkVolume } from '@/backend/models/types';
 
 const beveragesData:IBeverage[] = [

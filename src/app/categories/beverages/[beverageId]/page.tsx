@@ -1,7 +1,7 @@
-// @/src/app/categories/beverages/[beverageId]/page.tsx
+// @/app/categories/beverages/[beverageId]/page.tsx
 import { Metadata } from 'next';
 
-import { fetchBeverageById } from '@/src/services/get-data';
+import { fetchBeverageById } from '@/services/get-data';
 
 import { Typography, Box, List, ListItem, ListItemText } from '@mui/material';
 import styles from './page.module.css';

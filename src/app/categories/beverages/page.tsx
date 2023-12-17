@@ -1,4 +1,4 @@
-// @/src/app/categories/beverages/page.tsx
+// @/app/categories/beverages/page.tsx
 import Link from 'next/link';
 
 export default function BeveragesPage() {

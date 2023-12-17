@@ -1,4 +1,4 @@
-// @/src/app/categories/household/page.tsx
+// @/app/categories/household/page.tsx
 
 
 

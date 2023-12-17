@@ -1,10 +1,10 @@
-// @/src/app/layout.tsx
+// @/app/layout.tsx
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-import { Header} from '@/src/views/Header';
-import { Footer} from '@/src/views/Footer';
+import { Header} from '@/views/Header';
+import { Footer} from '@/views/Footer';
 
 
 

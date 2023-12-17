@@ -1,5 +1,5 @@
-// @/src/services/get-data.ts
-import { IBeverage } from '@/src/models/interfaces';
+// @/services/get-data.ts
+import { IBeverage } from '@/models/interfaces';
 import { beveragesData } from '@/seeder/placeholder-data';
 
 

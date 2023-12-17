@@ -1,4 +1,4 @@
-// @/src/views/Header.tsx
+// @/views/Header.tsx
 import { Navigation } from './components/Navigation';
 
 const navItems = [

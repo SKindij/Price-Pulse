@@ -1,7 +1,7 @@
-// @//models/interfaces.ts
+// @/models/interfaces.ts
 
-import { RetailPrices, DrinkVolume } from '@/src/models/types';
-import { Country, DrinkCategory } from '@/src/models/enums';
+import { RetailPrices, DrinkVolume } from '@/models/types';
+import { Country, DrinkCategory } from '@/models/enums';
 
 
 export interface IBeverage {

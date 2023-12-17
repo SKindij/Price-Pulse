@@ -1,4 +1,4 @@
-// @/src/views/Footer.tsx
+// @/views/Footer.tsx
 
 const Footer = () => {
   return (

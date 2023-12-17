@@ -1,4 +1,4 @@
-// @/src/app/categories/layout.tsx
+// @/app/categories/layout.tsx
 import Link from 'next/link';
 
 export default function CategoriesLayout({

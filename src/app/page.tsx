@@ -1,4 +1,4 @@
-// @/src/app/page.tsc
+// @/app/page.tsc
 import styles from './page.module.css';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';

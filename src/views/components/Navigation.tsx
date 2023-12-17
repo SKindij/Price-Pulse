@@ -1,4 +1,4 @@
-// @/src/views/components/Navigation.tsx
+// @/views/components/Navigation.tsx
 
 import Link from 'next/link';
 

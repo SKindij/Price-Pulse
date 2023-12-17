@@ -1,4 +1,4 @@
-// @/src/views/ThemeRegistry/theme.jsx
+// @/views/ThemeRegistry/theme.jsx
 import { Roboto } from 'next/font/google';
 import { createTheme } from '@mui/material/styles';
 

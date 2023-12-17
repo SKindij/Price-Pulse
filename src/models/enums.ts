@@ -1,4 +1,4 @@
-// @/src/models/enums.ts
+// @/models/enums.ts
 
 export enum RetailChain {
   Auchan = 'Auchan',

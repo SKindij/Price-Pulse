@@ -1,4 +1,4 @@
-// @/src/models/classes.ts
+// @/models/classes.ts
 
 
 

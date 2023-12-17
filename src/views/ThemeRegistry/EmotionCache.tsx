@@ -1,4 +1,4 @@
-// @/src/views/ThemeRegistry/EmotionCache.tsx
+// @/views/ThemeRegistry/EmotionCache.tsx
 'use client';
 import * as React from 'react';
 import createCache from '@emotion/cache';
@@ -17,7 +17,7 @@ export type NextAppDirEmotionCacheProviderProps = {
   children:React.ReactNode;
 };
 
-// Adapted from https://github.com/garronej/tss-react/blob/main/src/next/appDir.tsx
+// Adapted from https://github.com/garronej/tss-react/blob/main/next/appDir.tsx
 export default function NextAppDirEmotionCacheProvider(props:NextAppDirEmotionCacheProviderProps) {
   const { options, CacheProvider = DefaultCacheProvider, children } = props;
 
