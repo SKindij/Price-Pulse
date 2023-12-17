@@ -1,3 +1,4 @@
+'use client';
 // @/views/categories/RecipeReviewCard.tsx
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
@@ -20,7 +21,9 @@ interface ExpandMoreProps extends IconButtonProps {
   expand:boolean;
 }
 
-const ExpandMore = styled((props:ExpandMoreProps) => {
+// Оголосимо StyledExpandMore як компонент, а не виклик styled()
+// eslint-disable-next-line @typescript-eslint/type-annotation-spacing
+const StyledExpandMore = styled((props: ExpandMoreProps) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
 })(({ theme, expand }) => ({
@@ -30,6 +33,7 @@ const ExpandMore = styled((props:ExpandMoreProps) => {
     duration: theme.transitions.duration.shortest,
   }),
 }));
+
 
 export default function RecipeReviewCard() {
   const [expanded, setExpanded] = React.useState(false);
@@ -54,10 +58,9 @@ export default function RecipeReviewCard() {
         title="Shrimp and Chorizo Paella"
         subheader="September 14, 2016"
       />
-      <CardMedia
-        component="img"
+      <CardMedia component="img"
         height="194"
-        image="/static/images/cards/paella.jpg"
+        image="/images/cards/paella.jpg"
         alt="Paella dish"
       />
       <CardContent>
@@ -74,14 +77,14 @@ export default function RecipeReviewCard() {
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
-        <ExpandMore
+        <StyledExpandMore
           expand={expanded}
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
         >
           <ExpandMoreIcon />
-        </ExpandMore>
+        </StyledExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>

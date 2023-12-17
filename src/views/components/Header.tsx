@@ -1,5 +1,4 @@
 // @/views/Header.tsx
-import { Navigation } from './components/Navigation';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -12,7 +11,7 @@ const navItems = [
 const Header = () => {
   return (
     <header>
-      <Navigation navLinks={navItems} />
+      some
     </header>
   );
 };
