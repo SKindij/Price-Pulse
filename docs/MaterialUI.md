@@ -1,5 +1,6 @@
 # Material UI
 
+To support the **App Router**, the components and hooks from **Base UI** that need access to browser APIs are exported with the `"use client"` directive.
 
 ## MUI system
 

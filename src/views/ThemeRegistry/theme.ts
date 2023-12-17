@@ -11,9 +11,25 @@ const roboto = Roboto({
 const theme = createTheme({
   palette: {
     mode: 'light',
+    primary: {
+      main: '#f0c000',
+    },
+    secondary: {
+      main: '#208080',
+    },
   },
   typography: {
     fontFamily: roboto.style.fontFamily,
+    h1: {
+      fontSize: '1.6rem',
+      fontWeight: 400,
+      margin: '1rem 0',
+    },
+    h2: {
+      fontSize: '1.4rem',
+      fontWeight: 400,
+      margin: '1rem 0',
+    },
   },
   components: {
     MuiAlert: {
@@ -29,3 +45,6 @@ const theme = createTheme({
 });
 
 export default theme;
+/*
+
+*/
