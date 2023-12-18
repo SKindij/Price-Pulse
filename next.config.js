@@ -11,7 +11,7 @@ const nextConfig = {
   // settings for optimized image loading
   images: {
     // trusted domains for image uploads
-    domains: ['res.cloudinary.com', 'firebasestorage.googleapis.com', '192.168.1.3'],
+    domains: ['source.unsplash.com', 'res.cloudinary.com', 'firebasestorage.googleapis.com', '192.168.1.3'],
   } 
 }
 
