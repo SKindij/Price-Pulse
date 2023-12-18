@@ -2,13 +2,22 @@
 'use client';
 import { useState } from 'react';
 import { useTheme } from '@mui/material/styles';
+import Link from 'next/link';
 
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Toolbar from '@mui/material/Toolbar';
 import MenuIcon from '@mui/icons-material/Menu';
+// icons for navigation buttons
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import HomeIcon from '@mui/icons-material/Home';
+import CategoryIcon from '@mui/icons-material/Category';
+import LocalBarIcon from '@mui/icons-material/LocalBar';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+import InfoIcon from '@mui/icons-material/Info';
+import LoginIcon from '@mui/icons-material/Login';
+
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -22,6 +31,17 @@ import { AppBar } from '@/views/Layout/AppBar';
 import { DrawerHeader } from '@/views/Layout/DrawerHeader';
 import { Drawer } from '@/views/Layout/Drawer';
 
+const MenuItems = [
+  { label: 'Головна', href: '/', icon: <HomeIcon /> },
+  { label: 'Price-Pulse', href: '/categories', icon: <CategoryIcon /> },
+  { label: 'Коктейлі', href: '/cocktails', icon: <LocalBarIcon /> },
+  { label: 'Рецепти', href: '/recipes', icon: <RestaurantIcon /> },
+];
+
+const PlaceholderLinks = [
+  { label: 'About', href: '/about', icon: <InfoIcon /> },
+  { label: 'LogIn', href: '/login', icon: <LoginIcon /> },
+];
 
 const AppNavigation:React.FC = () => {
   const theme = useTheme();
@@ -37,7 +57,7 @@ const AppNavigation:React.FC = () => {
 
   return (
     <>
-      {/* Your AppBar */}
+      {/* Site AppBar */}
       <AppBar position="fixed" open={open} >
         <Toolbar>
           <IconButton
@@ -58,7 +78,7 @@ const AppNavigation:React.FC = () => {
         </Toolbar>
       </AppBar>
 
-      {/* Your Drawer */}
+      {/* Site Drawer */}
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
@@ -66,9 +86,10 @@ const AppNavigation:React.FC = () => {
           </IconButton>
         </DrawerHeader>
         <Divider />
+        {/* Menu Items */}
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
+          {MenuItems.map((item) => (
+            <Link key={item.label} href={item.href} passHref>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -83,17 +104,18 @@ const AppNavigation:React.FC = () => {
                     justifyContent: 'center',
                   }}
                 >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {item.icon}
                 </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={item.label} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
-            </ListItem>
+            </Link>
           ))}
         </List>
         <Divider />
+        {/* Placeholder Links */}
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
+          {PlaceholderLinks.map((link) => (
+            <Link key={link.label} href={link.href} passHref>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -108,11 +130,11 @@ const AppNavigation:React.FC = () => {
                     justifyContent: 'center',
                   }}
                 >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {link.icon}
                 </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={link.label} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
-            </ListItem>
+            </Link>
           ))}
         </List>
       </Drawer>
