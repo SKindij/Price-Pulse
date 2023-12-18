@@ -31,17 +31,7 @@ const theme = createTheme({
       margin: '1rem 0',
     },
   },
-  components: {
-    MuiAlert: {
-      styleOverrides: {
-        root: ({ ownerState }) => ({
-          ...(ownerState.severity === 'info' && {
-            backgroundColor: '#60a5fa',
-          }),
-        }),
-      },
-    },
-  },
+
 });
 
 export default theme;

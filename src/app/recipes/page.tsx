@@ -1,5 +1,5 @@
 // @/app/recipes/page.tsx
-import RecipeReviewCard from '@/views/categories/RecipeReviewCard';
+import RecipeReviewCard from '@/views/Categories/RecipeReviewCard';
 
 
 export default function RecipesPage() {

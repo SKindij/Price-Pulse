@@ -1,4 +1,4 @@
-// @/views/categories/BeverageCard.tsx
+// @/views/Categories/BeverageCard.tsx
 import * as React from 'react';
 import Image from 'next/image';
 import Card from '@mui/material/Card';

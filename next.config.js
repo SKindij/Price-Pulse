@@ -1,9 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // environment variables for use in client and server side
+  env: {
+    DRAWER_WIDTH: '240',
+    API_URL: "http://localhost:3000",
+    DB_LOCAL_URI: "mongodb://127.0.0.1:27017/pricepulse",
+    DB_URI: "",
+  },
   reactStrictMode: true,
+  // settings for optimized image loading
   images: {
-    domains: ['firebasestorage.googleapis.com', 'auto-promo-ph-api.onrender.com', '192.168.1.3'],
-    unoptimized: true,
+    // trusted domains for image uploads
+    domains: ['res.cloudinary.com', 'firebasestorage.googleapis.com', '192.168.1.3'],
   } 
 }
 

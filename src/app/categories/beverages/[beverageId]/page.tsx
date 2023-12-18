@@ -6,7 +6,7 @@ import { fetchBeverageById } from '@/services/get-data';
 import Typography from '@mui/material/Typography';
 import styles from './page.module.css';
 
-import BeverageCard from '@/views/categories/BeverageCard';
+import BeverageCard from '@/views/Categories/BeverageCard';
 
 type Props = {
   params:{ // only property that is an object
