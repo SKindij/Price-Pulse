@@ -1009,6 +1009,48 @@ const beveragesData:IBeverage[] = [
 const cocktailsData:ICocktail[] = [
   {
     cocktailID: 3001,
+    title: '',
+    imageUrl: '/public/images/cocktails/bahama-mama.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3002,
+    title: '',
+    imageUrl: '/public/images/cocktails/bloody-mary.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3003,
+    title: '',
+    imageUrl: '/public/images/cocktails/blue-hawaii.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3004,
+    title: '',
+    imageUrl: '/public/images/cocktails/blue-lagoon.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3005,
+    title: '',
+    imageUrl: '/public/images/cocktails/blue-tahoe.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3006,
+    title: '',
+    imageUrl: '/public/images/cocktails/caipirinha.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3007,
     title: 'Cosmopolitan',
     imageUrl: '/public/images/cocktails/cosmopolitan.jpg',
     alcoholic: true,
@@ -1020,18 +1062,117 @@ const cocktailsData:ICocktail[] = [
     ],
   },
   {
-    cocktailID: 3002,
-    title: 'Cosmopolitan',
-    imageUrl: '/public/images/cocktails/cosmopolitan.jpg',
+    cocktailID: 3008,
+    title: '',
+    imageUrl: '/public/images/cocktails/cuba-libre.jpg',
     alcoholic: true,
-    ingredients: [
-      CocktailIngredients.HORILKA,
-      CocktailIngredients.TRIPLE_SEC,
-      CocktailIngredients.LIME_JUICE,
-      CocktailIngredients.CRANBERRY_JUICE
-    ],
-  },
 
+  },
+  {
+    cocktailID: 3009,
+    title: '',
+    imageUrl: '/public/images/cocktails/dirty-martini.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 30010,
+    title: '',
+    imageUrl: '/public/images/cocktails/hiroshima.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3011,
+    title: '',
+    imageUrl: '/public/images/cocktails/kamikaze.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 30012,
+    title: '',
+    imageUrl: '/public/images/cocktails/long-island-iced-tea.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3013,
+    title: '',
+    imageUrl: '/public/images/cocktails/mai-tai.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3014,
+    title: '',
+    imageUrl: '/public/images/cocktails/margarita.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3015,
+    title: '',
+    imageUrl: '/public/images/cocktails/mint-julep.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3016,
+    title: '',
+    imageUrl: '/public/images/cocktails/mojito.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3017,
+    title: '',
+    imageUrl: '/public/images/cocktails/pina-colada.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3018,
+    title: '',
+    imageUrl: '/public/images/cocktails/salty-dog.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3019,
+    title: '',
+    imageUrl: '/public/images/cocktails/screwdriver.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3020,
+    title: '',
+    imageUrl: '/public/images/cocktails/strawberry-daiquiri.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3021,
+    title: '',
+    imageUrl: '/public/images/cocktails/strawberry-mojito.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3022,
+    title: '',
+    imageUrl: '/public/images/cocktails/tequila-sunrise.jpg',
+    alcoholic: true,
+
+  },
+  {
+    cocktailID: 3023,
+    title: '',
+    imageUrl: '/public/images/cocktails/whiskey-sour.jpg',
+    alcoholic: true,
+
+  },
 ];
 
 
