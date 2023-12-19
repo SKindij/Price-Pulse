@@ -1,8 +1,6 @@
 // @path: @/app/cocktails/page.tsx
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-
+import Container from '@mui/material/Container';
+import CocktailsImageList from '@/views/Categories/CocktailsImageList';
 
 
 
@@ -12,6 +10,10 @@ export default function CocktailsPage() {
       <h1>Cocktails Page</h1>
       {/*  */}
       <p>Here we will collect a selection of various delicious cocktails.</p>
+      {/*  */}
+      <Container>
+        < CocktailsImageList />
+      </Container>
     </>
   );
 }
