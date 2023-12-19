@@ -1,7 +1,6 @@
 // @/seeder/placeholder-data.ts
-import { IBeverage } from '@/models/interfaces';
-import { DrinkCategory, RetailChain, Country } from '@/models/enums';
-// import { RetailPrices, DrinkVolume } from '@/backend/models/types';
+import { IBeverage, ICocktail } from '@/models/interfaces';
+import { DrinkCategory, RetailChain, Country, CocktailIngredients , GlassType} from '@/models/enums';
 
 const beveragesData:IBeverage[] = [
   /* --- BOURBON --- */
@@ -1006,5 +1005,37 @@ const beveragesData:IBeverage[] = [
     description: ''
   },
 ];
+
+const cocktailsData:ICocktail[] = [
+  {
+    cocktailID: 3001,
+    title: 'Cosmopolitan',
+    imageUrl: '/public/images/cocktails/cosmopolitan.jpg',
+    alcoholic: true,
+    ingredients: [
+      CocktailIngredients.HORILKA,
+      CocktailIngredients.TRIPLE_SEC,
+      CocktailIngredients.LIME_JUICE,
+      CocktailIngredients.CRANBERRY_JUICE
+    ],
+  },
+  {
+    cocktailID: 3002,
+    title: 'Cosmopolitan',
+    imageUrl: '/public/images/cocktails/cosmopolitan.jpg',
+    alcoholic: true,
+    ingredients: [
+      CocktailIngredients.HORILKA,
+      CocktailIngredients.TRIPLE_SEC,
+      CocktailIngredients.LIME_JUICE,
+      CocktailIngredients.CRANBERRY_JUICE
+    ],
+  },
+
+];
+
+
+
+
 
 export { beveragesData };
