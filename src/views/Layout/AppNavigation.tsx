@@ -3,7 +3,16 @@
 import { useState } from 'react';
 import { useTheme } from '@mui/material/styles';
 import Link from 'next/link';
-
+// MUI components
+import Box from '@mui/material/Box';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Tooltip from '@mui/material/Tooltip';
+import List from '@mui/material/List';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Toolbar from '@mui/material/Toolbar';
@@ -19,19 +28,6 @@ import LocalBarIcon from '@mui/icons-material/LocalBar';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import InfoIcon from '@mui/icons-material/Info';
 import LoginIcon from '@mui/icons-material/Login';
-// MUI components
-import Box from '@mui/material/Box';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Tooltip from '@mui/material/Tooltip';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Divider from '@mui/material/Divider';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 // design elements
 import { AppBar } from '@/views/Layout/AppBar';
 import { DrawerHeader } from '@/views/Layout/DrawerHeader';
@@ -48,7 +44,6 @@ const PlaceholderLinks = [
   { label: 'LogIn', href: '/login', icon: <LoginIcon /> },
 ];
 const UserSettings = ['Profile', 'Logout'];
-
 
 const AppNavigation:React.FC = () => {
   const theme = useTheme();
@@ -73,7 +68,6 @@ const AppNavigation:React.FC = () => {
     <>
       {/* Site AppBar */}
       <AppBar position="fixed" open={open} >
-
         <Toolbar>
 		  {/* Open Side Menu */}
           <IconButton
@@ -137,7 +131,6 @@ const AppNavigation:React.FC = () => {
           </Box>
         </Toolbar>
       </AppBar>
-
       {/* Site Drawer */}
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>

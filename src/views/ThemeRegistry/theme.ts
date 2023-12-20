@@ -12,10 +12,10 @@ const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#f0c000',
+      main: '#f0c000', // mainly orange color
     },
     secondary: {
-      main: '#208080',
+      main: '#208080', // color of sea wave
     },
   },
   typography: {
