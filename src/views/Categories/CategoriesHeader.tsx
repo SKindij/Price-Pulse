@@ -22,10 +22,9 @@ type NavLink = {
 };
 // data for site navigation elements
 const СategoriesPages:NavLink[] = [
-  { label: 'Explore', href: '/categories', icon: <StorefrontIcon /> },
   { label: 'Напої', href: '/categories/beverages', icon: <LocalBarIcon /> },
   { label: 'Морепродукти', href: '/categories/seafood', icon: <RestaurantIcon /> },
-  { label: 'Побутові речі', href: '/categories/household', icon: <KitchenIcon /> },
+  { label: 'Побутові речі', href: '/categories/household', icon: <StorefrontIcon /> },
 ];
 
 const CategoriesHeader = () => {
@@ -33,7 +32,6 @@ const CategoriesHeader = () => {
   const pathname = usePathname();
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
-  const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
   return (
     <>
       <AppBar position='sticky'
@@ -44,21 +42,18 @@ const CategoriesHeader = () => {
             direction={isSmallScreen ? 'column' : 'row'}
             spacing={3}
             sx={{
-              marginLeft: isSmallScreen ? '15px' : '30px',
               flexWrap: isSmallScreen ? 'wrap' : 'nowrap',
             }}
           >
             {СategoriesPages.map(({ label, href, icon }) => (
               <Link href={href} key={label}>
                 {/* Сategory Page */}
-                <Box className={pathname === href ? styles.navLinkContainer : styles.navLinkContainerUnselected}
-                  sx={{
-                    marginBottom: isSmallScreen ? '8px' : '0',
-                    width: isMediumScreen ? '50%' : 'auto',
-                  }}
-                >
+                <Box className={pathname === href ? styles.navLinkContainer : styles.navLinkContainerUnselected}>
                   <Typography fontSize='15px' fontWeight='700'>
-                    {icon} {label}
+                    {icon}
+                  </Typography>
+                  <Typography fontSize='15px' fontWeight='700'>
+                    {label}
                   </Typography>
                 </Box>
               </Link>

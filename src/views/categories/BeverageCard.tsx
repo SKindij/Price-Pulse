@@ -6,25 +6,21 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { List, ListItem, ListItemText } from '@mui/material';
 
 import {IBeverage} from '@/models/interfaces';
+import BeverageCardTable from '@/views/Categories/BeverageCardTable';
 
 type BeverageCardProps = {
   beverage:IBeverage;
 };
 
 const BeverageCard:React.FC<BeverageCardProps> = ({ beverage }) => {
+  const { prices } = beverage;
   return (
-    <Card sx={{ maxWidth: 700 }}>
-      <Image src="https://source.unsplash.com/random"
+    <Card sx={{ maxWidth: 350 }}>
+      <Image src="/images/beverages/jameson-07.webp"
         alt="Random image"
-        width={640} height={480}
-        style={{
-          maxWidth: '100%',
-          height: '200px',
-          objectFit: 'cover',
-        }}
+        width={320} height={320}
       />
       <CardContent>
         <Typography variant="body1">
@@ -38,16 +34,7 @@ const BeverageCard:React.FC<BeverageCardProps> = ({ beverage }) => {
         </Typography>
         {/* Ціни */}
         <Typography variant="h4">Ціни:</Typography>
-        <List>
-          {Object.entries(beverage.prices).map(([chain, info]) => (
-            <ListItem key={chain} disablePadding>
-              <ListItemText
-                primary={`${chain}: ${info.price} грн`}
-                secondary={`Останнє оновлення: ${info.lastUpdated.toLocaleDateString()}`}
-              />
-            </ListItem>
-          ))}
-        </List>
+        <BeverageCardTable prices={prices} />
         <Typography variant="body2" color="text.secondary">
           {beverage.description}
         </Typography>
