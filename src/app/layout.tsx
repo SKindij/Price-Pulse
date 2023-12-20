@@ -1,8 +1,9 @@
 // @/app/layout.tsx
+import './globals.css';
 import ThemeRegistry from '@/views/ThemeRegistry/ThemeRegistry';
-
+// MUI components
 import Box from '@mui/material/Box';
-
+// views (design) elements
 import { DrawerHeader } from '@/views/Layout/DrawerHeader';
 import AppNavigation from '@/views/Layout/AppNavigation';
 
