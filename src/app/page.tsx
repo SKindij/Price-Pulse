@@ -2,25 +2,23 @@
 import styles from './page.module.css';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Main Screen</h1>
+      <h1>Price-Pulse: твій помічник у виборі товарів, рецептів та коктейлів.</h1>
       {/*  */}
 
       <Container>
-        <Typography variant="h4">Hello NEXT World</Typography>
         {/*  */}
-        <nav>
-          <Link href="/categories/beverages">Напої</Link>
-          <Link href="/categories/seafood">Морепродукти</Link>
-          <Link href="/categories/household">Побутові речі</Link>
-        </nav>
+        <Image
+          src="/images/main-page.jpg"
+          width={500} height={500}
+          alt="Picture of Price-Pulse"
+        />
       </Container>
 
-      <p>Find in-depth information about Next.js features and API.</p>
     </main>
   );
 }
