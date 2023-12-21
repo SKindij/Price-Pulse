@@ -24,7 +24,7 @@ export interface ICocktail {
   alcoholic:boolean;
   ingredients?:CocktailIngredients[];
   glassType?:GlassType;
-  instructions?:string;
+  instructions?:string[];
 }
 
 

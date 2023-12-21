@@ -17,7 +17,7 @@ type BeverageCardProps = {
 const BeverageCard:React.FC<BeverageCardProps> = ({ beverage }) => {
   const { prices } = beverage;
   return (
-    <Card sx={{ maxWidth: 350 }}>
+    <Card sx={{ maxWidth: 400 }}>
       <Image src="/images/beverages/jameson-07.webp"
         alt="Random image"
         width={320} height={320}

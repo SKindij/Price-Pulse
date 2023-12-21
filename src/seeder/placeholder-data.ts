@@ -1017,6 +1017,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Bahama-Mama',
     imageUrl: '/images/cocktails/bahama-mama.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1024,6 +1025,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Bloody-Mary',
     imageUrl: '/images/cocktails/bloody-mary.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1031,6 +1033,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Blue-Hawaii',
     imageUrl: '/images/cocktails/blue-hawaii.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1038,6 +1041,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Blue-Lagoon',
     imageUrl: '/images/cocktails/blue-lagoon.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1045,6 +1049,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Blue-Tahoe',
     imageUrl: '/images/cocktails/blue-tahoe.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1052,6 +1057,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Caipirinha',
     imageUrl: '/images/cocktails/caipirinha.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1059,18 +1065,21 @@ const cocktailsData:ICocktail[] = [
     title: 'Cosmopolitan',
     imageUrl: '/images/cocktails/cosmopolitan.jpg',
     alcoholic: true,
+	glassType: GlassType.MARTINI,
     ingredients: [
       CocktailIngredients.HORILKA,
       CocktailIngredients.TRIPLE_SEC,
       CocktailIngredients.LIME_JUICE,
       CocktailIngredients.CRANBERRY_JUICE
     ],
+	instructions: ['Початок приготування','Середина приготування','Завершення приготування']
   },
   {
     cocktailID: 3008,
     title: 'Cuba-Libre',
     imageUrl: '/images/cocktails/cuba-libre.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1078,6 +1087,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Dirty-Martini',
     imageUrl: '/images/cocktails/dirty-martini.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1085,6 +1095,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Hiroshima',
     imageUrl: '/images/cocktails/hiroshima.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1092,6 +1103,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Kamikaze',
     imageUrl: '/images/cocktails/kamikaze.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1099,6 +1111,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Long-Island-iced-tea',
     imageUrl: '/images/cocktails/long-island-iced-tea.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1106,6 +1119,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Mai-Tai',
     imageUrl: '/images/cocktails/mai-tai.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1113,6 +1127,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Margarita',
     imageUrl: '/images/cocktails/margarita.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1120,6 +1135,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Mint-Julep',
     imageUrl: '/images/cocktails/mint-julep.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1127,6 +1143,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Mojito',
     imageUrl: '/images/cocktails/mojito.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1134,6 +1151,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Pina-Colada',
     imageUrl: '/images/cocktails/pina-colada.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1141,6 +1159,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Salty-Dog',
     imageUrl: '/images/cocktails/salty-dog.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1148,6 +1167,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Screwdriver',
     imageUrl: '/images/cocktails/screwdriver.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1155,6 +1175,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Strawberry-Daiquiri',
     imageUrl: '/images/cocktails/strawberry-daiquiri.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1162,6 +1183,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Strawberry-Mojito',
     imageUrl: '/images/cocktails/strawberry-mojito.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1169,6 +1191,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Tequila-Sunrise',
     imageUrl: '/images/cocktails/tequila-sunrise.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1176,6 +1199,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Whiskey-Sour',
     imageUrl: '/images/cocktails/whiskey-sour.jpg',
     alcoholic: true,
+	instructions: ['Початок ','Середина ','Завершення ']
 
   },
 ];
