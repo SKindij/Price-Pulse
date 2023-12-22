@@ -52,7 +52,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Wild-Turkey-101-07.webp',
     description: 'Смак ванілі, меду, карамелі, тютюну і тростинного цукру. Аромат ванілі, дуба, апельсина.'
   },
   {
@@ -69,7 +69,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Wild-Turkey-07.webp',
     description: 'Аромат ірису, меду, карамелі і обпаленого дуба. Делікатний, солодкуватий, трохи маслянистий смак.'
   },
   {
@@ -86,7 +86,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Wild-Turkey-Rye-07.webp',
     description: 'Аромат має ванільно-пряні, дубові, цитрусові акценти. У смаку грушеві тони в компанії карамелі.'
   },
   {
@@ -224,7 +224,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Ireland,
     imageUrl: '',
-    description: '/images/beverages/.webp'
+    description: '/images/beverages/Jameson-Stout-07.webp'
   },
   {
     beverageId: 1014,
@@ -257,7 +257,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Britain,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Ballantines-Finest-07.webp',
     description: 'Blended.'
   },
   {
@@ -274,7 +274,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Britain,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Johnnie-Walker-Blonde-07.webp',
     description: ''
   },
   {
@@ -291,7 +291,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Britain,
-    imageUrl: '/images/beverages/johnnie-walker-red-label-07.jpg',
+    imageUrl: '/images/beverages/johnnie-walker-red-label-07.webp',
     description: 'Blended.'
   },
   {
@@ -308,7 +308,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Scotland,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Hankey-Bannister-07.webp',
     description: 'Blended.'
   },
   {
@@ -325,7 +325,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ireland,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/jameson-10.webp',
     description: 'Blended.'
   },
   {
@@ -359,7 +359,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Britain,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/johnnie-walker-red-label-10.webp',
     description: 'Blended.'
   },
   {
@@ -428,7 +428,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Belgium,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Botafogo-Spiced-07.webp',
     description: 'У смаку - спеції, ваніль, карамель і лакриця. Аромат солодкий цитрусовий.'
   },
   {
@@ -473,13 +473,13 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 599, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 789, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.Cuba,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Santiago-Cuba-Anejo-07.webp',
     description: 'Гладкий смак із фруктовими відтінками, нюансами вишні, ванілі, какао.'
   },
   {
@@ -512,7 +512,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 2,
     country: Country.Cuba,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Santiago-Cuba-Carta-Blanca-07.webp',
     description: 'Квітковий аромат із відтінками меду і карамелі. Свіжий цитрусовий смак.'
   },
   {
@@ -534,18 +534,18 @@ const beveragesData:IBeverage[] = [
   },
   {
     beverageId: 1032,
-    title: 'Santiago Cuba',
+    title: 'Appleton Estate Signature 0.7L',
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 509, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
-    country: Country.Cuba,
+    country: Country.Jamaica,
     imageUrl: '/images/beverages/.webp',
     description: ''
   },
@@ -581,7 +581,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Italy,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Malfy-Pink-Grapefruit-07.webp',
     description: 'Тони сицілійського рожевого грейпфрута, коріандра та ревеня.'
   },
   {
@@ -598,7 +598,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Italy,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Malfy-Con-Limone-07.webp',
     description: 'Аромат з тонами лимона, ялівцю, дягелю і кориці.'
   },
   {
@@ -615,7 +615,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Britain,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Gordons-Pink-07.webp',
     description: ''
   },
   {
@@ -909,6 +909,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Finland,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -925,6 +926,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Finland,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -941,6 +943,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Sweden,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -957,6 +960,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Sweden,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -973,6 +977,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 2,
     country: Country.Finland,
+    imageUrl: '/images/beverages/Finlandia-07.webp',
     description: ''
   },
   {
@@ -1063,7 +1068,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Bahama-Mama',
     imageUrl: '/images/cocktails/bahama-mama.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1071,7 +1076,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Bloody-Mary',
     imageUrl: '/images/cocktails/bloody-mary.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1079,7 +1084,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Blue-Hawaii',
     imageUrl: '/images/cocktails/blue-hawaii.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1087,7 +1092,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Blue-Lagoon',
     imageUrl: '/images/cocktails/blue-lagoon.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1095,7 +1100,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Blue-Tahoe',
     imageUrl: '/images/cocktails/blue-tahoe.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1103,7 +1108,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Caipirinha',
     imageUrl: '/images/cocktails/caipirinha.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1111,21 +1116,21 @@ const cocktailsData:ICocktail[] = [
     title: 'Cosmopolitan',
     imageUrl: '/images/cocktails/cosmopolitan.jpg',
     alcoholic: true,
-	glassType: GlassType.MARTINI,
+    glassType: GlassType.MARTINI,
     ingredients: [
       CocktailIngredients.HORILKA,
       CocktailIngredients.TRIPLE_SEC,
       CocktailIngredients.LIME_JUICE,
       CocktailIngredients.CRANBERRY_JUICE
     ],
-	instructions: ['Початок приготування','Середина приготування','Завершення приготування']
+    instructions: ['Початок приготування','Середина приготування','Завершення приготування']
   },
   {
     cocktailID: 3008,
     title: 'Cuba-Libre',
     imageUrl: '/images/cocktails/cuba-libre.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1133,7 +1138,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Dirty-Martini',
     imageUrl: '/images/cocktails/dirty-martini.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1141,7 +1146,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Hiroshima',
     imageUrl: '/images/cocktails/hiroshima.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1149,7 +1154,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Kamikaze',
     imageUrl: '/images/cocktails/kamikaze.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1157,7 +1162,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Long-Island-iced-tea',
     imageUrl: '/images/cocktails/long-island-iced-tea.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1165,7 +1170,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Mai-Tai',
     imageUrl: '/images/cocktails/mai-tai.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1173,7 +1178,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Margarita',
     imageUrl: '/images/cocktails/margarita.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1181,7 +1186,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Mint-Julep',
     imageUrl: '/images/cocktails/mint-julep.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1189,7 +1194,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Mojito',
     imageUrl: '/images/cocktails/mojito.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1197,7 +1202,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Pina-Colada',
     imageUrl: '/images/cocktails/pina-colada.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1205,7 +1210,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Salty-Dog',
     imageUrl: '/images/cocktails/salty-dog.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1213,7 +1218,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Screwdriver',
     imageUrl: '/images/cocktails/screwdriver.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1221,7 +1226,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Strawberry-Daiquiri',
     imageUrl: '/images/cocktails/strawberry-daiquiri.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1229,7 +1234,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Strawberry-Mojito',
     imageUrl: '/images/cocktails/strawberry-mojito.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1237,7 +1242,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Tequila-Sunrise',
     imageUrl: '/images/cocktails/tequila-sunrise.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
   {
@@ -1245,7 +1250,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Whiskey-Sour',
     imageUrl: '/images/cocktails/whiskey-sour.jpg',
     alcoholic: true,
-	instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Початок ','Середина ','Завершення ']
 
   },
 ];
