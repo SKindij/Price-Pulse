@@ -18,7 +18,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/.jpg',
     description: 'Тони паленого коричневого цукру і ванілі, трохи цитрусових, сосни і дуба.'
   },
   {
@@ -229,7 +229,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ireland,
-    imageUrl: '/images/beverages/jameson-07.webp',
+    imageUrl: '/images/beverages/jameson-07.jpg',
     description: 'Blended.'
   },
   {
@@ -279,7 +279,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Britain,
-    imageUrl: '/images/beverages/johnnie-walker-red-label-07.webp',
+    imageUrl: '/images/beverages/johnnie-walker-red-label-07.jpg',
     description: 'Blended.'
   },
   {
