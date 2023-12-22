@@ -1,10 +1,10 @@
 // @/app/categories/beverages/[beverageId]/page.tsx
+import styles from './page.module.css';
 import { Metadata } from 'next';
-
 import { fetchBeverageById } from '@/services/get-data';
 
+import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import styles from './page.module.css';
 
 import BeverageCard from '@/views/Categories/BeverageCard';
 
@@ -41,13 +41,13 @@ export default async function BeveragePage({params: {beverageId}}:Props) {
   }
 
   return (
-    <section>
-      <Typography variant="h1" className={styles.header}>
+    <Container>
+      <Typography variant="h2" className={styles.header}>
         Обраний напій:
       </Typography>
       {/* Інформація про напій */}
       <BeverageCard beverage={beverage}/>
 
-    </section>
+    </Container>
   );
 }
