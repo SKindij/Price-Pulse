@@ -20,7 +20,6 @@ const BeverageCardTable:React.FC<BeverageCardTableProps> = ({ prices }) => {
           <TableRow>
             <TableCell>Мережа</TableCell>
             <TableCell align="right">Ціна</TableCell>
-            <TableCell align="right">Валюта</TableCell>
             <TableCell align="right">На дату</TableCell>
           </TableRow>
         </TableHead>
@@ -31,7 +30,6 @@ const BeverageCardTable:React.FC<BeverageCardTableProps> = ({ prices }) => {
             >
               <TableCell component="th" scope="row">{chain}</TableCell>
               <TableCell align="right">{priceInfo.price}</TableCell>
-              <TableCell align="right">грн</TableCell>
               <TableCell align="right">{priceInfo.lastUpdated.toLocaleDateString()}</TableCell>
             </TableRow>
           ))}

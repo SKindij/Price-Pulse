@@ -25,7 +25,7 @@ const BeverageCard:React.FC<BeverageCardProps> = ({ beverage }) => {
   const firstBeverageLetter = beverage.title.charAt(0);
 
   return (
-    <Card sx={{ maxWidth: 370, boxShadow: 3, borderRadius: 8 }}>
+    <Card sx={{ maxWidth: 420, boxShadow: 3, borderRadius: 8 }}>
 	  {/*  */}
 	  <CardHeader
         avatar={
@@ -43,7 +43,7 @@ const BeverageCard:React.FC<BeverageCardProps> = ({ beverage }) => {
       />
 	  {/*  */}
 	  <CardMedia component="img"
-        height="320"
+        sx={{ objectFit: 'cover', height: '100%', }}
         image={beverage.imageUrl || '/images/cocktails/default-coctail.jpg'}
         alt={beverage.title}
       />
@@ -54,7 +54,7 @@ const BeverageCard:React.FC<BeverageCardProps> = ({ beverage }) => {
         </Typography>
         {/* Таблиця із цінами по супермаркетах */}
         <Typography variant="body2" mb={1}>
-		  Найнижчі ціни, що зустрічалися в магазинах
+		  Найнижчі ціни в UAH, що зустрічалися в цих супермаркетах:
         </Typography>
         <BeverageCardTable prices={prices} />
         {/* Опис напою */}

@@ -18,7 +18,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
-    imageUrl: '/images/beverages/.jpg',
+    imageUrl: '/images/beverages/.webp',
     description: 'Тони паленого коричневого цукру і ванілі, трохи цитрусових, сосни і дуба.'
   },
   {
@@ -35,6 +35,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
+    imageUrl: '/images/beverages/.webp',
     description: 'Смак з відтінками димних солодощів, червоних яблук і карамелі. '
   },
   {
@@ -51,6 +52,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
+    imageUrl: '/images/beverages/.webp',
     description: 'Смак ванілі, меду, карамелі, тютюну і тростинного цукру. Аромат ванілі, дуба, апельсина.'
   },
   {
@@ -67,6 +69,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
+    imageUrl: '/images/beverages/.webp',
     description: 'Аромат ірису, меду, карамелі і обпаленого дуба. Делікатний, солодкуватий, трохи маслянистий смак.'
   },
   {
@@ -83,6 +86,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
+    imageUrl: '/images/beverages/.webp',
     description: 'Аромат має ванільно-пряні, дубові, цитрусові акценти. У смаку грушеві тони в компанії карамелі.'
   },
   {
@@ -99,6 +103,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.USA,
+    imageUrl: '/images/beverages/.webp',
     description: 'Баланс насиченого смаку і неповторного аромату.'
   },
   {
@@ -115,6 +120,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.USA,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -131,6 +137,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.USA,
+    imageUrl: '/images/beverages/Jim-Beam-White-4Y-07.webp',
     description: '51% сусла із кукурудзи.'
   },
   {
@@ -147,6 +154,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
+    imageUrl: '/images/beverages/.webp',
     description: 'Смак ванілі, меду, карамелі, тютюну і тростинного цукру. Аромат ванілі, дуба, апельсина.'
   },
   {
@@ -163,6 +171,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
+    imageUrl: '/images/beverages/.webp',
 	  description: 'Аромат ірису, меду, карамелі і обпаленого дуба. Делікатний, солодкуватий, трохи маслянистий смак.'
   },
   {
@@ -179,6 +188,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.USA,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -195,6 +205,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.USA,
+    imageUrl: '/images/beverages/Jim-Beam-White-4Y-07.webp',
     description: '51% сусла із кукурудзи.'
   },
   /* --- WHISKEY --- */
@@ -229,7 +240,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ireland,
-    imageUrl: '/images/beverages/jameson-07.jpg',
+    imageUrl: '/images/beverages/jameson-07.webp',
     description: 'Blended.'
   },
   {
@@ -263,6 +274,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Britain,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -296,6 +308,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Scotland,
+    imageUrl: '/images/beverages/.webp',
     description: 'Blended.'
   },
   {
@@ -312,6 +325,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ireland,
+    imageUrl: '/images/beverages/.webp',
     description: 'Blended.'
   },
   {
@@ -328,6 +342,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Britain,
+    imageUrl: '/images/beverages/Ballantines-Finest-10.webp',
     description: 'Blended.'
   },
   {
@@ -344,6 +359,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Britain,
+    imageUrl: '/images/beverages/.webp',
     description: 'Blended.'
   },
   {
@@ -360,6 +376,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Scotland,
+    imageUrl: '/images/beverages/.webp',
     description: 'Blended.'
   },
   /* --- RUM --- */
@@ -377,6 +394,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Barbados,
+    imageUrl: '/images/beverages/.webp',
     description: 'Ноти тропічних і сушених фруктів, підсмажених кокосів і дуба. Післясмак фруктовий ванільний.'
   },
   {
@@ -393,6 +411,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Barbados,
+    imageUrl: '/images/beverages/.webp',
     description: 'Ванільний аромат із вершковими та медовими нотками. Смак з відтінками екзотичних фруктів.'
   },
   {
@@ -409,6 +428,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Belgium,
+    imageUrl: '/images/beverages/.webp',
     description: 'У смаку - спеції, ваніль, карамель і лакриця. Аромат солодкий цитрусовий.'
   },
   {
@@ -425,6 +445,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Jamaica,
+    imageUrl: '/images/beverages/.webp',
     description: 'Cмак пряних і горіхових нот із відтінком меду, ванілі і лісового горіха.'
   },
   {
@@ -441,6 +462,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 0,
     country: Country.Jamaica,
+    imageUrl: '/images/beverages/.webp',
     description: 'Вершковий смак із відтінками апельсинової цедри і ванілі. Аромат волоського і мускатного горіхів.'
   },
   {
@@ -457,6 +479,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Cuba,
+    imageUrl: '/images/beverages/.webp',
     description: 'Гладкий смак із фруктовими відтінками, нюансами вишні, ванілі, какао.'
   },
   {
@@ -489,6 +512,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 2,
     country: Country.Cuba,
+    imageUrl: '/images/beverages/.webp',
     description: 'Квітковий аромат із відтінками меду і карамелі. Свіжий цитрусовий смак.'
   },
   {
@@ -505,6 +529,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 2,
     country: Country.Belgium,
+    imageUrl: '/images/beverages/.webp',
     description: 'Темний ром, ваніль, апельсин, чилі. Аромат висушеного винограду.'
   },
   {
@@ -521,6 +546,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Cuba,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -537,6 +563,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Italy,
+    imageUrl: '/images/beverages/.webp',
     description: 'Ваніль, кориця, мускатний горіх і мед. Аромат з нотками дубової бочки і сухофруктів.'
   },
   /* --- GIN --- */
@@ -554,6 +581,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Italy,
+    imageUrl: '/images/beverages/.webp',
     description: 'Тони сицілійського рожевого грейпфрута, коріандра та ревеня.'
   },
   {
@@ -570,6 +598,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Italy,
+    imageUrl: '/images/beverages/.webp',
     description: 'Аромат з тонами лимона, ялівцю, дягелю і кориці.'
   },
   {
@@ -586,6 +615,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Britain,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -602,6 +632,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Britain,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   /* --- PORTWEIN --- */
@@ -619,6 +650,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ukraine,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -635,6 +667,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Spain,
+    imageUrl: '/images/beverages/.webp',
     description: 'Смак з тонами полину, гіркої апельсинової шкірки та відтінками кориці.'
   },
   {
@@ -651,6 +684,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Spain,
+    imageUrl: '/images/beverages/.webp',
     description: 'Туріга Насьональ. Тони пряні, кондитерські.'
   },
   /* --- CHAMPAGNE --- */
@@ -668,6 +702,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ukraine,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -684,6 +719,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Italy,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -700,6 +736,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Italy,
+    imageUrl: '/images/beverages/.webp',
     description: 'Купаж. Тони букета фруктові, квіткові.'
   },
   /* --- TEQUILA --- */
@@ -717,6 +754,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Mexico,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -733,6 +771,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Mexico,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -749,6 +788,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Mexico,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -765,6 +805,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Mexico,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   /* --- TINCTURE --- */
@@ -782,6 +823,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Germany,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -798,6 +840,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.CzechRepublic,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -814,6 +857,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Germany,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -830,6 +874,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.CzechRepublic,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   /* --- HORILKA --- */
@@ -847,6 +892,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Finland,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
