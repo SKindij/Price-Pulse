@@ -2,17 +2,19 @@
 .toolbarTopMost {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(31, 49, 137);
+    background-color: #6f42c1;
 	box-shadow: 0 0 1px 0 rgba(50, 50, 50, 1);
 }
 /* for </Box> in <Link> */
 .navLinkContainer {
+	background-color: #f0c000;
     padding: 5px 16px;
-    background-color: #fcfcfc;
+    margin-top: 8px;
     border-radius: 20px;
     color: #000000;
 }
 .navLinkContainerUnselected{
+	margin-top: 8px;
     padding: 5px 16px;
     color: #ffffff;
 }
@@ -25,12 +27,13 @@
 /* styles for responsive design */
 @media screen and (max-width: 768px) {
     .toolbarTopMost {
-      flex-direction: column; 
+      flex-direction: column;
+	  justify-content: space-around;
       align-items: center; 
     } 
     .navLinkContainer,
     .navLinkContainerUnselected {
+	  margin-top: 2px;
       padding: 2px 12px;
-      border-radius: 15px;
     }
-}  
+} 
