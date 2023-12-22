@@ -817,13 +817,13 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 399, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 399, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 476, lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 4,
     country: Country.Germany,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Jagermeister-07.webp',
     description: ''
   },
   {
@@ -834,13 +834,13 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 349, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 349, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 259, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.CzechRepublic,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Becherovka-07.webp',
     description: ''
   },
   {
@@ -851,13 +851,13 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 919, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 599, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 599, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 4,
     country: Country.Germany,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Jagermeister-10.webp',
     description: ''
   },
   {
@@ -868,13 +868,13 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 469, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 489, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 469, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.CzechRepublic,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Becherovka-10.webp',
     description: ''
   },
   /* --- HORILKA --- */
@@ -886,13 +886,13 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 519, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 494, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 319, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.Finland,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Koskenkorva-07.webp',
     description: ''
   },
   {
@@ -903,13 +903,13 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 399, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 369, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.Finland,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Koskenkorva-Lemon-Lime-07.webp',
     description: ''
   },
   {
@@ -926,7 +926,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Finland,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Koskenkorva-Sauna-Barrel-07.webp',
     description: ''
   },
   {
@@ -954,13 +954,13 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 349, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 434, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 349, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 4,
     country: Country.Sweden,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Absolut-Pears-07.webp',
     description: ''
   },
   {
@@ -994,6 +994,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ukraine,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -1010,6 +1011,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Ukraine,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -1026,6 +1028,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Ukraine,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -1042,6 +1045,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 2,
     country: Country.CzechRepublic,
+    imageUrl: '/images/beverages/.webp',
     description: ''
   },
   {
@@ -1058,6 +1062,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Finland,
+    imageUrl: '/images/beverages/Koskenkorva-10.webp',
     description: ''
   },
 ];
