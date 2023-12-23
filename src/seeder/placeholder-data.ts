@@ -188,7 +188,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.USA,
-    imageUrl: '/images/beverages/Jim-Beam-Red-Stag-Cherry- 10.webp',
+    imageUrl: '/images/beverages/Jim-Beam-Red-Stag-Cherry-10.webp',
     description: ''
   },
   {
@@ -223,8 +223,8 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ireland,
-    imageUrl: '',
-    description: '/images/beverages/Jameson-Stout-07.webp'
+    imageUrl: '/images/beverages/Jameson-Stout-07.webp',
+    description: ''
   },
   {
     beverageId: 1014,
@@ -386,7 +386,7 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 980, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 934, lastUpdated: new Date('2023-12-22') },
       [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
@@ -411,7 +411,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Barbados,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Doorlys-White-3Y-07.webp',
     description: 'Ванільний аромат із вершковими та медовими нотками. Смак з відтінками екзотичних фруктів.'
   },
   {
@@ -437,7 +437,7 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 642, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 642, lastUpdated: new Date('2023-12-22') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
@@ -445,7 +445,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 4,
     country: Country.Jamaica,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Appleton-Reserve-07.webp',
     description: 'Cмак пряних і горіхових нот із відтінком меду, ванілі і лісового горіха.'
   },
   {
@@ -454,15 +454,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 1299, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 1149, lastUpdated: new Date('2023-12-22') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 1099, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 0,
     country: Country.Jamaica,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Appleton-12Y-07.webp',
     description: 'Вершковий смак із відтінками апельсинової цедри і ванілі. Аромат волоського і мускатного горіхів.'
   },
   {
@@ -488,15 +488,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 452, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 409, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.Italy,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Bacardi-Spiced-07.webp',
     description: 'Ваніль, кориця, мускатний горіх і мед. Аромат з нотками дубової бочки і сухофруктів.'
   },
   {
@@ -522,15 +522,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 972, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 649, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Novus]: { price: 749, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 2,
     country: Country.Belgium,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Botafogo-Black-07.webp',
     description: 'Темний ром, ваніль, апельсин, чилі. Аромат висушеного винограду.'
   },
   {
@@ -539,15 +539,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 509, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 509, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Silpo]: { price: 509, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.Jamaica,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Appleton-Estate-Signature-07.webp',
     description: ''
   },
   {
@@ -556,15 +556,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Rum,
     volume: 1.0,
     prices: {
-      [RetailChain.Auchan]: { price: 569, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 569, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Novus]: { price: 944, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 539, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.Italy,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Bacardi-Spiced-10.webp',
     description: 'Ваніль, кориця, мускатний горіх і мед. Аромат з нотками дубової бочки і сухофруктів.'
   },
   /* --- GIN --- */
@@ -625,25 +625,25 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Gin,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 689, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 529, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Novus]: { price: 689, lastUpdated: new Date('2023-12-01') },
+      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.Britain,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Gordons-Sicilian-Lemon-07.webp',
     description: ''
   },
   /* --- PORTWEIN --- */
   {
     beverageId: 1038,
-    title: 'Colonist 0.7L',
+    title: 'Colonist Башта 0.7L',
     category: DrinkCategory.Portwein,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 564, lastUpdated: new Date('2023-12-01') },
       [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
@@ -651,7 +651,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ukraine,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Colonist-Башта-07.webp',
     description: ''
   },
   {
@@ -660,15 +660,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Portwein,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 374, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 374, lastUpdated: new Date('2023-12-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.Spain,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Osborn-Premium-Rojo-07.webp',
     description: 'Смак з тонами полину, гіркої апельсинової шкірки та відтінками кориці.'
   },
   {
@@ -677,25 +677,25 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Portwein,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 290, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 290, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.Spain,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Osborn-Porto-Tawny-07.webp',
     description: 'Туріга Насьональ. Тони пряні, кондитерські.'
   },
   /* --- CHAMPAGNE --- */
   {
     beverageId: 1041,
-    title: 'Colonist 0.7L',
+    title: 'Colonist Бісер 0.7L',
     category: DrinkCategory.Champagne,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 592, lastUpdated: new Date('2023-12-01') },
       [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
@@ -703,7 +703,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Ukraine,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Colonist-Бісер-07.webp',
     description: ''
   },
   {
@@ -712,15 +712,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Champagne,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 539, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 389, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 389, lastUpdated: new Date('2023-12-01') },
+      [RetailChain.Novus]: { price: 539, lastUpdated: new Date('2023-12-01') },
+      [RetailChain.Silpo]: { price: 369, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.Italy,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Martini-Prosecco-07.webp',
     description: ''
   },
   {
@@ -729,7 +729,7 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Champagne,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 535, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
@@ -737,7 +737,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.Italy,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Martini-Rose-07.webp',
     description: 'Купаж. Тони букета фруктові, квіткові.'
   },
   /* --- TEQUILA --- */
@@ -747,15 +747,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Tequila,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 1454, lastUpdated: new Date('2023-12-01') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 1199, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 1199, lastUpdated: new Date('2023-11-21') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.Mexico,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Espolon-Blanco-07.webp',
     description: ''
   },
   {
@@ -764,15 +764,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Tequila,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 1672, lastUpdated: new Date('2023-12-01') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 1199, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 1449, lastUpdated: new Date('2023-11-21') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.Mexico,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Espolon-Reposado-07.webp',
     description: ''
   },
   {
@@ -781,15 +781,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Tequila,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 579, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 579, lastUpdated: new Date('2023-12-01') },
       [RetailChain.Silpo]: { price: 839, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.Mexico,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Jose-Cuervo-Silver-07.webp',
     description: ''
   },
   {
@@ -798,15 +798,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Tequila,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 579, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 799, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 579, lastUpdated: new Date('2023-12-01') },
+      [RetailChain.Silpo]: { price: 579, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.Mexico,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Jose-Cuervo-Especial-07.webp',
     description: ''
   },
   /* --- TINCTURE --- */
@@ -932,19 +932,19 @@ const beveragesData:IBeverage[] = [
   },
   {
     beverageId: 1055,
-    title: 'Absolut Mandrin 0.7L',
+    title: 'Absolut Mandarin 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 349, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 349, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 349, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Silpo]: { price: 349, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 4,
     country: Country.Sweden,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Absolut-Mandarin-07.webp',
     description: ''
   },
   {
@@ -987,15 +987,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Horilka,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 869, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 869, lastUpdated: new Date('2023-12-01') },
+      [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.Ukraine,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Staritsky-Levitsky-Reserve-07.webp',
     description: ''
   },
   {
@@ -1004,15 +1004,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Horilka,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-12-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 4,
     country: Country.Ukraine,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Staritsky-Levitsky-07.webp',
     description: ''
   },
   {
@@ -1021,15 +1021,15 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Horilka,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 389, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 349, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Silpo]: { price: 389, lastUpdated: new Date('2023-12-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 4,
     country: Country.Ukraine,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Staritsky-Levitsky-Distil-9-07.webp',
     description: ''
   },
   {
@@ -1040,13 +1040,13 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 199, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 199, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 2,
     country: Country.CzechRepublic,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/R.Jelinek-hruska-05.webp',
     description: ''
   },
   {
