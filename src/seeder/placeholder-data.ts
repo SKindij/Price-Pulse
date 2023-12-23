@@ -1074,48 +1074,87 @@ const cocktailsData:ICocktail[] = [
     title: 'Bahama-Mama',
     imageUrl: '/images/cocktails/bahama-mama.jpg',
     alcoholic: true,
+    ingredients: [
+      CocktailIngredients.CRUSHED_ICE,
+      CocktailIngredients.ORANGE_JUICE,
+      CocktailIngredients.PINEAPPLE_JUICE,
+      CocktailIngredients.RUM,
+      CocktailIngredients.GRENADINE_SYRUP
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3002,
     title: 'Bloody-Mary',
     imageUrl: '/images/cocktails/bloody-mary.jpg',
     alcoholic: true,
+    glassType: GlassType.ROCKS,
+    ingredients: [
+      CocktailIngredients.HORILKA,
+      CocktailIngredients.TOMATO_JUICE,
+      CocktailIngredients.LEMON_JUICE,
+      CocktailIngredients.WORCESTERSHIRE_SAUCE,
+      CocktailIngredients.BLACK_PEPPER
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3003,
     title: 'Blue-Hawaii',
     imageUrl: '/images/cocktails/blue-hawaii.jpg',
     alcoholic: true,
+    glassType: GlassType.HURRICANE,
+    ingredients: [
+      CocktailIngredients.RUM,
+      CocktailIngredients.BLUE_CURACAO,
+      CocktailIngredients.COCONUT_CREAM,
+      CocktailIngredients.PINEAPPLE_JUICE,
+      CocktailIngredients.LIME_JUICE
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3004,
     title: 'Blue-Lagoon',
     imageUrl: '/images/cocktails/blue-lagoon.jpg',
     alcoholic: true,
+    glassType: GlassType.HURRICANE,
+    ingredients: [
+      CocktailIngredients.HORILKA,
+      CocktailIngredients.BLUE_CURACAO,
+      CocktailIngredients.SPRITE,
+      CocktailIngredients.PINEAPPLE_JUICE,
+      CocktailIngredients.ICE_CUBES
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3005,
     title: 'Blue-Tahoe',
     imageUrl: '/images/cocktails/blue-tahoe.jpg',
     alcoholic: true,
+    ingredients: [
+      CocktailIngredients.TEQUILA,
+      CocktailIngredients.LIME_JUICE,
+      CocktailIngredients.BLUE_CURACAO,
+      CocktailIngredients.ICE_CUBES,
+      CocktailIngredients.LEMON_JUICE,
+      CocktailIngredients.CHAMPAGNE,
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3006,
     title: 'Caipirinha',
     imageUrl: '/images/cocktails/caipirinha.jpg',
     alcoholic: true,
+    glassType: GlassType.HIGHBALL,
+    ingredients: [
+      CocktailIngredients.RUM,
+      CocktailIngredients.CRUSHED_ICE,
+      CocktailIngredients.LIME_JUICE,
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3007,
@@ -1136,40 +1175,70 @@ const cocktailsData:ICocktail[] = [
     title: 'Cuba-Libre',
     imageUrl: '/images/cocktails/cuba-libre.jpg',
     alcoholic: true,
+    ingredients: [
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3009,
     title: 'Dirty-Martini',
     imageUrl: '/images/cocktails/dirty-martini.jpg',
     alcoholic: true,
+    ingredients: [
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 30010,
     title: 'Hiroshima',
     imageUrl: '/images/cocktails/hiroshima.jpg',
     alcoholic: true,
+    ingredients: [
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3011,
     title: 'Kamikaze',
     imageUrl: '/images/cocktails/kamikaze.jpg',
     alcoholic: true,
+    ingredients: [
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 30012,
     title: 'Long-Island-iced-tea',
     imageUrl: '/images/cocktails/long-island-iced-tea.jpg',
     alcoholic: true,
+    ingredients: [
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3013,
