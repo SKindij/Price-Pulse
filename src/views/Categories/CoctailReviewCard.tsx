@@ -47,7 +47,7 @@ export default function CoctailReviewCard({ cocktail }:CoctailReviewCardProps) {
   };
 
   return (
-    <Card sx={{ maxWidth: 345, boxShadow: 3, borderRadius: 8 }}>
+    <Card sx={{ maxWidth: 360, boxShadow: 3, borderRadius: 8 }}>
       {/*  */}
       <CardHeader
         avatar={

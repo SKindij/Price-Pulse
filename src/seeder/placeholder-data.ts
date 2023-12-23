@@ -12,13 +12,13 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 1669, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 2199, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 2199, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Wild-Turkey-Rare-Breed-07.webp',
     description: 'Тони паленого коричневого цукру і ванілі, трохи цитрусових, сосни і дуба.'
   },
   {
@@ -35,7 +35,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 5,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Wild-Turkey-Longbranch-07.webp',
     description: 'Смак з відтінками димних солодощів, червоних яблук і карамелі. '
   },
   {
@@ -46,7 +46,7 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 1049, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 729, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 749, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 749, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -63,7 +63,7 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 849, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 589, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 599, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 599, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -97,18 +97,18 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 1089, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 1199, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 1149, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 1149, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Jim-Beam-Double-Oak-07.webp',
     description: 'Баланс насиченого смаку і неповторного аромату.'
   },
   {
     beverageId: 1007,
-    title: 'Jim Beam Double Rye 0.7L',
+    title: 'Jim Beam Rye 0.7L',
     category: DrinkCategory.Bourbon,
     volume: 0.7,
     prices: {
@@ -120,7 +120,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Jim-Beam-Rye-07.webp',
     description: ''
   },
   {
@@ -147,14 +147,14 @@ const beveragesData:IBeverage[] = [
     volume: 1.0,
     prices: {
       [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 939, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 939, lastUpdated: new Date('2023-12-22') },
       [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Wild-Turkey-101-10.webp',
     description: 'Смак ванілі, меду, карамелі, тютюну і тростинного цукру. Аромат ванілі, дуба, апельсина.'
   },
   {
@@ -164,14 +164,14 @@ const beveragesData:IBeverage[] = [
     volume: 1.0,
     prices: {
       [RetailChain.Auchan]: { price: 1045, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 749, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 749, lastUpdated: new Date('2023-12-22') },
       [RetailChain.Silpo]: { price: 1099, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Wild-Turkey-10.webp',
 	  description: 'Аромат ірису, меду, карамелі і обпаленого дуба. Делікатний, солодкуватий, трохи маслянистий смак.'
   },
   {
@@ -181,14 +181,14 @@ const beveragesData:IBeverage[] = [
     volume: 1.0,
     prices: {
       [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 1159, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 1159, lastUpdated: new Date('2023-12-22') },
       [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.USA,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Jim-Beam-Red-Stag-Cherry- 10.webp',
     description: ''
   },
   {
@@ -199,7 +199,7 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 729, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Novus]: { price: 1159, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 699, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 699, lastUpdated: new Date('2023-12-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -369,14 +369,14 @@ const beveragesData:IBeverage[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 599, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 569, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 569, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-12-23') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 3,
     country: Country.Scotland,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Hankey-Bannister-10.webp',
     description: 'Blended.'
   },
   /* --- RUM --- */
@@ -387,14 +387,14 @@ const beveragesData:IBeverage[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 980, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
     ratings: 5,
     country: Country.Barbados,
-    imageUrl: '/images/beverages/.webp',
+    imageUrl: '/images/beverages/Doorlys-Gold-5Y-07.webp',
     description: 'Ноти тропічних і сушених фруктів, підсмажених кокосів і дуба. Післясмак фруктовий ванільний.'
   },
   {
@@ -420,9 +420,9 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 649, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 649, lastUpdated: new Date('2023-12-01') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 649, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
     },
     inWish: false,
@@ -496,6 +496,7 @@ const beveragesData:IBeverage[] = [
     inWish: false,
     ratings: 3,
     country: Country.Italy,
+    imageUrl: '/images/beverages/.webp',
     description: 'Ваніль, кориця, мускатний горіх і мед. Аромат з нотками дубової бочки і сухофруктів.'
   },
   {
