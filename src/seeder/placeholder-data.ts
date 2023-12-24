@@ -1074,14 +1074,21 @@ const cocktailsData:ICocktail[] = [
     title: 'Bahama-Mama',
     imageUrl: '/images/cocktails/bahama-mama.jpg',
     alcoholic: true,
+    glassType: GlassType.ROCKS,
     ingredients: [
-      CocktailIngredients.CRUSHED_ICE,
-      CocktailIngredients.ORANGE_JUICE,
-      CocktailIngredients.PINEAPPLE_JUICE,
-      CocktailIngredients.RUM,
-      CocktailIngredients.GRENADINE_SYRUP
+      {
+        [CocktailIngredients.CRUSHED_ICE]: '30 мл',
+        [CocktailIngredients.ORANGE_JUICE]: '20 мл',
+        [CocktailIngredients.PINEAPPLE_JUICE]: '30 мл',
+        [CocktailIngredients.RUM]: '10 мл',
+        [CocktailIngredients.GRENADINE_SYRUP]: '30 мл',
+      }
     ],
-    instructions: ['Початок ','Середина ','Завершення ']
+    instructions: [
+      'Початок ',
+      'Середина ',
+      'Завершення '
+    ]
   },
   {
     cocktailID: 3002,
@@ -1133,6 +1140,7 @@ const cocktailsData:ICocktail[] = [
     title: 'Blue-Tahoe',
     imageUrl: '/images/cocktails/blue-tahoe.jpg',
     alcoholic: true,
+    glassType: GlassType.HURRICANE,
     ingredients: [
       CocktailIngredients.TEQUILA,
       CocktailIngredients.LIME_JUICE,
@@ -1175,12 +1183,11 @@ const cocktailsData:ICocktail[] = [
     title: 'Cuba-Libre',
     imageUrl: '/images/cocktails/cuba-libre.jpg',
     alcoholic: true,
+    glassType: GlassType.HIGHBALL,
     ingredients: [
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients
+      CocktailIngredients.RUM,
+      CocktailIngredients.COCA_COLA,
+      CocktailIngredients.LIME_JUICE,
     ],
     instructions: ['Початок ','Середина ','Завершення ']
   },
@@ -1189,26 +1196,24 @@ const cocktailsData:ICocktail[] = [
     title: 'Dirty-Martini',
     imageUrl: '/images/cocktails/dirty-martini.jpg',
     alcoholic: true,
+    glassType: GlassType.MARTINI,
     ingredients: [
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients
+      CocktailIngredients.VERMOUTH,
+      CocktailIngredients.GIN,
     ],
     instructions: ['Початок ','Середина ','Завершення ']
   },
   {
-    cocktailID: 30010,
+    cocktailID: 3010,
     title: 'Hiroshima',
     imageUrl: '/images/cocktails/hiroshima.jpg',
     alcoholic: true,
+    glassType: GlassType.HURRICANE,
     ingredients: [
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients
+      CocktailIngredients.SAMBUCA,
+      CocktailIngredients.ABSINTHE,
+      CocktailIngredients.IRISH_CREAM_LIQUEUR,
+      CocktailIngredients.GRENADINE_SYRUP,
     ],
     instructions: ['Початок ','Середина ','Завершення ']
   },
@@ -1217,26 +1222,29 @@ const cocktailsData:ICocktail[] = [
     title: 'Kamikaze',
     imageUrl: '/images/cocktails/kamikaze.jpg',
     alcoholic: true,
+    glassType: GlassType.SHOT,
     ingredients: [
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients
+      CocktailIngredients.HORILKA,
+      CocktailIngredients.COINTREAU,
+      CocktailIngredients.LIME_JUICE,
     ],
     instructions: ['Початок ','Середина ','Завершення ']
   },
   {
     cocktailID: 30012,
-    title: 'Long-Island-iced-tea',
+    title: 'Long-Island-Iced-Tea',
     imageUrl: '/images/cocktails/long-island-iced-tea.jpg',
     alcoholic: true,
+    glassType: GlassType.HIGHBALL,
     ingredients: [
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients,
-      CocktailIngredients
+      CocktailIngredients.HORILKA,
+      CocktailIngredients.RUM,
+      CocktailIngredients.GIN,
+      CocktailIngredients.TEQUILA,
+      CocktailIngredients.COINTREAU,
+      CocktailIngredients.LEMON_JUICE,
+      CocktailIngredients.SUGAR_SYRUP,
+      CocktailIngredients.COCA_COLA
     ],
     instructions: ['Початок ','Середина ','Завершення ']
   },
@@ -1245,22 +1253,42 @@ const cocktailsData:ICocktail[] = [
     title: 'Mai-Tai',
     imageUrl: '/images/cocktails/mai-tai.jpg',
     alcoholic: true,
+    glassType: GlassType.ROCKS,
+    ingredients: [
+      CocktailIngredients.RUM,
+      CocktailIngredients.COINTREAU,
+      CocktailIngredients.LIME_JUICE,
+      CocktailIngredients.ORGEAT_SYRUP,
+      CocktailIngredients.CRUSHED_ICE
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3014,
     title: 'Margarita',
     imageUrl: '/images/cocktails/margarita.jpg',
     alcoholic: true,
+    glassType: GlassType.COUPE,
+    ingredients: [
+      CocktailIngredients.TEQUILA,
+      CocktailIngredients.COINTREAU,
+      CocktailIngredients.LIME_JUICE,
+      CocktailIngredients.SUGAR_SYRUP,
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3015,
     title: 'Mint-Julep',
     imageUrl: '/images/cocktails/mint-julep.jpg',
     alcoholic: true,
+    glassType: GlassType.ROCKS,
+    ingredients: [
+      CocktailIngredients.BOURBON,
+      CocktailIngredients.SODA_WATER,
+      CocktailIngredients.MINT_LEAVES,
+      CocktailIngredients.ANGOSTURA_SUGAR,
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
 
   },
@@ -1269,62 +1297,120 @@ const cocktailsData:ICocktail[] = [
     title: 'Mojito',
     imageUrl: '/images/cocktails/mojito.jpg',
     alcoholic: true,
+    glassType: GlassType.HIGHBALL,
+    ingredients: [
+      CocktailIngredients.RUM,
+      CocktailIngredients.SUGAR_SYRUP,
+      CocktailIngredients.MINT_LEAVES,
+      CocktailIngredients.SODA_WATER,
+      CocktailIngredients.LIME_WEDGES
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3017,
     title: 'Pina-Colada',
     imageUrl: '/images/cocktails/pina-colada.jpg',
     alcoholic: true,
-    instructions: ['Початок ','Середина ','Завершення ']
-
+    glassType: GlassType.HURRICANE,
+    ingredients: [
+      CocktailIngredients.RUM,
+      CocktailIngredients.COCONUT_LIQUEUR,
+      CocktailIngredients.LIME_JUICE,
+      CocktailIngredients.PINEAPPLE_JUICE,
+      CocktailIngredients.COCONUT_CREAM
+    ],
+    instructions: [
+      'Перелийте всі інгредієнти в шейкер і збовтайте.',
+      'Процідіть у келих ураган або хайбол над кубиками льоду.',
+      'Прикрасьте часточкою ананаса та вишнею.'
+    ]
   },
   {
     cocktailID: 3018,
     title: 'Salty-Dog',
     imageUrl: '/images/cocktails/salty-dog.jpg',
     alcoholic: true,
-    instructions: ['Початок ','Середина ','Завершення ']
-
+    glassType: GlassType.ROCKS,
+    ingredients: [
+      CocktailIngredients.HORILKA,
+      CocktailIngredients.GRAPEFRUIT_JUICE,
+      CocktailIngredients.SALT,
+      CocktailIngredients.ICE_CUBES,
+    ],
+    instructions: [
+      'Посипте склянку сіллю  і наповніть її доверху кубиками льоду.',
+      'Влийте горілку і грейпфрутовий сік. Обережно перемішайте.',
+      'Прикрасьте шматочком грейпфрута.'
+    ]
   },
   {
     cocktailID: 3019,
     title: 'Screwdriver',
     imageUrl: '/images/cocktails/screwdriver.jpg',
     alcoholic: true,
+    glassType: GlassType.HIGHBALL,
+    ingredients: [
+      CocktailIngredients.HORILKA,
+      CocktailIngredients.ORANGE_JUICE,
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3020,
     title: 'Strawberry-Daiquiri',
     imageUrl: '/images/cocktails/strawberry-daiquiri.jpg',
     alcoholic: true,
+    glassType: GlassType.HIGHBALL,
+    ingredients: [
+      CocktailIngredients.RUM,
+      CocktailIngredients.LIME_JUICE,
+      CocktailIngredients.RASPBERRY_PUREE,
+      CocktailIngredients.CRUSHED_ICE,
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3021,
     title: 'Strawberry-Mojito',
     imageUrl: '/images/cocktails/strawberry-mojito.jpg',
     alcoholic: true,
+    glassType: GlassType,
+    ingredients: [
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients,
+      CocktailIngredients
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3022,
     title: 'Tequila-Sunrise',
     imageUrl: '/images/cocktails/tequila-sunrise.jpg',
     alcoholic: true,
+    glassType: GlassType.HIGHBALL,
+    ingredients: [
+      CocktailIngredients.TEQUILA,
+      CocktailIngredients.GRENADINE_SYRUP,
+      CocktailIngredients.ORANGE_JUICE,
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
-
   },
   {
     cocktailID: 3023,
     title: 'Whiskey-Sour',
     imageUrl: '/images/cocktails/whiskey-sour.jpg',
     alcoholic: true,
+    glassType: GlassType.ROCKS,
+    ingredients: [
+      CocktailIngredients.ANGOSTURA_BITTERS,
+      CocktailIngredients.EGG_WHITE,
+      CocktailIngredients.BOURBON,
+      CocktailIngredients.LEMON_JUICE,
+      CocktailIngredients.SUGAR_SYRUP
+    ],
     instructions: ['Початок ','Середина ','Завершення ']
 
   },

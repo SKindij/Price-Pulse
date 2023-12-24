@@ -10,11 +10,10 @@ export type RetailPrices = {
   };
 };
 
-export type DrinkVolume = 0.5 | 0.7 | 1.0;
+export type BottleСapacity = 0.5 | 0.7 | 1.0;
 
-
-
-
-
-
+// we will use it in cocktails and recipes
+export type IngredientsAndQuantities<E extends string> = {
+  [K in E]?:string;
+};
 

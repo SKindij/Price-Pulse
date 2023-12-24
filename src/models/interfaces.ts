@@ -1,14 +1,14 @@
 // @/models/interfaces.ts
 
-import { RetailPrices, DrinkVolume } from '@/models/types';
-import { Country, DrinkCategory, CocktailIngredients, GlassType } from '@/models/enums';
+import { RetailPrices, BottleСapacity, IngredientsAndQuantities } from '@/models/types';
+import { Country, DrinkCategory, CocktailIngredients, GlassType, RecipeIngredients } from '@/models/enums';
 
 
 export interface IBeverage {
   beverageId:number;
   title:string;
   category:DrinkCategory;
-  volume:DrinkVolume;
+  volume:BottleСapacity;
   prices:RetailPrices;
   inWish:boolean;
   ratings:number;
@@ -22,12 +22,18 @@ export interface ICocktail {
   title:string;
   imageUrl?:string;
   alcoholic:boolean;
-  ingredients?:CocktailIngredients[];
+  ingredients?:IngredientsAndQuantities<CocktailIngredients>[];
   glassType?:GlassType;
   instructions?:string[];
 }
 
-
+export interface IRecipe {
+  recipeID:number;
+  title:string;
+  imageUrl?:string;
+  ingredients?:IngredientsAndQuantities<RecipeIngredients>[];
+  instructions?:string[];
+}
 
 
 

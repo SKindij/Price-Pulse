@@ -100,8 +100,8 @@ export default function CoctailReviewCard({ cocktail }:CoctailReviewCardProps) {
           </Typography>
           <Typography paragraph>Інгредієнти:</Typography>
           <ul>
-            {cocktail.ingredients?.map((ingredient, index) => (
-              <li key={index}>{ingredient}</li>
+            {Object.entries(cocktail.ingredients || {}).map(([ingredient, quantity], index) => (
+              <li key={index}>{`${ingredient}: ${quantity}`}</li>
             ))}
           </ul>
 		  <Typography paragraph>Інструкція:</Typography>
