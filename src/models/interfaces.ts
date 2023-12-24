@@ -22,7 +22,7 @@ export interface ICocktail {
   title:string;
   imageUrl?:string;
   alcoholic:boolean;
-  ingredients?:IngredientsAndQuantities<CocktailIngredients>[];
+  ingredients?:IngredientsAndQuantities<CocktailIngredients>;
   glassType?:GlassType;
   instructions?:string[];
 }
@@ -31,7 +31,7 @@ export interface IRecipe {
   recipeID:number;
   title:string;
   imageUrl?:string;
-  ingredients?:IngredientsAndQuantities<RecipeIngredients>[];
+  ingredients?:IngredientsAndQuantities<RecipeIngredients>;
   instructions?:string[];
 }
 
