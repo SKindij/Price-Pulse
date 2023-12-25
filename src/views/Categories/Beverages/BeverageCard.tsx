@@ -64,7 +64,7 @@ const BeverageCard:React.FC<BeverageCardProps> = ({ beverage }) => {
       </CardContent>
 	  {/*  */}
       <CardActions>
-	    <IconButton aria-label="add to favorites">
+	      <IconButton aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
         <Button size="small" color="primary">Редагувати</Button>
