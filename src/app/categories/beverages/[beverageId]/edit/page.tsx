@@ -1,4 +1,4 @@
-// @/app/categories/beverages/[beverageId]/page.tsx
+// @/app/categories/beverages/[beverageId]/edit/page.tsx
 import styles from './page.module.css';
 import { Metadata } from 'next';
 import { fetchBeverageById } from '@/services/get-data';
