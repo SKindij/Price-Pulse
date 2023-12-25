@@ -12,7 +12,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import LocalBarIcon from '@mui/icons-material/LocalBar';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
-import KitchenIcon from '@mui/icons-material/Kitchen';
 import SearchIcon from '@mui/icons-material/Search';
 // type for each navigation item
 type NavLink = {

@@ -1,12 +1,18 @@
 // @/app/categories/beverages/[beverageId]/edit/page.tsx
 import { notFound } from 'next/navigation';
 // import DrinkEditForm from '@/views/Categories/Beverages/DrinkEditForm';
-// import Breadcrumbs from '@/views/Categories/Beverages/BreadCrumbs';
+import BreadCrumbs from '@/views/Categories/CategoriesBreadCrumbs';
 
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
 
 import BeverageCard from '@/views/Categories/Beverages/BeverageCard';
+
+// icons for breadcrumbs elements
+import HomeIcon from '@mui/icons-material/Home';
+import LocalBarIcon from '@mui/icons-material/LocalBar';
+import GrainIcon from '@mui/icons-material/Grain';
+
+
 
 // get information from the database
 import { fetchBeverageById } from '@/services/get-data';
@@ -28,9 +34,13 @@ export default async function BeverageEditPage({params: {beverageId}}:Props) {
 
   return (
     <Container>
-      <Typography variant="h2">
-        Обраний напій:
-      </Typography>
+      <BreadCrumbs
+        breadcrumbs={[
+          { label: 'Головна', href: '/', icon: <HomeIcon /> },
+          { label: 'Напої', href: '/categories/beverages', icon: <LocalBarIcon /> },
+          { label: 'Редагування напою', icon: <GrainIcon /> }
+        ]}
+      />
       {/* Інформація про напій */}
       <BeverageCard beverage={beverage}/>
 

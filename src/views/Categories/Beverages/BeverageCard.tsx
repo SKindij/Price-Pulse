@@ -1,5 +1,6 @@
 // @/views/Categories/Beverages/BeverageCard.tsx
-import Image from 'next/image';
+import Link from 'next/link';
+
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -67,8 +68,14 @@ const BeverageCard:React.FC<BeverageCardProps> = ({ beverage }) => {
 	      <IconButton aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
-        <Button size="small" color="primary">Редагувати</Button>
-        <Button size="small" color="secondary">Зберегти</Button>
+        <Button size="small" color="primary">
+          <Link
+            href={`/categories/beverages/${beverage.beverageId}/edit`}
+          >
+            Редагувати
+          </Link>
+        </Button>
+        <Button size="small" color="secondary">Видалити</Button>
       </CardActions>
     </Card>
   );
