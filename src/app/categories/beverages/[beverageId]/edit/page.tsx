@@ -1,14 +1,15 @@
 // @/app/categories/beverages/[beverageId]/edit/page.tsx
-// import DrinkEditForm from '@/app/ui/invoices/edit-form';
-
-import styles from './page.module.css';
-import { Metadata } from 'next';
-import { fetchBeverageById } from '@/services/get-data';
+import { notFound } from 'next/navigation';
+// import DrinkEditForm from '@/views/Categories/Beverages/DrinkEditForm';
+// import Breadcrumbs from '@/views/Categories/Beverages/BreadCrumbs';
 
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 import BeverageCard from '@/views/Categories/Beverages/BeverageCard';
+
+// get information from the database
+import { fetchBeverageById } from '@/services/get-data';
 
 type Props = {
   params:{ // only property that is an object
@@ -16,35 +17,18 @@ type Props = {
   };
 };
 
-// function defines page metadata for a specific drink
-export async function generateMetadata(
-  {params: {beverageId}}:Props):Promise<Metadata> {
+
+export default async function BeverageEditPage({params: {beverageId}}:Props) {
   // to get the data of a specific drink
   const beverage = await fetchBeverageById(Number(beverageId));
 
   if (!beverage) {
-    return {
-      title: 'Loading...'
-    };
-  }
-
-  return {
-    // defining meta title of page
-    title: beverage.title,
-  };
-};
-
-export default async function BeveragePage({params: {beverageId}}:Props) {
-  // to get the data of a specific drink
-  const beverage = await fetchBeverageById(Number(beverageId));
-
-  if (!beverage) {
-    return <div>Такого напою не знайдено...</div>;
+    notFound();
   }
 
   return (
     <Container>
-      <Typography variant="h2" className={styles.header}>
+      <Typography variant="h2">
         Обраний напій:
       </Typography>
       {/* Інформація про напій */}
