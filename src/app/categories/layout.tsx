@@ -2,7 +2,7 @@
 // MUI components
 import Box from '@mui/material/Box';
 // views (design) elements
-import CategoriesHeader from '@/views/Categories/CategoriesHeader';
+import CategoriesBottomNavigation from '@/views/Categories/CategoriesBottomNavigation';
 
 export default function CategoriesLayout({
   children,
@@ -10,12 +10,11 @@ export default function CategoriesLayout({
 }) {
   return (
     <Box>
-	  <CategoriesHeader />
-      <section>
-        <h1>Категорії товарів.</h1>
+      <Box component="section" sx={{ mb: 6 }}>
         {/*  */}
         {children}
-      </section>
+      </Box>
+      <CategoriesBottomNavigation />
 	  </Box>
   );
 }

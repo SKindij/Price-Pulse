@@ -9,7 +9,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Typography variant="h1">
-        Твій помічник у виборі товарів з найкращою ціною, рецептів та коктейлів.
+        Ваш помічник у виборі товарів з найкращою ціною.
+      </Typography>
+      <Typography variant="h2">
+        А також до вашої уваги добірки рецептів та коктейлів.
       </Typography>
       {/*  */}
       <Grid container spacing={2} className={styles.gridContainer}>
