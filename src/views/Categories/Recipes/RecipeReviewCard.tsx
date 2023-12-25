@@ -1,4 +1,4 @@
-// @/views/Categories/RecipeReviewCard.tsx
+// @/views/Categories/Recipes/RecipeReviewCard.tsx
 'use client';
 import * as React from 'react';
 import { styled } from '@mui/material/styles';

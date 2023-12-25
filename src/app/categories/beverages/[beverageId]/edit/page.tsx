@@ -1,4 +1,6 @@
 // @/app/categories/beverages/[beverageId]/edit/page.tsx
+// import DrinkEditForm from '@/app/ui/invoices/edit-form';
+
 import styles from './page.module.css';
 import { Metadata } from 'next';
 import { fetchBeverageById } from '@/services/get-data';
@@ -6,7 +8,7 @@ import { fetchBeverageById } from '@/services/get-data';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-import BeverageCard from '@/views/Categories/BeverageCard';
+import BeverageCard from '@/views/Categories/Beverages/BeverageCard';
 
 type Props = {
   params:{ // only property that is an object

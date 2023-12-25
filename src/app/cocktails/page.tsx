@@ -1,6 +1,6 @@
 // @path: @/app/cocktails/page.tsx
 import Container from '@mui/material/Container';
-import CocktailsCardGrid from '@/views/Categories/CocktailsCardGrid';
+import CocktailsCardGrid from '@/views/Categories/Coctails/CocktailsCardGrid';
 
 export default function CocktailsPage() {
   return (

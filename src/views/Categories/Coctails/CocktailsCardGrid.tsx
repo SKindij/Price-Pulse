@@ -1,7 +1,7 @@
-// @/views/Categories/CocktailsCardGrid.tsx
+// @/views/Categories/Coctails/CocktailsCardGrid.tsx
 import Grid from '@mui/material/Grid';
 
-import CoctailReviewCard from '@/views/Categories/CoctailReviewCard';
+import CoctailReviewCard from '@/views/Categories/Coctails/CoctailReviewCard';
 
 import { cocktailsData } from '@/seeder/placeholder-data';
 

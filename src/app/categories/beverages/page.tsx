@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 import Container from '@mui/material/Container';
-import BeveragesCardGrid from '@/views/Categories/BeveragesCardGrid';
+import BeveragesCardGrid from '@/views/Categories/Beverages/BeveragesCardGrid';
 
 export default function BeveragesPage() {
   return (

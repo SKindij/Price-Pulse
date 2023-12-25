@@ -1,4 +1,4 @@
-// @/views/Categories/BeverageCardTable.tsx
+// @/views/Categories/Beverages/BeverageCardTable.tsx
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';

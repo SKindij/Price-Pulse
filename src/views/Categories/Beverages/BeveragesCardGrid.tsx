@@ -1,7 +1,7 @@
-// @/views/Categories/BeveragesCardGrid.tsx
+// @/views/Categories/Beverages/BeveragesCardGrid.tsx
 import Grid from '@mui/material/Grid';
 
-import BeverageCard from '@/views/Categories/BeverageCard';
+import BeverageCard from '@/views/Categories/Beverages/BeverageCard';
 
 import { beveragesData } from '@/seeder/placeholder-data';
 

@@ -1,4 +1,4 @@
-// @/views/Categories/BeverageCard.tsx
+// @/views/Categories/Beverages/BeverageCard.tsx
 import Image from 'next/image';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -14,7 +14,7 @@ import Typography from '@mui/material/Typography';
 import { purple } from '@mui/material/colors';
 
 import {IBeverage} from '@/models/interfaces';
-import BeverageCardTable from '@/views/Categories/BeverageCardTable';
+import BeverageCardTable from '@/views/Categories/Beverages/BeverageCardTable';
 
 type BeverageCardProps = {
   beverage:IBeverage;

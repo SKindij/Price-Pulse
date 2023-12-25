@@ -1,4 +1,4 @@
-// @/views/Categories/CoctailReviewCard.tsx
+// @/views/Categories/Coctails/CoctailReviewCard.tsx
 'use client';
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
