@@ -1,18 +1,16 @@
 // @/app/categories/beverages/[beverageId]/edit/page.tsx
 import { notFound } from 'next/navigation';
-// import DrinkEditForm from '@/views/Categories/Beverages/DrinkEditForm';
-import BreadCrumbs from '@/views/Categories/CategoriesBreadCrumbs';
 
 import Container from '@mui/material/Container';
 
-import BeverageCard from '@/views/Categories/Beverages/BeverageCard';
-
+// import DrinkEditForm from '@/views/Categories/Beverages/DrinkEditForm';
+import BreadCrumbs from '@/views/Categories/CategoriesBreadCrumbs';
 // icons for breadcrumbs elements
 import HomeIcon from '@mui/icons-material/Home';
 import LocalBarIcon from '@mui/icons-material/LocalBar';
 import GrainIcon from '@mui/icons-material/Grain';
 
-
+import BeverageCard from '@/views/Categories/Beverages/BeverageCard';
 
 // get information from the database
 import { fetchBeverageById } from '@/services/get-data';

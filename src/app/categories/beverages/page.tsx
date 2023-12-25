@@ -10,14 +10,14 @@ export default function BeveragesPage() {
       <section>
         <h1>Напої</h1>
         {/*  */}
+        <nav>
+          <Link href="/categories/beverages/create">Додати напій</Link>
+        </nav>
+        {/*  */}
         <p>Порівнюємо ціни різних напоїв</p>
         <Container>
           <BeveragesCardGrid />
         </Container>
-        {/*  */}
-        <nav>
-          <Link href="/categories/beverages/create">Додати напій</Link>
-        </nav>
       </section>
     </>
   );
