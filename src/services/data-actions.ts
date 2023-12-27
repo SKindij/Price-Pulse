@@ -29,14 +29,17 @@ const CreateBeverage = FormSchema.omit({ id:true, date:true });
 // adds data about the new beverage to the database
 export async function createBeverage(formData:FormData) {
   // сheck for data availability
-  if (
-    !formData.get('country') ||
-    !formData.get('category') ||
-    !formData.get('description')
-  ) {
-    console.error('Some required fields are missing.');
+  if ( !formData.get('country') ) {
+    console.error('country field is missing');
+    return;
+  } else if ( !formData.get('category') ) {
+    console.error('category field is missing');
+    return;
+  } else if ( !formData.get('description') ) {
+    console.error('description field is missing');
     return;
   }
+
   // extract data after validation
   const {
     country, category, title, description,

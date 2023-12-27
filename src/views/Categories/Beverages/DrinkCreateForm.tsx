@@ -1,6 +1,7 @@
 // @/views/Categories/Beverages/DrinkCreateForm
 'use client';
 import Link from 'next/link';
+import { useState } from 'react';
 // field elements for the form
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
@@ -15,6 +16,10 @@ interface DrinkCreateFormProps {
 }
 
 export default function DrinkCreateForm({ countries, categories }:DrinkCreateFormProps) {
+  const [selectedCountry, setSelectedCountry] = useState<null | string>(null);
+  const [selectedCategory, setSelectedCategory] = useState<null | string>(null);
+
+
   return (
     <form action={createBeverage}>
       <Stack sx={{ width: 300 }}
@@ -23,6 +28,13 @@ export default function DrinkCreateForm({ countries, categories }:DrinkCreateFor
 	      {/* Поле форми для вибору країни виробництва напою */}
         <Autocomplete id="countries-select"
           options={countries}
+          value={selectedCountry}
+          onChange={(event:any, newCountry:string|null) => {
+            if (newCountry !== null) {
+              setSelectedCountry(newCountry);
+              console.log(`country: ${selectedCountry}`);
+            }
+          }}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -33,6 +45,13 @@ export default function DrinkCreateForm({ countries, categories }:DrinkCreateFor
         {/* Поле форми для вибору категорії напою */}
 	      <Autocomplete id="categories-select"
           options={categories}
+          value={selectedCategory}
+          onChange={(event, newCategory) => {
+            if (newCategory !== null) {
+              setSelectedCategory(newCategory);
+              console.log(`category: ${selectedCategory}`);
+            }
+          }}
           renderInput={(params) => (
             <TextField
               {...params}
