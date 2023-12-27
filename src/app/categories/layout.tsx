@@ -9,7 +9,7 @@ export default function CategoriesLayout({
 }:{ children:React.ReactNode;
 }) {
   return (
-    <Box>
+    <Box sx={{ position: 'relative' }}>
       <Box component="section" sx={{ mb: 6 }}>
         {/*  */}
         {children}
