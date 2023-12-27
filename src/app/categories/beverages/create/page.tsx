@@ -29,9 +29,9 @@ export default async function CreateBeveragePage() {
       <p>Оберіть параметри напою.</p>
       {/*  */}
       <DrinkCreateForm
-     	countries={countries}
+     	  countries={countries}
         categories={categories}
-	  />
+	    />
     </Container>
   );
 }
