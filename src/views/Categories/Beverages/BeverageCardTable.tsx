@@ -30,7 +30,7 @@ const BeverageCardTable:React.FC<BeverageCardTableProps> = ({ prices }) => {
             >
               <TableCell component="th" scope="row">{chain}</TableCell>
               <TableCell align="right">{priceInfo.price}</TableCell>
-              <TableCell align="right">{priceInfo.lastUpdated.toLocaleDateString()}</TableCell>
+              <TableCell align="right">{priceInfo.lastUpdated.toLocaleDateString('uk-UA')}</TableCell>
             </TableRow>
           ))}
         </TableBody>

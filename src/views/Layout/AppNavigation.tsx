@@ -41,9 +41,13 @@ const MenuItems = [
 ];
 const PlaceholderLinks = [
   { label: 'About', href: '/about', icon: <InfoIcon /> },
-  { label: 'LogIn', href: '/login', icon: <LoginIcon /> },
+  { label: 'LogIn', href: '/auth/signin', icon: <LoginIcon /> },
 ];
 const UserSettings = ['Profile', 'Logout'];
+const UserSettingsLinks = [
+  { label: 'Profile', href: '/profile' },
+  { label: 'Logout', href: '/' }
+];
 
 const AppNavigation:React.FC = () => {
   const theme = useTheme();

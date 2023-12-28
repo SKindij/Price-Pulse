@@ -1,12 +1,18 @@
 // @/views/Categories/Beverages/DrinkCreateForm
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useFormState } from 'react-dom';
 // field elements for the form
 import Stack from '@mui/material/Stack';
-import Autocomplete from '@mui/material/Autocomplete';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
-import { Button } from '@mui/material';
+import FormHelperText from '@mui/material/FormHelperText';
+import Divider from '@mui/material/Divider';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Button from '@mui/material/Button';
 // put information to the database
 import { createBeverage } from '@/services/data-actions';
 
@@ -16,88 +22,87 @@ interface DrinkCreateFormProps {
 }
 
 export default function DrinkCreateForm({ countries, categories }:DrinkCreateFormProps) {
-  const [selectedCountry, setSelectedCountry] = useState<null | string>(null);
-  const [selectedCategory, setSelectedCategory] = useState<null | string>(null);
-
+  //
 
   return (
     <form action={createBeverage}>
       <Stack sx={{ width: 300 }}
         spacing={{ xs: 1, sm: 2, md: 3 }}
       >
-	      {/* Поле форми для вибору країни виробництва напою */}
-        <Autocomplete id="countries-select"
-          options={countries}
-          value={selectedCountry}
-          onChange={(event:any, newCountry:string|null) => {
-            if (newCountry !== null) {
-              setSelectedCountry(newCountry);
-              console.log(`country: ${selectedCountry}`);
-            }
-          }}
-          renderInput={(params) => (
-            <TextField
-              {...params}
-              label="Виберіть країну виробництва"
-            />
-          )}
-        />
+	  <Divider>Оберіть параметри напою.</Divider>
+	  {/* Поле форми для вибору країни виробництва напою */}
+	  <FormControl required size="small">
+	    <InputLabel id="country-label">країна виробництва</InputLabel>
+          <Select name="country"
+		  labelId="country-label" id="country"
+          >
+            <MenuItem value="" disabled><em>перелік країн</em></MenuItem>
+            {countries.map( (country, index) => (
+              <MenuItem key={index} value={country}>{country}</MenuItem>
+            ) )}
+          </Select>
+	    <FormHelperText>* Required</FormHelperText>
+	  </FormControl>
+
         {/* Поле форми для вибору категорії напою */}
-	      <Autocomplete id="categories-select"
-          options={categories}
-          value={selectedCategory}
-          onChange={(event, newCategory) => {
-            if (newCategory !== null) {
-              setSelectedCategory(newCategory);
-              console.log(`category: ${selectedCategory}`);
-            }
-          }}
-          renderInput={(params) => (
-            <TextField
-              {...params}
-              label="Виберіть категорію напою"
-            />
-          )}
-        />
+	  <FormControl required size="small">
+	    <InputLabel id="category-label">категорія напою</InputLabel>
+          <Select name="category"
+		  labelId="category-label" id="category"
+          >
+            <MenuItem value="" disabled><em>перелік категорій</em></MenuItem>
+            {categories.map( (category, index) => (
+              <MenuItem key={index} value={category}>{category}</MenuItem>
+            ) )}
+          </Select>
+	    <FormHelperText>* Required</FormHelperText>
+	  </FormControl>
+
         {/* Поле форми для введення назви напою */}
-	      <TextField type="text"
+	  <TextField type="text" color="secondary" size="small"
           id="title" name="title"
-          label="Введіть найменування напою"
+          label="* Введіть найменування напою"
           placeholder="Назва місткістьL"
+          helperText="* Please enter beverige title"
         />
-	      {/* Поле форми для введення ціни Auchan */}
-	      <TextField type="number"
+	  {/* ----- ЦІНИ МАГАЗИНІВ ----- */}
+        <Divider>поля вводу цін магазинів</Divider>
+	  <TextField type="number" size="small"
           id="priceAuchan" name="priceAuchan"
-          label="Введіть ціну магазину Auchan"
-          placeholder="Ціна Ашан в ГРН"
+          label="Auchan"
+          placeholder="ГРН"
         />
-	      {/* Поле форми для введення ціни Novus */}
-        <TextField type="number"
+        <TextField type="number" size="small"
           id="priceNovus" name="priceNovus"
-          label="Введіть ціну магазину Novus"
-          placeholder="Ціна Новус в ГРН"
+          label="Novus"
+          placeholder="ГРН"
         />
-	      {/* Поле форми для введення ціни Silpo */}
-	      <TextField type="number"
+	  <TextField type="number" size="small"
           id="priceSilpo" name="priceSilpo"
-          label="Введіть ціну магазину Silpo"
-          placeholder="Ціна Сільпо в ГРН"
+          label="Silpo"
+          placeholder="ГРН"
         />
-	      {/* Поле форми для введення ціни ATB */}
-	      <TextField type="number"
+	  <TextField type="number" size="small"
           id="priceATB" name="priceATB"
-          label="Введіть ціну магазину ATB"
-          placeholder="Ціна АТБ в ГРН"
+          label="ATB"
+          placeholder="ГРН"
+          helperText="* якщо немає, то залишаємо поле пустим"
         />
-        {/* Поле форми для введення опису напою */}
-	      <TextField type="text"
+	  {/* ----- ОПИС НАПОЮ ----- */}
+        <Divider>поле для опису напою</Divider>
+	  <TextField type="text" color="secondary" size="small"
           id="description" name="description"
-          label="Введіть короткий опис напою"
-          placeholder="Напишіть щось про цей напій"
+          label="Напишіть щось про цей напій"
+          defaultValue="..."
         />
-        <Link href="/categories/beverages">Cancel</Link>
-        <Button type="submit">Create Drink</Button>
-      </Stack>
+	  {/* ----- ФОТО ПЛЯШКИ ----- */}
+	  <Divider>форма для завантаження фото</Divider>
+
+        <Link href="/categories/beverages">
+	    <Button variant="outlined">Cancel</Button>
+	  </Link>
+        <Button type="submit" variant="outlined" color="secondary">Create Drink</Button>
+	  </Stack>
     </form>
   );
 }
