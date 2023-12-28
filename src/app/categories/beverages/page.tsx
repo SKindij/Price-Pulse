@@ -7,21 +7,19 @@ import BeveragesCardGrid from '@/views/Categories/Beverages/BeveragesCardGrid';
 
 export default function BeveragesPage() {
   return (
-    <>
-      <section>
-        <h1>Напої</h1>
+    <section>
+      <h1>Напої</h1>
 		    {/*  */}
-        <nav>
-          <Link href="/categories/beverages/create">
+      <nav>
+        <Link href="/categories/beverages/create">
 		    <Button color="secondary">Додати напій</Button>
 		  </Link>
-        </nav>
-        {/*  */}
-        <p>Порівнюємо ціни різних напоїв</p>
-        <Container>
-          <BeveragesCardGrid />
-        </Container>
-      </section>
-    </>
+      </nav>
+      {/*  */}
+      <p>Порівнюємо ціни різних напоїв</p>
+      <Container>
+        <BeveragesCardGrid />
+      </Container>
+    </section>
   );
 }
