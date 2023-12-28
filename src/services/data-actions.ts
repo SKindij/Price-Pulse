@@ -28,18 +28,6 @@ const FormSchema = z.object({
 const CreateBeverage = FormSchema.omit({ id:true, date:true });
 // adds data about the new beverage to the database
 export async function createBeverage(formData:FormData) {
-  // сheck for data availability
-  if ( !formData.get('country') ) {
-    console.error('country field is missing');
-    return;
-  } else if ( !formData.get('category') ) {
-    console.error('category field is missing');
-    return;
-  } else if ( !formData.get('description') ) {
-    console.error('description field is missing');
-    return;
-  }
-
   // extract data after validation
   const {
     country, category, title, description,
@@ -61,10 +49,11 @@ export async function createBeverage(formData:FormData) {
   console.log(`category: ${category}`);
   console.log('--- beverage ---');
   console.log(`title: ${title}`);
-  console.log(`priceAuchan: ${priceAuchan} on ${date}.`);
-  console.log(`priceNovus: ${priceNovus} on ${date}.`);
-  console.log(`priceSilpo: ${priceSilpo} on ${date}.`);
-  console.log(`priceATB: ${priceATB} on ${date}.`);
+  // Log data with 'none' if price is 0
+  console.log(`priceAuchan: ${priceAuchan === 0 ? 'none' : priceAuchan} on ${date}.`);
+  console.log(`priceNovus: ${priceNovus === 0 ? 'none' : priceNovus} on ${date}.`);
+  console.log(`priceSilpo: ${priceSilpo === 0 ? 'none' : priceSilpo} on ${date}.`);
+  console.log(`priceATB: ${priceATB === 0 ? 'none' : priceATB} on ${date}.`);
   console.log('--- description ---');
   console.log(`text: ${description}`);
   // Simulate database operations
@@ -102,8 +91,6 @@ export async function createBeverage(formData:FormData) {
 
 /* ----- RECIPES ----- */
 // adds data about the new recipe to the database
-
-
 
 
 

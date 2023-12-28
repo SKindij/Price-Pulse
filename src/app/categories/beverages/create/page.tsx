@@ -1,6 +1,5 @@
 // @/app/categories/beverages/create/page.tsx
 import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
 import DrinkCreateForm from '@/views/Categories/Beverages/DrinkCreateForm';
 import BreadCrumbs from '@/views/Categories/CategoriesBreadCrumbs';
 // icons for breadcrumbs elements
@@ -26,15 +25,12 @@ export default async function CreateBeveragePage() {
       />
       {/* Інформація про напій */}
       <h1>Створення картки нового напою.</h1>
-      {/*  */}
-      <p>Оберіть параметри напою.</p>
-      {/*  */}
-      <Box>
-        <DrinkCreateForm
-     	    countries={countries}
-          categories={categories}
-	      />
-      </Box>
+	  {/*  */}
+	  <DrinkCreateForm
+     	countries={countries}
+		  categories={categories}
+	  />
+
     </Container>
   );
 }
