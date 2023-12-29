@@ -4,14 +4,23 @@ const nextConfig = {
   env: {
     DRAWER_WIDTH: '200',
     API_URL: "http://localhost:3000",
-    DB_LOCAL_URI: "mongodb://127.0.0.1:27017/pricepulse",
+    DB_LOCAL_URI: "",
     DB_URI: "",
   },
   reactStrictMode: true,
   // settings for optimized image loading
   images: {
     // trusted domains for image uploads
-    domains: ['source.unsplash.com', 'res.cloudinary.com', 'firebasestorage.googleapis.com', '192.168.1.3'],
+	remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "your-website.com",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
+      },
+    ],
   } 
 }
 
