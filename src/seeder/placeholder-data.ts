@@ -121,7 +121,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.USA,
     imageUrl: '/images/beverages/Jim-Beam-Rye-07.webp',
-    description: ''
+    description: 'Аромат житнього хліба, чорного перцю з нотами дині, горіхів та деревної смоли. Карамельно-ванільний смак з відтінками дуба.'
   },
   {
     beverageId: 1008,
@@ -138,7 +138,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.USA,
     imageUrl: '/images/beverages/Jim-Beam-White-4Y-07.webp',
-    description: '51% сусла із кукурудзи.'
+    description: 'Аромат з деревними тонами та відтінками лугових квітів. Смак фруктів, карамелі та ванілі.'
   },
   {
     beverageId: 1009,
@@ -189,7 +189,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.USA,
     imageUrl: '/images/beverages/Jim-Beam-Red-Stag-Cherry-10.webp',
-    description: ''
+    description: 'Аромат черешня, ваніль, шоколад. Солодкуватий із пряним післясмаком.'
   },
   {
     beverageId: 1012,
@@ -206,7 +206,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.USA,
     imageUrl: '/images/beverages/Jim-Beam-White-4Y-07.webp',
-    description: '51% сусла із кукурудзи.'
+    description: 'Аромат з деревними тонами та відтінками лугових квітів. Смак фруктів, карамелі та ванілі.'
   },
   /* --- WHISKEY --- */
   {
@@ -224,7 +224,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Ireland,
     imageUrl: '/images/beverages/Jameson-Stout-07.webp',
-    description: ''
+    description: 'Вершковий смак з нотами какао-бобів та гвоздики. Аромати смажених кавових зерен, шоколаду, зелених яблук та соковитої дині.'
   },
   {
     beverageId: 1014,
@@ -241,7 +241,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Ireland,
     imageUrl: '/images/beverages/jameson-07.webp',
-    description: 'Blended.'
+    description: 'Купажований (Blended) смак пряний і солодкий.'
   },
   {
     beverageId: 1015,
@@ -258,7 +258,7 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Britain,
     imageUrl: '/images/beverages/Ballantines-Finest-07.webp',
-    description: 'Blended.'
+    description: 'Коричневий цукор поряд з нотами ванілі та сухофруктів. Аромат апельсинової шкірки з відтінками карамелі.'
   },
   {
     beverageId: 1016,
@@ -275,7 +275,7 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Britain,
     imageUrl: '/images/beverages/Johnnie-Walker-Blonde-07.webp',
-    description: ''
+    description: 'Аромат іриски, крем-карамелі та свіжих ягід. Смак із вершковою текстурою, ванільно-яблучними тонами.'
   },
   {
     beverageId: 1017,
@@ -292,7 +292,7 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Britain,
     imageUrl: '/images/beverages/johnnie-walker-red-label-07.webp',
-    description: 'Blended.'
+    description: 'Аромат цитрусів із нотами меду, ароматних трав, спецій. Смак чорного перцю з анісом.'
   },
   {
     beverageId: 1018,
@@ -309,7 +309,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.Scotland,
     imageUrl: '/images/beverages/Hankey-Bannister-07.webp',
-    description: 'Blended.'
+    description: 'Ванільний аромат. У фруктовому смаку відчувається мигдаль і прянощі.'
   },
   {
     beverageId: 1019,
@@ -326,7 +326,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Ireland,
     imageUrl: '/images/beverages/jameson-10.webp',
-    description: 'Blended.'
+    description: 'Купажований (Blended) смак пряний і солодкий.'
   },
   {
     beverageId: 1020,
@@ -343,7 +343,7 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Britain,
     imageUrl: '/images/beverages/Ballantines-Finest-10.webp',
-    description: 'Blended.'
+    description: 'Коричневий цукор поряд з нотами ванілі та сухофруктів. Аромат апельсинової шкірки з відтінками карамелі.'
   },
   {
     beverageId: 1021,
@@ -360,7 +360,7 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Britain,
     imageUrl: '/images/beverages/johnnie-walker-red-label-10.webp',
-    description: 'Blended.'
+    description: 'Аромат цитрусів із нотами меду, ароматних трав, спецій. Смак чорного перцю з анісом.'
   },
   {
     beverageId: 1022,
@@ -377,7 +377,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.Scotland,
     imageUrl: '/images/beverages/Hankey-Bannister-10.webp',
-    description: 'Blended.'
+    description: 'Ванільний аромат. У фруктовому смаку відчувається мигдаль і прянощі.'
   },
   /* --- RUM --- */
   {
@@ -548,7 +548,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.Jamaica,
     imageUrl: '/images/beverages/Appleton-Estate-Signature-07.webp',
-    description: ''
+    description: 'Аромат сливи та спецій із тонами сухофруктів. У смаку чорний шоколад та смажені горіхи.'
   },
   {
     beverageId: 1033,
@@ -617,7 +617,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.Britain,
     imageUrl: '/images/beverages/Gordons-Pink-07.webp',
-    description: ''
+    description: 'Малина, полуниця та червона смородина, ялівцеві акценти.'
   },
   {
     beverageId: 1037,
@@ -634,7 +634,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.Britain,
     imageUrl: '/images/beverages/Gordons-Sicilian-Lemon-07.webp',
-    description: ''
+    description: 'Аромат сицилійських лимонів із хвойними акцентами. Смак із тонами ялівцю.'
   },
   /* --- PORTWEIN --- */
   {
@@ -704,7 +704,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Ukraine,
     imageUrl: '/images/beverages/Colonist-Бісер-07.webp',
-    description: ''
+    description: 'Аромат вершків, ванілі та хлібної скоринки. Смак зелених яблук.'
   },
   {
     beverageId: 1042,
@@ -721,7 +721,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Italy,
     imageUrl: '/images/beverages/Martini-Prosecco-07.webp',
-    description: ''
+    description: 'Смак фруктових нот. Аромат зелених яблук, чебрецю, персика.'
   },
   {
     beverageId: 1043,
@@ -756,7 +756,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Mexico,
     imageUrl: '/images/beverages/Espolon-Blanco-07.webp',
-    description: ''
+    description: 'Аромат квітковий з нотами агави та чорного перцю. Смак лайма, цедри цитрусових і печеного ананаса.'
   },
   {
     beverageId: 1045,
@@ -773,7 +773,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Mexico,
     imageUrl: '/images/beverages/Espolon-Reposado-07.webp',
-    description: ''
+    description: 'Аромат карамелі, банана та агави. Смак тропічних плодів, квітів, карамелі та ванілі.'
   },
   {
     beverageId: 1046,
@@ -790,7 +790,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.Mexico,
     imageUrl: '/images/beverages/Jose-Cuervo-Silver-07.webp',
-    description: ''
+    description: 'Аромат карамелі та суміші трав з перцевою ноткою. Смак смаженої агави, сандалового дерева із чорним перцем.'
   },
   {
     beverageId: 1047,
@@ -807,7 +807,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.Mexico,
     imageUrl: '/images/beverages/Jose-Cuervo-Especial-07.webp',
-    description: ''
+    description: 'Аромат агави із відтінками дуба. Смак дуба та ванілі.'
   },
   /* --- TINCTURE --- */
   {
@@ -825,7 +825,7 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Germany,
     imageUrl: '/images/beverages/Jagermeister-07.webp',
-    description: ''
+    description: 'Смак: з легкою гіркотою, збалансований насолодою. Аромат гірських трав, лакриці, гвоздики та кориці.'
   },
   {
     beverageId: 1049,
@@ -842,7 +842,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.CzechRepublic,
     imageUrl: '/images/beverages/Becherovka-07.webp',
-    description: ''
+    description: 'Понад 20 видів лікарських трав та спецій. Смак солодкий та гіркий одночасно.'
   },
   {
     beverageId: 1050,
@@ -859,7 +859,7 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Germany,
     imageUrl: '/images/beverages/Jagermeister-10.webp',
-    description: ''
+    description: 'Смак: з легкою гіркотою, збалансований насолодою. Аромат гірських трав, лакриці, гвоздики та кориці.'
   },
   {
     beverageId: 1051,
@@ -876,7 +876,7 @@ const beveragesData:IBeverage[] = [
     ratings: 3,
     country: Country.CzechRepublic,
     imageUrl: '/images/beverages/Becherovka-10.webp',
-    description: ''
+    description: 'Понад 20 видів лікарських трав та спецій. Смак солодкий та гіркий одночасно.'
   },
   /* --- HORILKA --- */
   {
@@ -894,7 +894,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Finland,
     imageUrl: '/images/beverages/Koskenkorva-07.webp',
-    description: ''
+    description: 'Аромат з легкими ячмінними нотками. Смак із лакричними відтінками.'
   },
   {
     beverageId: 1053,
@@ -911,7 +911,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Finland,
     imageUrl: '/images/beverages/Koskenkorva-Lemon-Lime-07.webp',
-    description: ''
+    description: 'Смак із нотами трав та лимону. Аромат лайма.'
   },
   {
     beverageId: 1054,
@@ -928,7 +928,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Finland,
     imageUrl: '/images/beverages/Koskenkorva-Sauna-Barrel-07.webp',
-    description: ''
+    description: 'Аромат із відтінками дерева, смоли та нотками диму. Присмак бурбону, смоли та диму.'
   },
   {
     beverageId: 1055,
@@ -945,7 +945,7 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Sweden,
     imageUrl: '/images/beverages/Absolut-Mandarin-07.webp',
-    description: ''
+    description: 'Аромат мандарина. Смак апельсинової цедри.'
   },
   {
     beverageId: 1056,
@@ -962,7 +962,7 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Sweden,
     imageUrl: '/images/beverages/Absolut-Pears-07.webp',
-    description: ''
+    description: 'Смак груші.'
   },
   {
     beverageId: 1057,
@@ -979,27 +979,10 @@ const beveragesData:IBeverage[] = [
     ratings: 2,
     country: Country.Finland,
     imageUrl: '/images/beverages/Finlandia-07.webp',
-    description: ''
+    description: 'Гладкий смак від добірного ячменю.'
   },
   {
     beverageId: 1058,
-    title: 'Staritsky Levitsky Reserve 0.7L',
-    category: DrinkCategory.Horilka,
-    volume: 0.7,
-    prices: {
-      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.Novus]: { price: 869, lastUpdated: new Date('2023-12-01') },
-      [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
-    },
-    inWish: false,
-    ratings: 5,
-    country: Country.Ukraine,
-    imageUrl: '/images/beverages/Staritsky-Levitsky-Reserve-07.webp',
-    description: ''
-  },
-  {
-    beverageId: 1059,
     title: 'Staritsky Levitsky 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -1013,10 +996,10 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Ukraine,
     imageUrl: '/images/beverages/Staritsky-Levitsky-07.webp',
-    description: ''
+    description: 'Смак пшениці. Аромат із тонкою пряністю.'
   },
   {
-    beverageId: 1060,
+    beverageId: 1059,
     title: 'Staritsky Levitsky Distil №9 0.7L',
     category: DrinkCategory.Horilka,
     volume: 0.7,
@@ -1030,10 +1013,10 @@ const beveragesData:IBeverage[] = [
     ratings: 4,
     country: Country.Ukraine,
     imageUrl: '/images/beverages/Staritsky-Levitsky-Distil-9-07.webp',
-    description: ''
+    description: 'Смак - свіжий, натуральний. Аромат - легкий, чистий.'
   },
   {
-    beverageId: 1061,
+    beverageId: 1060,
     title: 'R.Jelinek hruska 0.5L',
     category: DrinkCategory.Horilka,
     volume: 0.5,
@@ -1047,7 +1030,24 @@ const beveragesData:IBeverage[] = [
     ratings: 2,
     country: Country.CzechRepublic,
     imageUrl: '/images/beverages/R.Jelinek-hruska-05.webp',
-    description: ''
+    description: 'Смак і аромат стиглої груші.'
+  },
+  {
+    beverageId: 1061,
+    title: 'Staritsky Levitsky Reserve 1.0L',
+    category: DrinkCategory.Horilka,
+    volume: 1.0,
+    prices: {
+      [RetailChain.Auchan]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 869, lastUpdated: new Date('2023-12-01') },
+      [RetailChain.Silpo]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+      [RetailChain.ATB]: { price: 'none', lastUpdated: new Date('2023-11-01') },
+    },
+    inWish: false,
+    ratings: 5,
+    country: Country.Ukraine,
+    imageUrl: '/images/beverages/Staritsky-Levitsky-Reserve-07.webp',
+    description: 'Смак пшениці. Аромат із тонкою пряністю.'
   },
   {
     beverageId: 1062,
@@ -1064,7 +1064,7 @@ const beveragesData:IBeverage[] = [
     ratings: 5,
     country: Country.Finland,
     imageUrl: '/images/beverages/Koskenkorva-10.webp',
-    description: ''
+    description: 'Аромат з легкими ячмінними нотками. Смак із лакричними відтінками.'
   },
 ];
 
