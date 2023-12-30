@@ -1102,7 +1102,7 @@ const cocktailsData:ICocktail[] = [
       [CocktailIngredients.WORCESTERSHIRE_SAUCE]: 'до смаку',
       [CocktailIngredients.BLACK_PEPPER]: 'щіпка'
     },
-    instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Перелийте всі інгредієнти в шейкер.','Налийте в келих поверх кубиків льоду.','Прикрашаємо паличкою селери.']
   },
   {
     cocktailID: 3003,
@@ -1274,7 +1274,7 @@ const cocktailsData:ICocktail[] = [
       [CocktailIngredients.LIME_JUICE]: '30 мл',
       [CocktailIngredients.SUGAR_SYRUP]: '10 мл',
     },
-    instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Облямівку охолодженого келиха намажте сіллю (використовуйте сік лайма для прилипання).','Перелийте всі інгредієнти в шейкер і збовтайте.','Процідіть у келих.']
   },
   {
     cocktailID: 3015,
@@ -1288,7 +1288,7 @@ const cocktailsData:ICocktail[] = [
       [CocktailIngredients.MINT_LEAVES]: '8 штук',
       [CocktailIngredients.ANGOSTURA_SUGAR]: '1 ч.л.',
     },
-    instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Перемішати содову і кубик цукру.','Потріть листочки м’яти та додайте їх до бурбону.','Зверху покрийте куполом колотого льоду.']
   },
   {
     cocktailID: 3016,
@@ -1359,14 +1359,14 @@ const cocktailsData:ICocktail[] = [
     title: 'Strawberry-Daiquiri',
     imageUrl: '/images/cocktails/strawberry-daiquiri.jpg',
     alcoholic: true,
-    glassType: GlassType.HIGHBALL,
+    glassType: GlassType.HURRICANE,
     ingredients: {
       [CocktailIngredients.RUM_WHITE]: '60 мл',
       [CocktailIngredients.LIME_JUICE]: '30 мл',
       [CocktailIngredients.RASPBERRY_PUREE]: '45 мл',
       [CocktailIngredients.CRUSHED_ICE]: 'кілька кубиків'
     },
-    instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Додайте всі інгредієнти в блендер.','Змішайте і перелийте в фужер.','Прикрасити полуницею.']
   },
   {
     cocktailID: 3021,
@@ -1394,7 +1394,7 @@ const cocktailsData:ICocktail[] = [
       [CocktailIngredients.GRENADINE_SYRUP]: '15 мл',
       [CocktailIngredients.ORANGE_JUICE]: '90 мл'
     },
-    instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Налийте текілу в склянку поверх кубиків льоду.','Заправляємо апельсиновим соком.','Потопіть гренадин.']
   },
   {
     cocktailID: 3023,
@@ -1409,7 +1409,7 @@ const cocktailsData:ICocktail[] = [
       [CocktailIngredients.LEMON_JUICE]: '30 мл',
       [CocktailIngredients.SUGAR_SYRUP]: '15 мл'
     },
-    instructions: ['Початок ','Середина ','Завершення ']
+    instructions: ['Перелийте всі інгредієнти в шейкер.','Струсіть із яєчним білком.','Прикрасьте шматочками апельсина і вишнею.']
   },
 ];
 
