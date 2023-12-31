@@ -1,7 +1,6 @@
 // @/views/Categories/Beverages/DrinkCreateForm
 'use client';
 import Link from 'next/link';
-import { useFormState } from 'react-dom';
 // field elements for the form
 import Stack from '@mui/material/Stack';
 import FormControl from '@mui/material/FormControl';
@@ -11,7 +10,6 @@ import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import FormHelperText from '@mui/material/FormHelperText';
 import Divider from '@mui/material/Divider';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Button from '@mui/material/Button';
 // put information to the database
 import { createBeverage } from '@/services/data-actions';

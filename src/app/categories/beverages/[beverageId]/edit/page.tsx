@@ -2,8 +2,6 @@
 import { notFound } from 'next/navigation';
 
 import Container from '@mui/material/Container';
-
-// import DrinkEditForm from '@/views/Categories/Beverages/DrinkEditForm';
 import BreadCrumbs from '@/views/Categories/CategoriesBreadCrumbs';
 // icons for breadcrumbs elements
 import HomeIcon from '@mui/icons-material/Home';
