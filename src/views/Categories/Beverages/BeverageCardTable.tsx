@@ -7,6 +7,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
+import { formatDateToLocal, } from '@/services/utils';
+
 import { RetailPrices } from '@/models/types';
 type BeverageCardTableProps = {
   prices:RetailPrices;
@@ -30,7 +32,7 @@ const BeverageCardTable:React.FC<BeverageCardTableProps> = ({ prices }) => {
             >
               <TableCell component="th" scope="row">{chain}</TableCell>
               <TableCell align="right">{priceInfo.price}</TableCell>
-              <TableCell align="right">{priceInfo.lastUpdated.toLocaleDateString('uk-UA')}</TableCell>
+              <TableCell align="right">{formatDateToLocal(priceInfo.lastUpdated)}</TableCell>
             </TableRow>
           ))}
         </TableBody>

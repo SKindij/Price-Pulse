@@ -1,6 +1,6 @@
 // @/views/Categories/Coctails/CoctailReviewCard.tsx
 'use client';
-import * as React from 'react';
+import {useState} from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -39,7 +39,7 @@ const StyledExpandMore = styled((props: ExpandMoreProps) => {
 }));
 
 export default function CoctailReviewCard({ cocktail }:CoctailReviewCardProps) {
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = useState(false);
   const firstCoctailLetter = cocktail.title.charAt(0);
 
   const handleExpandClick = () => {

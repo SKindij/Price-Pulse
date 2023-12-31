@@ -26,7 +26,7 @@ const BeverageCard:React.FC<BeverageCardProps> = ({ beverage }) => {
   const firstBeverageLetter = beverage.title.charAt(0);
 
   return (
-    <Card sx={{ maxWidth: 420, boxShadow: 3, borderRadius: 8 }}>
+    <Card sx={{ boxShadow: 3, borderRadius: 8 }}>
 	  {/*  */}
 	  <CardHeader
         avatar={

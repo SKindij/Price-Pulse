@@ -85,6 +85,7 @@ export async function updateBeverage(id:number, formData:FormData) {
   // get current date in ISO format and separate time from date
   const date = new Date().toISOString().split('T')[0];
   // Log the data
+  console.log(`this id: ${id}`);
   console.log(`update country: ${country}`);
   console.log(`update category: ${category}`);
   console.log('--- beverage ---');
