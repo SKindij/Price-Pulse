@@ -80,25 +80,25 @@ export default function DrinkEditForm({ beverage, countries, categories }:DrinkE
           id="priceAuchan" name="priceAuchan"
           label="Auchan"
           placeholder="ГРН"
-          defaultValue={prices.Auchan}
+          defaultValue={prices.Auchan.price}
         />
         <TextField type="number" size="small"
           id="priceNovus" name="priceNovus"
           label="Novus"
           placeholder="ГРН"
-          defaultValue={prices.Novus}
+          defaultValue={prices.Novus.price}
         />
 	  <TextField type="number" size="small"
           id="priceSilpo" name="priceSilpo"
           label="Silpo"
           placeholder="ГРН"
-          defaultValue={prices.Silpo}
+          defaultValue={prices.Silpo.price}
         />
 	  <TextField type="number" size="small"
           id="priceATB" name="priceATB"
           label="ATB"
           placeholder="ГРН"
-          defaultValue={prices.ATB}
+          defaultValue={prices.ATB.price}
           helperText="* якщо немає, то залишаємо поле пустим"
         />
 	  {/* ----- ОПИС НАПОЮ ----- */}
