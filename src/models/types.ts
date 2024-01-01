@@ -9,7 +9,6 @@ export type RetailPrices = {
     lastUpdated:Date;
   };
 };
-
 export type BottleСapacity = 0.5 | 0.7 | 1.0;
 
 // we will use it in cocktails and recipes

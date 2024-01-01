@@ -1,8 +1,6 @@
 // @/models/interfaces.ts
-
 import { RetailPrices, BottleСapacity, IngredientsAndQuantities } from '@/models/types';
 import { Country, DrinkCategory, CocktailIngredients, GlassType, RecipeIngredients } from '@/models/enums';
-
 
 export interface IBeverage {
   beverageId:number;
