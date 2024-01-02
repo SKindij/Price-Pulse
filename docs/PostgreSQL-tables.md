@@ -2,11 +2,11 @@
 
 ### countries
 
-| country_id | country_name | prefix_ean |
+| country_id       | country_name       | prefix_ean        |
+|------------------|--------------------|-------------------|
 |SERIAL PRIMARY KEY|VARCHAR(20) NOT NULL|VARCHAR(7) NOT NULL|
-|------------|--------------|------------|
-|     1      |   Argentina  |    '779'   |
-|     2      |   Armenia    |	'485'    |
+| 1          |   Argentina  |    '779'   |
+| 2          |   Armenia    |	'485'    |
 | 3          | Australia    | '930'      |
 | 4          | Barbados     | '500'      |
 | 5          | Belgium      | '540'      |
@@ -34,6 +34,25 @@
 | 27         | Sweden       | '730-739'  |
 | 28         | Ukraine      | '482'      |
 | 29         | USA          | '000-019'  |
+
+### drink_categories
+
+| Drink_id         | Drink_name       |
+|------------------|------------------|
+|SERIAL PRIMARY KEY|VARCHAR(10) UNIQUE|
+| 1        | absinthe   |
+| 2        | bourbon    |
+| 3        | brandy     |
+| 4        | champagne  |
+| 5        | cider      |
+| 6        | gin        |
+| 7        | horilka    |
+| 8        | liqueur    |
+| 9        | portwein   |
+
+
+
+
 
 
 
