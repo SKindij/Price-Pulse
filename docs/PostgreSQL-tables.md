@@ -49,9 +49,21 @@
 | 7        | horilka    |
 | 8        | liqueur    |
 | 9        | portwein   |
+| 10       | rum        |
+| 11       | tequila    |
+| 12       | tincture   |
+| 13       | whiskey    |
+| 14       | wine       |
 
+### retail_chains
 
-
+| Retail_chain_id  | Retail_chain_name |
+|------------------|-------------------|
+|SERIAL PRIMARY KEY|VARCHAR(10) UNIQUE |
+|        1         |      Auchan       |
+|        2         |      Novus        |
+|        3         |      Silpo        |
+|        4         |     Rozetka       |
 
 
 
