@@ -133,11 +133,11 @@ The clsx function can take any number of arguments, each of which can be an Obje
 
 ### 🔐 dotenv
 
-* npm-site:
-  - version:
-  - install: ``
-  - weekly downloads:
-* home-page:
+* npm-site: https://www.npmjs.com/package/dotenv
+  - version: 16.3.1
+  - install: `npm install dotenv --save`
+  - weekly downloads: 32 000 000
+* home-page: https://github.com/motdotla/dotenv
 
 
 ### 
