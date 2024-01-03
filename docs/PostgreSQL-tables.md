@@ -63,7 +63,8 @@
 |        1         |      Auchan       |
 |        2         |      Novus        |
 |        3         |      Silpo        |
-|        4         |     Rozetka       |
+|        4         |      ATB          |
+|        5         |     Rozetka       |
 
 
 
