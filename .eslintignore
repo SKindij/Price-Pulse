@@ -2,3 +2,5 @@ node_modules
 out
 .next
 next.config.js
+src/seeder/seed.js
+src/seeder/seed-data.js
