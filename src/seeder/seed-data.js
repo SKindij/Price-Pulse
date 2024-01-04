@@ -124,7 +124,6 @@ const drinkCategoriesData = [
 const retailChainsData = [
   'Auchan', 'Novus', 'Silpo', 'ATB', 'Rozetka'
 ]
-
 const beveragesData = [
   /* --- BOURBON --- */
   {
@@ -1307,9 +1306,370 @@ const beveragesData = [
     description: 'Смак з легким натяком на локрицю. Широка хвиля анісових ноток.'
   },
 ];
+const cocktailIngredients = [
+  'Absinthe', 'Angostura Bitters', 'Angostura Sugar', 'Black Pepper',
+  'Blue Curacao', 'Bourbon', 'Campari', 'Champagne', 'Coca Cola',
+  'Cointreau', 'Coconaut Cream', 'Coconaut Liqueur', 'Cranberry Juice',
+  'Egg White', 'Grapefruit Juice', 'Grenadine Syrup', 'Crushed Ice',
+  'Gin', 'Horilka', 'Ice Cubes', 'Irish cream liqueur', 'Lemon Juice',
+  'Lime Juice', 'Lime Wedges', 'Mint Leaves', 'Orange Juice', 'Orgeat Syrup',
+  'Peach Schnapps', 'Pineapple Juice', 'Raspberry puree', 'Dark Rum',
+  'White Rum', 'Salt', 'Sambuca', 'Simple Syrup', 'Soda Water',
+  'Sparkling Water', 'Sprite', 'Strawberry puree', 'Sugar Syrup',
+  'Sweet and Sour Mix', 'Tequila', 'Tomato Juice', 'Triple Sec',
+  'Vermouth', 'White Rum', 'Whiskey', 'Worcestershire Sauce'
+];
+const glassTypes = [
+  'Bodega', 'Cocktail', 'Collins', 'Coupe', 'Gin Goblet', 'Highball',
+  'Hurricane', 'Julep', 'Margarita', 'Martini', 'Old Fashion',
+  'Pint', 'Rocks', 'Snifter', 'Shot', 'Sour', 'Wine',
+];
+const cocktailsData = [
+  {
+    cocktailID: 3001,
+    cocktailTitle: 'Bahama-Mama',
+    imageUrl: '/images/cocktails/bahama-mama.jpg',
+    alcoholic: true,
+    glassTypeID: 13,
+    ingredients: {
+      17: '150 гр',
+      32: '30 мл',
+      31: '15 мл',
+      26: '60 мл',
+      29: '60 мл',
+      16: '3 краплі',
+    },
+    instructions: [
+      'Збивати всі інгредієнти у чаші блендера до отримання однорідної, снігоподібної консистенції.',
+      'Перелити суміш у попередньо охолоджений високий келих.',
+      'Прикрасити часточкою апельсина, ананаса чи коктейльною вишнею.'
+    ]
+  },
+  {
+    cocktailID: 3002,
+    cocktailTitle: 'Bloody-Mary',
+    imageUrl: '/images/cocktails/bloody-mary.jpg',
+    alcoholic: true,
+    glassTypeID: 13,
+    ingredients: {
+      19: '60 мл',
+      43: '120 мл',
+      22: '10 мл',
+      48: 'до смаку',
+      4: 'щіпка'
+    },
+    instructions: ['Перелийте всі інгредієнти в шейкер.','Налийте в келих поверх кубиків льоду.','Прикрашаємо паличкою селери.']
+  },
+  {
+    cocktailID: 3003,
+    cocktailTitle: 'Blue-Hawaii',
+    imageUrl: '/images/cocktails/blue-hawaii.jpg',
+    alcoholic: true,
+    glassTypeID: 7,
+    ingredients: {
+      32: '30 мл',
+      5: '30 мл',
+      11: '30 мл',
+      29: '60 мл',
+      23: '15 мл'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3004,
+    cocktailTitle: 'Blue-Lagoon',
+    imageUrl: '/images/cocktails/blue-lagoon.jpg',
+    alcoholic: true,
+    glassTypeID: 7,
+    ingredients: {
+      19: '30 мл',
+      5: '30 мл',
+      38: '60 мл',
+      29: '60 мл',
+      20: 'декілька'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3005,
+    cocktailTitle: 'Blue-Tahoe',
+    imageUrl: '/images/cocktails/blue-tahoe.jpg',
+    alcoholic: true,
+    glassTypeID: 7,
+    ingredients: {
+      42: '40 мл',
+      23: '20 мл',
+      5: '20 мл',
+      20: '4 шт.',
+      22: '30 мл',
+      8: '60 мл',
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3006,
+    cocktailTitle: 'Caipirinha',
+    imageUrl: '/images/cocktails/caipirinha.jpg',
+    alcoholic: true,
+    glassTypeID: 6,
+    ingredients: {
+      32: '50 мл',
+      17: '2 кубика',
+      23: '30 мл',
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3007,
+    cocktailTitle: 'Cosmopolitan',
+    imageUrl: '/images/cocktails/cosmopolitan.jpg',
+    alcoholic: true,
+    glassTypeID: 10,
+    ingredients: {
+      19: '40 мл',
+      44: '20 мл',
+      23: '20 мл',
+      13: '30 мл'
+    },
+    instructions: ['Початок приготування','Середина приготування','Завершення приготування']
+  },
+  {
+    cocktailID: 3008,
+    cocktailTitle: 'Cuba-Libre',
+    imageUrl: '/images/cocktails/cuba-libre.jpg',
+    alcoholic: true,
+    glassTypeID: 6,
+    ingredients: {
+      31: '50 мл',
+      9: '120 мл',
+      23: '20 мл'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3009,
+    cocktailTitle: 'Dirty-Martini',
+    imageUrl: '/images/cocktails/dirty-martini.jpg',
+    alcoholic: true,
+    glassTypeID: 10,
+    ingredients: {
+      45: '50 мл',
+      18: '50 мл'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3010,
+    cocktailTitle: 'Hiroshima',
+    imageUrl: '/images/cocktails/hiroshima.jpg',
+    alcoholic: true,
+    glassTypeID: 7,
+    ingredients: {
+      34: '15 мл',
+      1: '15 мл',
+      21: '15 мл',
+      16: '15 мл'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3011,
+    cocktailTitle: 'Kamikaze',
+    imageUrl: '/images/cocktails/kamikaze.jpg',
+    alcoholic: true,
+    glassTypeID: 15,
+    ingredients: {
+      19: '30 мл',
+      10: '30 мл',
+      23: '30 мл'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 30012,
+    cocktailTitle: 'Long-Island-Iced-Tea',
+    imageUrl: '/images/cocktails/long-island-iced-tea.jpg',
+    alcoholic: true,
+    glassTypeID: 6,
+    ingredients: {
+      19: '15 мл',
+      32: '15 мл',
+      18: '15 мл',
+      42: '15 мл',
+      10: '15 мл',
+      22: '15 мл',
+      40: '15 мл',
+      9: '150 мл'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3013,
+    cocktailTitle: 'Mai-Tai',
+    imageUrl: '/images/cocktails/mai-tai.jpg',
+    alcoholic: true,
+    glassTypeID: 13,
+    ingredients: {
+      31: '30 мл',
+      10: '15 мл',
+      23: '15 мл',
+      27: '10 мл',
+      17: '100 гр'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3014,
+    cocktailTitle: 'Margarita',
+    imageUrl: '/images/cocktails/margarita.jpg',
+    alcoholic: true,
+    glassTypeID: 4,
+    ingredients: {
+      42: '50 мл',
+      10: '20 мл',
+      23: '30 мл',
+      40: '10 мл',
+    },
+    instructions: ['Облямівку охолодженого келиха намажте сіллю (використовуйте сік лайма для прилипання).','Перелийте всі інгредієнти в шейкер і збовтайте.','Процідіть у келих.']
+  },
+  {
+    cocktailID: 3015,
+    cocktailTitle: 'Mint-Julep',
+    imageUrl: '/images/cocktails/mint-julep.jpg',
+    alcoholic: true,
+    glassTypeID: 13,
+    ingredients: {
+      6: '60 мл',
+      36: '30 мл',
+      25: '8 штук',
+      3: '1 ч.л.',
+    },
+    instructions: ['Перемішати содову і кубик цукру.','Потріть листочки м’яти та додайте їх до бурбону.','Зверху покрийте куполом колотого льоду.']
+  },
+  {
+    cocktailID: 3016,
+    cocktailTitle: 'Mojito',
+    imageUrl: '/images/cocktails/mojito.jpg',
+    alcoholic: true,
+    glassTypeID: 6,
+    ingredients: {
+      32: '60 мл',
+      40: '20 мл',
+      25: '10 штук',
+      36: '120 мл',
+      24: '4 шматочки'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3017,
+    cocktailTitle: 'Pina-Colada',
+    imageUrl: '/images/cocktails/pina-colada.jpg',
+    alcoholic: true,
+    glassTypeID: 7,
+    ingredients: {
+      32: '60 мл',
+      12: '30 мл',
+      23: '30 мл',
+      29: '90 мл',
+      11: '30 мл'
+    },
+    instructions: [
+      'Перелийте всі інгредієнти в шейкер і збовтайте.',
+      'Процідіть у келих ураган або хайбол над кубиками льоду.',
+      'Прикрасьте часточкою ананаса та вишнею.'
+    ]
+  },
+  {
+    cocktailID: 3018,
+    cocktailTitle: 'Salty-Dog',
+    imageUrl: '/images/cocktails/salty-dog.jpg',
+    alcoholic: true,
+    glassTypeID: 13,
+    ingredients: {
+      19: '60 мл',
+      15: '120 мл',
+      33: 'Для посипання',
+      20: 'Декілька штук'
+    },
+    instructions: [
+      'Посипте склянку сіллю  і наповніть її доверху кубиками льоду.',
+      'Влийте горілку і грейпфрутовий сік. Обережно перемішайте.',
+      'Прикрасьте шматочком грейпфрута.'
+    ]
+  },
+  {
+    cocktailID: 3019,
+    cocktailTitle: 'Screwdriver',
+    imageUrl: '/images/cocktails/screwdriver.jpg',
+    alcoholic: true,
+    glassTypeID: 6,
+    ingredients: {
+      19: '60 мл',
+      26: '120 мл'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3020,
+    cocktailTitle: 'Strawberry-Daiquiri',
+    imageUrl: '/images/cocktails/strawberry-daiquiri.jpg',
+    alcoholic: true,
+    glassTypeID: 7,
+    ingredients: {
+      32: '60 мл',
+      23: '30 мл',
+      30: '45 мл',
+      17: 'кілька кубиків'
+    },
+    instructions: ['Додайте всі інгредієнти в блендер.','Змішайте і перелийте в фужер.','Прикрасити полуницею.']
+  },
+  {
+    cocktailID: 3021,
+    cocktailTitle: 'Strawberry-Mojito',
+    imageUrl: '/images/cocktails/strawberry-mojito.jpg',
+    alcoholic: true,
+    glassTypeID: 6,
+    ingredients: {
+      39: '50 мл',
+      32: '60 мл',
+      37: '100 мл',
+      25: '6 шт',
+      24: '2 шт'
+    },
+    instructions: ['Початок ','Середина ','Завершення ']
+  },
+  {
+    cocktailID: 3022,
+    cocktailTitle: 'Tequila-Sunrise',
+    imageUrl: '/images/cocktails/tequila-sunrise.jpg',
+    alcoholic: true,
+    glassTypeID: 6,
+    ingredients: {
+      42: '60 мл',
+      16: '15 мл',
+      26: '90 мл'
+    },
+    instructions: ['Налийте текілу в склянку поверх кубиків льоду.','Заправляємо апельсиновим соком.','Потопіть гренадин.']
+  },
+  {
+    cocktailID: 3023,
+    cocktailTitle: 'Whiskey-Sour',
+    imageUrl: '/images/cocktails/whiskey-sour.jpg',
+    alcoholic: true,
+    glassTypeID: 13,
+    ingredients: {
+      2: '2 краплі',
+      14: '1 шт',
+      6: '60 мл',
+      22: '30 мл',
+      40: '15 мл'
+    },
+    instructions: ['Перелийте всі інгредієнти в шейкер.','Струсіть із яєчним білком.','Прикрасьте шматочками апельсина і вишнею.']
+  },
+];
 
 module.exports = {
-  countriesData, drinkCategoriesData, retailChainsData,
-  beveragesData,
-    
+  countriesData, drinkCategoriesData, retailChainsData, beveragesData,
+  cocktailIngredients, glassTypes, cocktailsData
 };

@@ -3,6 +3,7 @@ const { db } = require('@vercel/postgres');
 const bcrypt = require('bcrypt');
 const {
   countriesData, drinkCategoriesData, retailChainsData,  beveragesData,
+  cocktailIngredients, glassTypes, cocktailsData
 } = require('./seed-data');
 // Insert data into the "countries" table
 async function seedCountries(client) {
@@ -20,6 +21,7 @@ async function seedCountries(client) {
         (country) => client.sql`
         INSERT INTO countries (country_name, prefix_ean)
         VALUES (${country.countryName}, ${country.prefixEAN})
+        ON CONFLICT DO NOTHING;
       `,
       ),
     );
@@ -43,7 +45,8 @@ async function seedCategories(client) {
       drinkCategoriesData.map(
         (category) => client.sql`
         INSERT INTO drink_categories (drink_category)
-        VALUES (${category});
+        VALUES (${category})
+        ON CONFLICT DO NOTHING;
       `,
       ),
     );
@@ -67,7 +70,8 @@ async function seedRetailChains(client) {
       retailChainsData.map(
         (retail) => client.sql`
         INSERT INTO retail_chains (retail_chain_name)
-        VALUES (${retail});
+        VALUES (${retail})
+        ON CONFLICT DO NOTHING;
       `,
       ),
     );
@@ -102,6 +106,7 @@ async function seedBeverages(client) {
           beverage_in_wish, beverage_ratings, country_id, beverage_description, beverage_image_url)
         VALUES (${beverage.beverageId}, ${beverage.title}, ${beverage.category}, ${beverage.volume}, 
           ${beverage.inWish}, ${beverage.ratings}, ${beverage.countryID}, ${beverage.description}, ${beverage.imageUrl})
+          ON CONFLICT (beverage_title) DO NOTHING;
       `,
       ),
     );
@@ -135,6 +140,7 @@ async function seedBeveragePrices(client) {
           text: `
             INSERT INTO beverage_prices (beverage_id, retail_chain_id, price, last_updated)
             VALUES ($1, $2, $3, $4)
+            ON CONFLICT (beverage_id, retail_chain_id) DO NOTHING;
           `,
           values: [beverageId, retailChainId, price, lastUpdated],
         });
@@ -146,14 +152,127 @@ async function seedBeveragePrices(client) {
     throw error;
   }
 }
+// fill in table with ingredients for cocktails
+async function seedCocktailIngredients(client) {
+  try {
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS cocktail_ingredients (
+        ingredient_id SERIAL PRIMARY KEY,
+        ingredient_name VARCHAR(50) UNIQUE
+      )
+    `);
+    console.log('Created "cocktail_ingredients" table');
+    for (const ingredient of cocktailIngredients) {
+      await client.query(
+        'INSERT INTO cocktail_ingredients (ingredient_name) VALUES ($1) ON CONFLICT DO NOTHING',
+        [ingredient]
+      );
+    }
+    console.log('The table has been successfully populated with data.');
+  } catch (err) {
+    console.error('An error occurred while creating a table or filling it with data:', err);
+  }
+}
+// Insert data into the "drink_categories" table
+async function seedGlassTypes(client) {
+  try {
+    const createTable = await client.sql`
+      CREATE TABLE IF NOT EXISTS glass_types (
+        glass_id SERIAL PRIMARY KEY,
+        glass_type VARCHAR(20) NOT NULL UNIQUE
+      );
+    `;
+    console.log('Created "glass_types" table');
+    const insertedTypes = await Promise.all(
+      glassTypes.map(
+        (type) => client.sql`
+        INSERT INTO glass_types (glass_type)
+        VALUES (${type})
+        ON CONFLICT DO NOTHING;
+      `,
+      ),
+    );
+    console.log(`Seeded ${insertedTypes.length} types`);
+  } catch (error) {
+    console.error('Error seeding glass_types:', error);
+    throw error;
+  }
+}
+// Insert data into the "cocktails_data" table
+async function seedCocktails(client) {
+  try {
+    const createTable = await client.sql`
+    CREATE TABLE IF NOT EXISTS cocktails_data (
+      cocktail_id SERIAL PRIMARY KEY,
+      cocktail_title VARCHAR(50) NOT NULL UNIQUE,
+      image_url VARCHAR(120),
+      alcoholic BOOLEAN,
+      glass_type_id SMALLINT REFERENCES glass_types(glass_id),
+      instructions TEXT[]
+    );
+    
+    `;
+    console.log('Created "cocktails_data" table');
+    const insertedCocktails = await Promise.all(
+      cocktailsData.map(
+        (cocktail) => client.sql`
+        INSERT INTO cocktails_data ( cocktail_id, cocktail_title, image_url,
+          alcoholic, glass_type_id, instructions )
+        VALUES (${cocktail.cocktailID}, ${cocktail.cocktailTitle}, ${cocktail.imageUrl},
+          ${cocktail.alcoholic}, ${cocktail.glassTypeID}, ${cocktail.instructions} )
+          ON CONFLICT (cocktail_title) DO NOTHING;
+      `,
+      ),
+    );
+    console.log(`Seeded ${insertedCocktails.length} cocktails`);
+  } catch (error) {
+    console.error('Error seeding Cocktails:', error);
+    throw error;
+  }
+}
+// fill in table with ingredients with volumes
+async function seedIngredientsVolume(client) {
+  try {
+    console.log('Running seedIngredientsVolume function.');
+    const createTable = await client.sql`
+    CREATE TABLE IF NOT EXISTS cocktails_ingredients_volume (
+      cocktail_id SMALLINT REFERENCES cocktails_data(cocktail_id),
+      ingredient_id SMALLINT REFERENCES cocktail_ingredients(ingredient_id),
+      volume VARCHAR(50),
+      PRIMARY KEY (cocktail_id, ingredient_id)
+    );
+    `;
+    console.log('Created "cocktails_ingredients_volume" table');
+    for (const cocktail of cocktailsData) {
+      const { cocktailID, ingredients } = cocktail;
+      for (const ingredientID in ingredients) {
+        const volume = ingredients[ingredientID];
+        await client.sql`
+          INSERT INTO cocktails_ingredients_volume (cocktail_id, ingredient_id, volume)
+          VALUES (${cocktailID}, ${ingredientID}, ${volume})
+          ON CONFLICT DO NOTHING;
+        `;
+      }
+    }
+    console.log('Cocktail ingredients volumes seeded successfully');
+  } catch (error) {
+    console.error('Error seeding cocktail ingredients volumes:', error);
+    throw error;
+  }
+}
 // start the process of initial filling of the database
 async function main() {
+  console.log('Підключаємося до Vercel PosgreSQL...');
   const client = await db.connect();
-  await seedCountries(client);
-  await seedCategories(client);
-  await seedRetailChains(client);
-  await seedBeverages(client);
-  await seedBeveragePrices(client);
+  // await seedCountries(client);
+  // await seedCategories(client);
+  // await seedRetailChains(client);
+  // await seedBeverages(client);
+  // await seedBeveragePrices(client);
+  // await seedCocktailIngredients(client);
+  // await seedGlassTypes(client);
+  // await seedCocktails(client);
+  seedIngredientsVolume(client)
   await client.end();
 }
 main().catch((err) => {
