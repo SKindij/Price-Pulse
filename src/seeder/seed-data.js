@@ -1486,7 +1486,7 @@ const cocktailsData = [
     instructions: ['Початок ','Середина ','Завершення ']
   },
   {
-    cocktailID: 30012,
+    cocktailID: 3012,
     cocktailTitle: 'Long-Island-Iced-Tea',
     imageUrl: '/images/cocktails/long-island-iced-tea.jpg',
     alcoholic: true,

@@ -209,8 +209,7 @@ async function seedCocktails(client) {
       alcoholic BOOLEAN,
       glass_type_id SMALLINT REFERENCES glass_types(glass_id),
       instructions TEXT[]
-    );
-    
+    ); 
     `;
     console.log('Created "cocktails_data" table');
     const insertedCocktails = await Promise.all(
@@ -245,8 +244,14 @@ async function seedIngredientsVolume(client) {
     console.log('Created "cocktails_ingredients_volume" table');
     for (const cocktail of cocktailsData) {
       const { cocktailID, ingredients } = cocktail;
-      for (const ingredientID in ingredients) {
-        const volume = ingredients[ingredientID];
+      // Convert ingredients object to an array of objects
+      const ingredientsArray = Object.entries(ingredients).map(([ingredientID, volume]) => ({
+        ingredientID: parseInt(ingredientID), // Convert to number if needed
+        volume,
+      }));
+      for (const ingredient of ingredientsArray) {
+        const { ingredientID, volume } = ingredient;
+
         await client.sql`
           INSERT INTO cocktails_ingredients_volume (cocktail_id, ingredient_id, volume)
           VALUES (${cocktailID}, ${ingredientID}, ${volume})
@@ -272,7 +277,7 @@ async function main() {
   // await seedCocktailIngredients(client);
   // await seedGlassTypes(client);
   // await seedCocktails(client);
-  seedIngredientsVolume(client)
+  // seedIngredientsVolume(client)
   await client.end();
 }
 main().catch((err) => {
