@@ -160,7 +160,7 @@ const beveragesData = [
     ratings: 5,
     countryID: 29,
     imageUrl: '/images/beverages/Wild-Turkey-Longbranch-07.webp',
-    description: 'Смак з відтінками димних солодощів, червоних яблук і карамелі. '
+    description: 'Смак з відтінками димних солодощів, червоних яблук і карамелі.'
   },
   {
     beverageId: 1003,
@@ -192,7 +192,7 @@ const beveragesData = [
       4: { price: 0, lastUpdated: '2023-11-01' },
       5: { price: 670, lastUpdated: '2024-01-01' },
     },
-    inWish: false,
+    inWish: true,
     ratings: 5,
     countryID: 29,
     imageUrl: '/images/beverages/Wild-Turkey-07.webp',

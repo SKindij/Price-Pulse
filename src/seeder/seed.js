@@ -5,12 +5,12 @@ const {
   countriesData, drinkCategoriesData, retailChainsData,  beveragesData,
   cocktailIngredients, glassTypes, cocktailsData
 } = require('./seed-data');
-// Insert data into the "countries" table
+// ----- "countries" table -----
 async function seedCountries(client) {
   try {
     const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS countries (
-        country_id SERIAL PRIMARY KEY,
+        country_id SMALLSERIAL PRIMARY KEY,
         country_name VARCHAR(20) NOT NULL UNIQUE,
         prefix_ean VARCHAR(7) NOT NULL
       );
@@ -31,13 +31,13 @@ async function seedCountries(client) {
     throw error;
   }
 }
-// Insert data into the "drink_categories" table
+// ----- "drink_categories" table -----
 async function seedCategories(client) {
   try {
     const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS drink_categories (
-        drink_id SERIAL PRIMARY KEY,
-        drink_category VARCHAR(10) NOT NULL UNIQUE
+        drink_id SMALLSERIAL PRIMARY KEY,
+        drink_category VARCHAR(20) NOT NULL UNIQUE
       );
     `;
     console.log('Created "drink_categories" table');
@@ -56,13 +56,13 @@ async function seedCategories(client) {
     throw error;
   }
 }
-// Insert data into the "retail_chains" table
+// ----- "retail_chains" table -----
 async function seedRetailChains(client) {
   try {
     const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS retail_chains (
-        retail_chain_id SERIAL PRIMARY KEY,
-        retail_chain_name VARCHAR(10) NOT NULL UNIQUE
+        retail_chain_id SMALLSERIAL PRIMARY KEY,
+        retail_chain_name VARCHAR(20) NOT NULL UNIQUE
       );
     `;
     console.log('Created "retail_chains" table');
@@ -81,7 +81,7 @@ async function seedRetailChains(client) {
     throw error;
   }
 }
-// Insert data into the "beverages_data" table
+// ----- "beverages_data" table -----
 async function seedBeverages(client) {
   try {
     const createTable = await client.sql`
@@ -157,7 +157,7 @@ async function seedCocktailIngredients(client) {
   try {
     await client.query(`
       CREATE TABLE IF NOT EXISTS cocktail_ingredients (
-        ingredient_id SERIAL PRIMARY KEY,
+        ingredient_id SMALLSERIAL PRIMARY KEY,
         ingredient_name VARCHAR(50) UNIQUE
       )
     `);
@@ -178,7 +178,7 @@ async function seedGlassTypes(client) {
   try {
     const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS glass_types (
-        glass_id SERIAL PRIMARY KEY,
+        glass_id SMALLSERIAL PRIMARY KEY,
         glass_type VARCHAR(20) NOT NULL UNIQUE
       );
     `;
@@ -203,7 +203,7 @@ async function seedCocktails(client) {
   try {
     const createTable = await client.sql`
     CREATE TABLE IF NOT EXISTS cocktails_data (
-      cocktail_id SERIAL PRIMARY KEY,
+      cocktail_id SMALLSERIAL PRIMARY KEY,
       cocktail_title VARCHAR(50) NOT NULL UNIQUE,
       image_url VARCHAR(120),
       alcoholic BOOLEAN,
