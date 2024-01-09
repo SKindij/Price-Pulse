@@ -8,8 +8,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import LocalBarIcon from '@mui/icons-material/LocalBar';
 import GrainIcon from '@mui/icons-material/Grain';
 
-import BeverageCard from '@/views/Categories/Beverages/BeverageCard';
-
 // get information from the database
 import { fetchBeverageById, fetchAllCountries, fetchDrinkCategories } from '@/services/get-data';
 

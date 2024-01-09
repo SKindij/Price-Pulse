@@ -16,3 +16,12 @@ export type IngredientsAndQuantities<E extends string> = {
   [K in E]?:string;
 };
 
+export type CountryData = {
+  country_name:string;
+  country_id?:number;
+  prefix_ean?:string;
+};
+export type CategoriesData = {
+  drink_category:string;
+  drink_id?:number;
+};
