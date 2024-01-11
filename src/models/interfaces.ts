@@ -1,18 +1,25 @@
 // @/models/interfaces.ts
-import { RetailPrices, BottleСapacity, IngredientsAndQuantities } from '@/models/types';
-import { Country, DrinkCategory, CocktailIngredients, GlassType, RecipeIngredients } from '@/models/enums';
+import { CocktailIngredients, GlassType, RecipeIngredients } from '@/models/enums';
+import { CountryType, DrinkCategoryType, BottleСapacity,
+  IngredientsAndQuantities
+} from '@/models/types';
 
 export interface IBeverage {
   beverageId:number;
   title:string;
-  category:DrinkCategory;
+  category:DrinkCategoryType;
   volume:BottleСapacity;
-  prices:RetailPrices;
+  Auchan:number;
+  Novus:number;
+  Silpo:number;
+  ATB:number;
+  Rozetka:number;
   inWish:boolean;
   ratings:number;
-  country:Country;
+  country:[CountryType, string];
   description:string;
   imageUrl?:string;
+  lastUpdated:Date;
 }
 
 export interface ICocktail {
@@ -32,7 +39,3 @@ export interface IRecipe {
   ingredients?:IngredientsAndQuantities<RecipeIngredients>;
   instructions?:string[];
 }
-
-
-
-

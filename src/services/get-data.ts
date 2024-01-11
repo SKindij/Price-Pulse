@@ -3,7 +3,7 @@ import {
   RetailChain, CocktailIngredients, GlassType
 } from '@/models/enums';
 import { IBeverage, ICocktail } from '@/models/interfaces';
-import { CountryData, CategoriesData } from '@/models/types';
+import { CountryData, CategoriesData, RetailPrices } from '@/models/types';
 // we get some static information
 import { beveragesData, cocktailsData } from '@/seeder/placeholder-data';
 
@@ -13,8 +13,70 @@ import { sql } from '@vercel/postgres';
 
 /* ----- BEVERAGES ----- */
 // Function to get all drinks
-export function fetchAllBeverages():IBeverage[] {
-  return beveragesData;
+export async function fetchAllBeverages():Promise<IBeverage[]> {
+  // this prevent response from being cached
+  noStore();
+  try {
+    console.log('Fetching BEVERAGES data...');
+    const beveragesData = await sql<IBeverage>`
+    -- choose the data we need
+      SELECT
+        bd.beverage_id, bd.beverage_title, dc.drink_category,
+        bd.beverage_volume, bd.beverage_in_wish, bd.beverage_ratings,
+        co.country_name, bd.beverage_description, bd.beverage_image_url
+      FROM
+        beverages_data bd
+      -- combine beverages_data table with fields of other tables
+      JOIN
+        countries co ON bd.country_id = co.country_id
+      JOIN
+        drink_categories dc ON bd.category_id = dc.drink_id;
+  `;
+    console.log('Data fetch completed.');
+    // data to IBeverage interface
+    const beverages:IBeverage[] = [];
+    for (const row of beveragesData.rows) {
+      const beverageId = row.beverage_id;
+      const prices:RetailPrices = {};
+
+      // Отримання цін для кожної мережі магазинів
+      const priceResult = await sql<RetailPrices>`
+        SELECT * FROM beverage_prices
+        JOIN retail_chains ON beverage_prices.retail_chain_id = retail_chains.retail_chain_id
+        WHERE beverage_id = $1
+      `, [beverageId];
+
+      priceResult.rows.forEach((priceRow:any) => {
+        prices[priceRow.retail_chain_name] = {
+          price: priceRow.price,
+          lastUpdated: priceRow.last_updated,
+        };
+      });
+
+      const beverage:IBeverage = {
+        beverageId: row.beverage_id,
+        title: row.beverage_title,
+        category: row.drink_category,
+        volume: row.beverage_volume,
+        prices,
+        inWish: row.beverage_in_wish,
+        ratings: row.beverage_ratings,
+        country: row.country_name,
+        imageUrl: row.beverage_image_url,
+        description: row.beverage_description,
+      };
+
+      beverages.push(beverage);
+    }
+    // checking the form of received data
+    console.log(beverages[0]);
+    console.log(beverages[1]);
+    console.log(beverages[2]);
+    return beverages;
+  } catch (error) {
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch beverages data.');
+  }
 }
 
 // Function to get a drink by its id

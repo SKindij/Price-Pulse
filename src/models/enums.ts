@@ -1,11 +1,4 @@
 // @/models/enums.ts
-export enum RetailChain {
-  Auchan = 'Auchan',
-  Novus = 'Novus',
-  Silpo = 'Silpo',
-  ATB = 'ATB',
-  Rozetka = 'Rozetka'
-}
 export enum Country {
   Argentina = 'Argentina',
   Armenia = 'Armenia',
