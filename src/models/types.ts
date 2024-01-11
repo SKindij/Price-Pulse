@@ -14,3 +14,8 @@ export type DrinkCategoryData = {
   categoryID:number;
   categoryName:DrinkCategoryType;
 };
+
+// we will use it in cocktails and recipes
+export type IngredientsAndQuantities<E extends string> = {
+  [K in E]?:string;
+};

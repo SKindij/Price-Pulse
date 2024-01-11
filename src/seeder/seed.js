@@ -10,7 +10,7 @@ async function seedCountries(client) {
   try {
     const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS countries (
-        country_id SMALLSERIAL PRIMARY KEY,
+        country_id SMALLINT PRIMARY KEY,
         country_name VARCHAR(20) NOT NULL UNIQUE,
         prefix_ean VARCHAR(7) NOT NULL
       );
@@ -19,8 +19,8 @@ async function seedCountries(client) {
     const insertedCountries = await Promise.all(
       countriesData.map(
         (country) => client.sql`
-        INSERT INTO countries (country_name, prefix_ean)
-        VALUES (${country.countryName}, ${country.prefixEAN})
+        INSERT INTO countries (country_id, country_name, prefix_ean)
+        VALUES (${country.countryID}, ${country.countryName}, ${country.prefixEAN})
         ON CONFLICT DO NOTHING;
       `,
       ),
@@ -36,8 +36,8 @@ async function seedCategories(client) {
   try {
     const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS drink_categories (
-        drink_id SMALLSERIAL PRIMARY KEY,
-        drink_category VARCHAR(20) NOT NULL UNIQUE
+        category_id SMALLINT PRIMARY KEY,
+        category_name VARCHAR(20) NOT NULL UNIQUE
       );
     `;
     console.log('Created "drink_categories" table');
