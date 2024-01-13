@@ -112,12 +112,14 @@ Also serves as a faster & smaller drop-in replacement for the `classnames` modul
 The clsx function can take any number of arguments, each of which can be an Object, Array, Boolean, or String.
 
 ### 🔒 "bcrypt"
+A library to help you hash passwords.
 
-* npm-site:
-  - version:
-  - install: ``
-  - weekly downloads:
-* home-page:
+* npm-site: https://www.npmjs.com/package/bcrypt
+  - version: 5.1.1
+  - install: `npm install bcrypt`
+  - also: `npm install --save @types/bcrypt`
+  - weekly downloads: 1 400 000
+* home-page: https://github.com/kelektiv/node.bcrypt.js#readme
 
 ### 
 
